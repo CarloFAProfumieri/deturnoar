@@ -1,0 +1,63 @@
+.vollkorn-normal {
+               font-family: "Vollkorn", serif;
+               font-optical-sizing: auto;
+               font-weight: 400;
+               font-style: normal;
+}
+.vollkorn-bold {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+}
+.icon{
+    max-width: 2rem;
+    margin: 1rem;
+}
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.banner-font{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navbar {
+    border-bottom: black solid 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    align-self: center;
+}
+
+.search-form input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+.search-form-container{
+    margin: 1rem;
+}
+.search-form button {
+    background-color: #00b140;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #00912d;
+}
