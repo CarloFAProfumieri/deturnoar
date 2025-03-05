@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  width="100"
+  height="100"
+  viewBox="0 0 512 1024"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  fill="#000000">
+  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+  <g id="SVGRepo_iconCarrier">
+    <!-- Circle background -->
+    <circle cx="255.60221023" cy="210" r="150" style="fill:#dff0d8;" /> <!-- Change the fill color as needed -->
+
+    <path
+      style="fill:#03bf55;"
+      d="M390.54,55.719C353.383,18.578,304.696,0,255.993,0c-48.688,0-97.391,18.578-134.547,55.719
+          c-59.219,59.219-74.641,149.563-36.094,218.875C129.586,354.109,255.993,512,255.993,512s126.422-157.891,170.656-237.406
+          C465.195,205.281,449.773,114.938,390.54,55.719z M255.993,305.844c-63.813,0-115.563-51.75-115.563-115.547
+          c0-63.859,51.75-115.609,115.563-115.609c63.828,0,115.578,51.75,115.578,115.609C371.571,254.094,319.821,305.844,255.993,305.844z">
+    </path>
+    <rect
+      x="240"
+      y="128"
+      width="32"
+      height="115"
+      style="fill:#03bf55;fill-opacity:1;stroke-width:1.19316;"></rect>
+    <rect
+      x="197.5"
+      y="169"
+      width="115"
+      height="32"
+      style="fill:#03bf55;fill-opacity:1;stroke-width:1.19316;"></rect>
+  </g>
+</svg>
