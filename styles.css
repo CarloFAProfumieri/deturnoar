@@ -1,15 +1,10 @@
-.vollkorn-normal {
-               font-family: "Vollkorn", serif;
-               font-optical-sizing: auto;
-               font-weight: 400;
-               font-style: normal;
+.Vollkorn {
+   font-family: "Vollkorn", serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
 }
-.vollkorn-bold {
-    font-family: "Vollkorn", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: bold;
-}
+
 .icon{
     max-width: 2rem;
     margin: 1rem;
@@ -22,6 +17,7 @@
 .banner-font{
     font-size: 2rem;
     font-weight: bold;
+    font-family: "Vollkorn", serif;
 }
 .navbar {
     border-bottom: black solid 1px;
@@ -39,6 +35,18 @@
     align-self: center;
 }
 
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+}
+.right-container{
+    border: grey solid 1.5px;
+    border-radius: 26px;
+    overflow: hidden;
+}
 .search-form input {
     flex: 1;
     border: none;
