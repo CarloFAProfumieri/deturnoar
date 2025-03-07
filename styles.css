@@ -5,9 +5,27 @@
    font-style: normal;
 }
 
-.icon{
+.logo-icon{
     max-width: 2rem;
     margin: 1rem;
+}
+.card img{
+    max-width: 2rem;
+    margin: 1.5rem  ;
+}
+.card{
+    display: flex;
+    align-items: center;
+    font-family: Roboto, "Vollkorn", serif;
+}
+.card-list{
+    list-style: none;
+    padding: 0;
+}
+.card-container{
+}
+.card-text{
+    max-width: 50rem;
 }
 .logo-container{
     display: flex;
@@ -17,7 +35,7 @@
 .banner-font{
     font-size: 2rem;
     font-weight: bold;
-    font-family: "Vollkorn", serif;
+    font-family: Roboto, Verdana, serif;
 }
 .navbar {
     border-bottom: black solid 1px;
@@ -39,12 +57,31 @@
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 1.5rem 0;
 }
+.left-container{
+    display: flex;
+    flex-direction: column;
+
+}
+.list-header{
+    margin: 1rem;
+    align-self: center;
+}
+.card p{
+    margin: 0.5rem 0;
+}
+.card h4, h5{
+    margin: 0.2rem 0;
+}
+.card h4{
+    font-size: 1.2rem;
+}
+
 .right-container{
     border: grey solid 1.5px;
-    border-radius: 26px;
+    border-radius: 20px;
     overflow: hidden;
 }
 .search-form input {

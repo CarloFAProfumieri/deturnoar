@@ -7,12 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
   <div class="navbar">
     <div>
         <div class="logo-container">
-            <img src="public/logo.svg" alt="logo de la página" class="icon">
+            <img src="public/logo.svg" alt="logo de la página" class="logo-icon">
             <span class="banner-font"> Farmacias De Turno Santa Fe</span>
         </div>
     </div>
@@ -28,15 +29,27 @@
           <img src="public/map-placeholder.png">
       </div>
       <div class="left-container">
-          <h1>
+          <h1 class="list-header">
               Farmacias de Turno
           </h1>
-          <ul>
+          <ul class="card-list" id="pharmacyList">
               <li class="card-container">
-
+                  <div class="card">
+                      <img src="public/logo.svg" alt="pin icon" class="item-icon">
+                      <div class="card-text">
+                          <h4>Pharmacy Name</h4>
+                          <h5>pharmacy address and pharmacy phone</h5>
+                          <p>
+                              this is some extra information that might be relevant to this pharmacy
+                          </p>
+                      </div>
+                  </div>
               </li>
           </ul>
       </div>
   </div>
 </body>
+<script>
+    "index.js"
+</script>
 </html>
