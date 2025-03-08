@@ -2,39 +2,40 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>De Turno</title>
+    <link rel="shortcut icon" href="public/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
+    <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
 </head>
 <body>
   <div class="navbar">
     <div>
         <div class="logo-container">
             <img src="public/logo.svg" alt="logo de la página" class="logo-icon">
-            <span class="banner-font"> Farmacias De Turno Santa Fe</span>
+            <span class="banner-font"> De Turno Santa Fe</span>
         </div>
     </div>
     <div class="search-form-container">
         <form class="search-form"  >
-            <label for="addressInput">Buscar por dirección</label>
-            <input type="text" id="addressInput" placeholder="Buscar por dirección">
+            <input type="text" placeholder="Buscar por dirección" aria-label="Buscar por dirección">
             <button type="submit">Buscar</button>
         </form>
     </div>
   </div>
   <div class="main-container">
-      <div class="right-container">
-          <img src="public/map-placeholder.png" alt="mapa con las ubicaciones de las farmacias">
-      </div>
+      <div id="map" style="width: 45%; height: 700px; border: grey solid 1.5px; border-radius: 20px; "></div>
       <div class="left-container">
           <h1 class="list-header">
               Farmacias de Turno
           </h1>
           <ul class="card-list" id="pharmacyList">
               <li class="card-container">
+                  <!--
                   <div class="card">
                       <img src="public/logo.svg" alt="pin icon" class="item-icon">
                       <div class="card-text">
@@ -45,6 +46,7 @@
                           </p>
                       </div>
                   </div>
+                  -->
               </li>
           </ul>
       </div>

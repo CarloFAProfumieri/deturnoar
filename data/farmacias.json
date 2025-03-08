@@ -1,0 +1,177 @@
+[
+    {
+        "nombre": "Armando",
+        "direccion": "25 de Mayo 3441",
+        "telefono": "0342 - 4520603",
+        "latitud": -31.6364618,
+        "longitud": -60.7028763
+    },
+    {
+        "nombre": "Arrimada",
+        "direccion": "Marcial Candioti 3298",
+        "telefono": "0342 - 4561397",
+        "latitud": -31.6392528,
+        "longitud": -60.6959717
+    },
+    {
+        "nombre": "Asinari",
+        "direccion": "Crespo 2808",
+        "telefono": "0342 - 4530042",
+        "latitud": -31.6405842,
+        "longitud": -60.7076817
+    },
+    {
+        "nombre": "Burgués Romano",
+        "direccion": "Av. Blas Parera 7001",
+        "telefono": "0342 - 4891807",
+        "latitud": -31.5974125,
+        "longitud": -60.7227954
+    },
+    {
+        "nombre": "Daniel Lagger",
+        "direccion": "Av. Facundo Zuviría 6536",
+        "telefono": "0342 - 4895994",
+        "latitud": -31.6061783,
+        "longitud": -60.7031965
+    },
+    {
+        "nombre": "El Inca",
+        "direccion": "San Martín 2255",
+        "telefono": "0342 4521747/4535657",
+        "latitud": -31.649648,
+        "longitud": -60.7076507
+    },
+    {
+        "nombre": "Lucia Banchio",
+        "direccion": "Avda. Gral Paz 7165",
+        "telefono": "0342 - 4603500",
+        "latitud": null,
+        "longitud": null
+    },
+    {
+        "nombre": "Mazzali",
+        "direccion": "Juan de Garay 2915",
+        "telefono": "0342 - 4581286",
+        "latitud": -31.6518496,
+        "longitud": -60.7124635
+    },
+    {
+        "nombre": "Pellegrini",
+        "direccion": "Bv. Pellegrini 3465",
+        "telefono": "0342 - 4521233",
+        "latitud": -31.634663,
+        "longitud": -60.7068872
+    },
+    {
+        "nombre": "Plank",
+        "direccion": "Av. Gral Paz 4880",
+        "telefono": "0342 - 4121360",
+        "latitud": null,
+        "longitud": null
+    },
+    {
+        "nombre": "Sobrero",
+        "direccion": "Mendoza 3306",
+        "telefono": "0342 - 154056175",
+        "latitud": -31.6466625,
+        "longitud": -60.7162742
+    },
+    {
+        "nombre": "Strada",
+        "direccion": "Bv. Zavalla 1067",
+        "telefono": "0342 - 4599798",
+        "latitud": null,
+        "longitud": null
+    },
+    {
+        "nombre": "Abregú",
+        "direccion": "Av. Freyre 3029",
+        "telefono": "0342 - 4531300",
+        "latitud": -31.6429927,
+        "longitud": -60.7177265
+    },
+    {
+        "nombre": "Gottero",
+        "direccion": "San Martín 2699",
+        "telefono": "0342 - 4530644",
+        "latitud": -31.6445686,
+        "longitud": -60.7060943
+    },
+    {
+        "nombre": "Ignacio Azanza",
+        "direccion": "López y Planes 3901",
+        "telefono": "0342 - 4526526",
+        "latitud": -31.6292039,
+        "longitud": -60.7140002
+    },
+    {
+        "nombre": "Liliana Matínez",
+        "direccion": "Belgrano 6254",
+        "telefono": "0342 - 4606780",
+        "latitud": -31.6114223,
+        "longitud": -60.6912342
+    },
+    {
+        "nombre": "Luero",
+        "direccion": "9 de Julio 1898",
+        "telefono": "342 4594785",
+        "latitud": -31.6533391,
+        "longitud": -60.7112505
+    },
+    {
+        "nombre": "Marcelo Galizzi",
+        "direccion": "Blas Parera 8953",
+        "telefono": "0342 - 4840578",
+        "latitud": -31.6086387,
+        "longitud": -60.7194432
+    },
+    {
+        "nombre": "Mario Martínez",
+        "direccion": "Av. A. Del Valle 4499",
+        "telefono": "0342 - 4531597",
+        "latitud": null,
+        "longitud": null
+    },
+    {
+        "nombre": "Pardo",
+        "direccion": "9 de Julio 3443",
+        "telefono": "0342 - 4566267",
+        "latitud": -31.6356979,
+        "longitud": -60.7061493
+    },
+    {
+        "nombre": "Sabio",
+        "direccion": "Ángel Cassanello 898",
+        "telefono": "0342 - 4608172",
+        "latitud": -31.6038896,
+        "longitud": -60.7183152
+    },
+    {
+        "nombre": "San Lorenzo",
+        "direccion": "Av. Freyre 1598",
+        "telefono": "0342 - 4593487",
+        "latitud": -31.6552503,
+        "longitud": -60.7214834
+    },
+    {
+        "nombre": "Santiváñez",
+        "direccion": "Estanislao Zeballos 4453",
+        "telefono": "0342 - 4892739",
+        "latitud": -31.6003308,
+        "longitud": -60.7185724
+    },
+    {
+        "nombre": "Tonini",
+        "direccion": "Avellaneda 3498",
+        "telefono": "0342 - 4538391",
+        "latitud": -31.6390241,
+        "longitud": -60.6880109
+    },
+    {
+        "nombre": "Zimmerman",
+        "direccion": "Padre Genesio 2971",
+        "telefono": "0342 - 4691616",
+        "latitud": -31.5989912,
+        "longitud": -60.6980012
+    }
+]

@@ -14,11 +14,13 @@
     margin: 1.5rem  ;
 }
 .card{
+    margin: 1.5rem 0;
     display: flex;
     align-items: center;
     font-family: Roboto, "Vollkorn", serif;
 }
 .card-list{
+    font-family: Wotfard, Arial, sans-serif;
     list-style: none;
     padding: 0;
 }
@@ -70,20 +72,18 @@
     align-self: center;
 }
 .card p{
-    margin: 0.5rem 0;
+    margin: 0.3rem 0;
 }
+
 .card h4, h5{
-    margin: 0.2rem 0;
+    margin: 0.1rem 0;
 }
+
 .card h4{
     font-size: 1.2rem;
 }
 
-.right-container{
-    border: grey solid 1.5px;
-    border-radius: 20px;
-    overflow: hidden;
-}
+
 .search-form input {
     flex: 1;
     border: none;
