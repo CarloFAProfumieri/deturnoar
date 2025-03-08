@@ -1,4 +1,4 @@
-let pharmacyDictionary = {};
+let pinDictionary = {};
 let cardDictionary = {};
 
 function addCard(pharmacy){
@@ -47,7 +47,7 @@ function dropPin(pharmacy){
     pinElement.addEventListener("mouseenter", () => highlightCard(pharmacy.nombre,animationSeconds));
     pinElement.addEventListener("mouseleave", () => resetCard(pharmacy.nombre,animationSeconds));
 
-    pharmacyDictionary[pharmacy.nombre] = marker;
+    pinDictionary[pharmacy.nombre] = marker;
 }
 
 function highlightCard(pharmacyName, animationSeconds) {
@@ -96,7 +96,7 @@ function addPharmacy(pharmacy){
 
 function highlightPin(pharmacyName, animationSeconds) {
     highlightCard(pharmacyName,animationSeconds);
-    let marker = pharmacyDictionary[pharmacyName];
+    let marker = pinDictionary[pharmacyName];
     if (marker) {
         let pin = marker.getElement();
         pin.style.transition = "transform " + animationSeconds + "s ease-in-out";
@@ -105,7 +105,7 @@ function highlightPin(pharmacyName, animationSeconds) {
 }
 
 function resetPin(pharmacyName, animationSeconds) {
-    let marker = pharmacyDictionary[pharmacyName];
+    let marker = pinDictionary[pharmacyName];
     resetCard(pharmacyName);
     if (marker) {
         let pin = marker.getElement();

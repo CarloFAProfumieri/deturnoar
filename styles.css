@@ -147,20 +147,23 @@ body{
         flex-direction: column;
         align-items: center;
         width: 100vw;
+        padding: 0;
     }
     .list-header{
         display: none;
     }
+
     #map {
-        width: 100vw;         /* Take most of the screen width */
-        height: 300px;      /* Reduce height for mobile */
-        margin-bottom: 1rem; /* Add space between the map and list */
+        width: 100vw;
+        height: 60vh;
+        margin-bottom: 2rem;
         border-radius: 0;
     }
 
     .left-container {
         width: 100%;  /* Make the list take full width */
     }
+
     .mobile-hint{
         display: block;
     }
@@ -169,4 +172,5 @@ body{
         max-height: 50vh; /* Reduce max height for better scrolling */
         min-width: 90%;  /* Make it more responsive */
     }
+
 }
