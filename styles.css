@@ -4,7 +4,10 @@
    font-weight: 400;
    font-style: normal;
 }
-
+body{
+    margin: 0px;
+    padding: 0px;
+}
 .logo-icon{
     max-width: 2rem;
     margin: 1rem;
@@ -18,12 +21,29 @@
     display: flex;
     align-items: center;
     font-family: Roboto, "Vollkorn", serif;
+    border-radius: 10px;
+    background-color: white;
 }
 .card-list{
     font-family: Wotfard, Arial, sans-serif;
     list-style: none;
     padding: 0;
+    max-height: 75vh;
+    min-width: 25vw;
+    overflow: auto;
 }
+/*
+    these two are for hiding the scrollbar in different browsers
+*/
+.card-list{
+    -ms-overflow-style: none; /* Edge */
+    scrollbar-width: none;    /* Firefox */
+}
+.card-list::-webkit-scrollbar{
+    display: none;            /* Chromium */
+}
+
+
 .card-container{
 }
 .card-text{
@@ -60,7 +80,8 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    margin: 1.5rem 0;
+    padding: 1.5rem 0;
+    background-color: #f4f2ef;
 }
 .left-container{
     display: flex;
@@ -105,4 +126,47 @@
 
 .search-form button:hover {
     background-color: #00912d;
+}
+
+#map{
+    width: 35%;
+    height: 800px;
+    border: grey solid 1.5px;
+    border-radius: 20px;
+}
+
+.mobile-hint{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .search-form-container{
+        display: none;
+    }
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+    .list-header{
+        display: none;
+    }
+    #map {
+        width: 100vw;         /* Take most of the screen width */
+        height: 300px;      /* Reduce height for mobile */
+        margin-bottom: 1rem; /* Add space between the map and list */
+        border-radius: 0;
+    }
+
+    .left-container {
+        width: 100%;  /* Make the list take full width */
+    }
+    .mobile-hint{
+        display: block;
+    }
+
+    .card-list {
+        max-height: 50vh; /* Reduce max height for better scrolling */
+        min-width: 90%;  /* Make it more responsive */
+    }
 }
