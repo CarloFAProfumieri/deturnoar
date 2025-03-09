@@ -156,21 +156,36 @@ body{
     #map {
         width: 100vw;
         height: 60vh;
-        margin-bottom: 2rem;
         border-radius: 0;
     }
 
     .left-container {
         width: 100%;  /* Make the list take full width */
     }
-
+    div .mobile-hint{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    ul{
+        margin: 0;
+    }
     .mobile-hint{
         display: block;
+        margin: .5rem;
+        width: 100%;
     }
-
+    .mobile-hint h3{
+        margin: 0rem;
+        padding: 0 1rem;
+    }
+    .mobile-hint img{
+        max-width: 2rem;
+    }
     .card-list {
-        max-height: 50vh; /* Reduce max height for better scrolling */
-        min-width: 90%;  /* Make it more responsive */
+        max-height: 50vh;
+        min-width: 90%;
     }
 
 }
