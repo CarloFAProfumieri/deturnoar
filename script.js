@@ -144,7 +144,7 @@ function center(pharmacy){
         latitud: -31.640134534867073,
         longitud: -60.70403018834733
     };
-    fetch("data/farmacias.json")
+    fetch("data/pharmacies.json")
         .then(response => response.json())
         .then(data => {
             data.forEach(aPharmacy => {

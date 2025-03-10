@@ -1,0 +1,1202 @@
+[
+    {
+        "nombre": "PEDRO ANDRES KORNIJUK",
+        "direccion": "F. Zuviria 5323 La Capital Santa Fe",
+        "latitud": "-31.617248",
+        "longitud": "-60.705674"
+    },
+    {
+        "nombre": "BOLOGNESI",
+        "direccion": "facundo zuviria 5079 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.619682",
+        "longitud": "-60.705618"
+    },
+    {
+        "nombre": "BERRON",
+        "direccion": "Diagonal Goyena 3221 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.615785",
+        "longitud": "-60.706266"
+    },
+    {
+        "nombre": "CARABALLO",
+        "direccion": "Diag Goyena 3460 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.61556",
+        "longitud": "-60.709329"
+    },
+    {
+        "nombre": "GHERSI",
+        "direccion": "Pres. Julio A. Roca 2993 La Capital Santa Fe",
+        "latitud": "-31.61488",
+        "longitud": "-60.702767"
+    },
+    {
+        "nombre": "CHELINI",
+        "direccion": "Av. Facundo Zuviria 4679 La Capital Santa Fe",
+        "latitud": "-31.623669",
+        "longitud": "-60.705523"
+    },
+    {
+        "nombre": "CONIGLIO",
+        "direccion": "F. Zuviria 5918 La Capital Santa Fe",
+        "latitud": "-31.611834",
+        "longitud": "-60.704592"
+    },
+    {
+        "nombre": "IMOBERDORF",
+        "direccion": "FRAY CAYETANO RODRIGUEZ 3889 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.618429",
+        "longitud": "-60.716146"
+    },
+    {
+        "nombre": "IRRAZABAL",
+        "direccion": "Av. López y Planes 4499 Santa Fe La Capital",
+        "latitud": "-31.62374",
+        "longitud": "-60.713793"
+    },
+    {
+        "nombre": "BONAZZOLA ESTEFANÍA",
+        "direccion": "Aristóbulo del Valle 5118 Santa Fe La Capital",
+        "latitud": "-31.620801",
+        "longitud": "-60.698664"
+    },
+    {
+        "nombre": "PACCE",
+        "direccion": "Av. Aristóbulo del Valle 4900 Santa Fe La Capital",
+        "latitud": "-31.62275",
+        "longitud": "-60.69909"
+    },
+    {
+        "nombre": "LOPEZ",
+        "direccion": "AV LOPEZ Y PLANES 4267 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.625669",
+        "longitud": "-60.714006"
+    },
+    {
+        "nombre": "GIULIONI",
+        "direccion": "Gorostiaga 3038 Santa Fe La Capital",
+        "latitud": "-31.610409",
+        "longitud": "-60.702088"
+    },
+    {
+        "nombre": "MORALES",
+        "direccion": "ARISTOBULO DEL VALLE 5827 SANTA FE LA CAPITAL",
+        "latitud": "-31.614688",
+        "longitud": "-60.696916"
+    },
+    {
+        "nombre": "MORELLO SANTA FE",
+        "direccion": "Facundo Zuviria 4201 La Capital Santa Fe",
+        "latitud": "-31.628153",
+        "longitud": "-60.705346"
+    },
+    {
+        "nombre": "PEIRO",
+        "direccion": "Av. Facundo Zuviría 6253 Santa Fe La Capital",
+        "latitud": "-31.608525",
+        "longitud": "-60.704312"
+    },
+    {
+        "nombre": "COLL",
+        "direccion": "Av. Aristóbulo del Valle 6029 Santa Fe La Capital",
+        "latitud": "-31.612611",
+        "longitud": "-60.695715"
+    },
+    {
+        "nombre": "COSTA SANTA FE",
+        "direccion": "Av. Blas Parera 5671 Santa Fe La Capital",
+        "latitud": "-31.611125",
+        "longitud": "-60.718959"
+    },
+    {
+        "nombre": "IGNACIO AZANZA",
+        "direccion": "Av. López y Planes 3901 Santa Fe La Capital",
+        "latitud": "-31.629232",
+        "longitud": "-60.71405"
+    },
+    {
+        "nombre": "LAGGER ZURBRIGGEN (ART. 57)",
+        "direccion": "Las Heras 5401 La Capital Santa Fe",
+        "latitud": "-31.619169",
+        "longitud": "-60.693023"
+    },
+    {
+        "nombre": "DANIEL LAGGER",
+        "direccion": "Av. F. Zuviria 6536 La Capital Santa Fe",
+        "latitud": "-31.606151",
+        "longitud": "-60.703217"
+    },
+    {
+        "nombre": "TRUCCO SANTA FE",
+        "direccion": "Las Heras 4501 Santa Fe La Capital",
+        "latitud": "-31.627605",
+        "longitud": "-60.694892"
+    },
+    {
+        "nombre": "COSTA SAMITA",
+        "direccion": "artistobulo del valle 6378 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.60973",
+        "longitud": "-60.69395"
+    },
+    {
+        "nombre": "JUDITH ACEVEDO",
+        "direccion": "Castelli 3642 Santa Fe La Capital",
+        "latitud": "-31.60338",
+        "longitud": "-60.708318"
+    },
+    {
+        "nombre": "BRAMBILLA",
+        "direccion": "Estanislao Zeballos 3731 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.602454",
+        "longitud": "-60.709225"
+    },
+    {
+        "nombre": "VINDEROLA",
+        "direccion": "Bv. Pellegrini 3060 Santa Fe La Capital",
+        "latitud": "-31.634039",
+        "longitud": "-60.709279"
+    },
+    {
+        "nombre": "BURGI",
+        "direccion": "Bv. Pellegrini 3187 Santa Fe La Capital",
+        "latitud": "-31.634051",
+        "longitud": "-60.711125"
+    },
+    {
+        "nombre": "PELLEGRINI",
+        "direccion": "BV PELLEGRINI 3465 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.633363",
+        "longitud": "-60.714462"
+    },
+    {
+        "nombre": "MARÍA SELVA",
+        "direccion": "Av. Aristóbulo del Valle 6600 Santa Fe La Capital",
+        "latitud": "-31.607614",
+        "longitud": "-60.693139"
+    },
+    {
+        "nombre": "CAMILATTO",
+        "direccion": "ESTANISLAO ZEBALLOS 2702 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.605073",
+        "longitud": "-60.695903"
+    },
+    {
+        "nombre": "CAMILATTO (ART. 57)",
+        "direccion": "E. Zeballos 2702 La Capital Santa Fe",
+        "latitud": "-31.605073",
+        "longitud": "-60.695903"
+    },
+    {
+        "nombre": "SEN COLTRINARI",
+        "direccion": "SALVADOR DEL CARRIL 1672 SANTA FE",
+        "latitud": "-31.620072",
+        "longitud": "-60.687884"
+    },
+    {
+        "nombre": "CLAVE",
+        "direccion": "Av. Gral. Paz 4548 La Capital Santa Fe",
+        "latitud": "-31.627948",
+        "longitud": "-60.691169"
+    },
+    {
+        "nombre": "VIGNOLO",
+        "direccion": "av general paz 4698 SANTA FE",
+        "latitud": "-31.626785",
+        "longitud": "-60.690297"
+    },
+    {
+        "nombre": "LILIANA MARTINEZ",
+        "direccion": "Belgrano",
+        "latitud": "-31.609027",
+        "longitud": "-60.690748"
+    },
+    {
+        "nombre": "ROJAS SOTELO",
+        "direccion": "Alvear 6303 Santa Fe La Capital",
+        "latitud": "-31.611321",
+        "longitud": "-60.689153"
+    },
+    {
+        "nombre": "PLANK",
+        "direccion": "Av. Gral Paz 4880 Santa Fe La Capital",
+        "latitud": "-31.625311",
+        "longitud": "-60.689225"
+    },
+    {
+        "nombre": "PARDO",
+        "direccion": "9 de julio 3443 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.635757",
+        "longitud": "-60.706208"
+    },
+    {
+        "nombre": "GÓMEZ SANTA FE",
+        "direccion": "Av. Vera Peñaloza 6839 Santa Fe La Capital",
+        "latitud": "-31.601073",
+        "longitud": "-60.712867"
+    },
+    {
+        "nombre": "JULLIER Santa Fe",
+        "direccion": "Av. Freyre N° 3313 La Capital Santa Fe",
+        "latitud": "-31.634799",
+        "longitud": "-60.715573"
+    },
+    {
+        "nombre": "GERMAN LOPEZ",
+        "direccion": "Gral. Paz 5210 La Capital Santa Fe",
+        "latitud": "-31.62234",
+        "longitud": "-60.687169"
+    },
+    {
+        "nombre": "STRICKER",
+        "direccion": "Chacabuco 2116 La Capital Santa Fe",
+        "latitud": "-31.63377",
+        "longitud": "-60.696939"
+    },
+    {
+        "nombre": "LABATH",
+        "direccion": "Stgo. del Estero 3142 Santa Fe La Capital",
+        "latitud": "-31.63621",
+        "longitud": "-60.711049"
+    },
+    {
+        "nombre": "SANTIAGO",
+        "direccion": "Necochea 4162 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.631424",
+        "longitud": "-60.692447"
+    },
+    {
+        "nombre": "MONICA WAGNER",
+        "direccion": "Marcial Candioti 3899 Santa Fe La Capital",
+        "latitud": "-31.63363",
+        "longitud": "-60.694539"
+    },
+    {
+        "nombre": "BOSCH",
+        "direccion": "Santiago del Estero 2764 La Capital Santa Fe",
+        "latitud": "-31.637235",
+        "longitud": "-60.706088"
+    },
+    {
+        "nombre": "BRUNO",
+        "direccion": "GRAL. PAZ 5550 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.619532",
+        "longitud": "-60.685164"
+    },
+    {
+        "nombre": "LENCINAS",
+        "direccion": "Balcarce 2384 Santa Fe La Capital",
+        "latitud": "-31.637149",
+        "longitud": "-60.701186"
+    },
+    {
+        "nombre": "DAMIANI",
+        "direccion": "Urquiza 3180 La Capital Santa Fe",
+        "latitud": "-31.637874",
+        "longitud": "-60.710679"
+    },
+    {
+        "nombre": "THEILLER",
+        "direccion": "Av. Gral. Paz 5773 Santa Fe La Capital",
+        "latitud": "-31.617645",
+        "longitud": "-60.684309"
+    },
+    {
+        "nombre": "SANTIVÁÑEZ",
+        "direccion": "Estanislao Zeballos 4453 Santa Fe La Capital",
+        "latitud": "-31.600347",
+        "longitud": "-60.718515"
+    },
+    {
+        "nombre": "SARTOR",
+        "direccion": "Rivadavia 3300 La Capital Santa Fe",
+        "latitud": "-31.638412",
+        "longitud": "-60.701938"
+    },
+    {
+        "nombre": "FUCKSMANN",
+        "direccion": "Saavedra 3081 Santa Fe La Capital",
+        "latitud": "-31.63833",
+        "longitud": "-60.713899"
+    },
+    {
+        "nombre": "VERÓNICA CANO",
+        "direccion": "Suipacha 2912 Santa Fe La Capital",
+        "latitud": "-31.639255",
+        "longitud": "-60.7088"
+    },
+    {
+        "nombre": "ZIMERMAN SANTA FE",
+        "direccion": "Padre Genesio 2971 Santa Fe La Capital",
+        "latitud": "-31.599045",
+        "longitud": "-60.697622"
+    },
+    {
+        "nombre": "Belgrano Santa Fe",
+        "direccion": "Rivadavia 3237 Santa Fe La Capital",
+        "latitud": "-31.63899",
+        "longitud": "-60.702136"
+    },
+    {
+        "nombre": "IMVINKELRIED",
+        "direccion": "Lavalle 4201 Santa Fe La Capital",
+        "latitud": "-31.631742",
+        "longitud": "-60.688363"
+    },
+    {
+        "nombre": "ESCUDERO",
+        "direccion": "Av. Galicia 1881 Santa Fe La Capital",
+        "latitud": "-31.606828",
+        "longitud": "-60.68642"
+    },
+    {
+        "nombre": "ABREGU",
+        "direccion": "Av. Freyre 3029 La Capital Santa Fe",
+        "latitud": "-31.63832",
+        "longitud": "-60.716602"
+    },
+    {
+        "nombre": "ZENTNER",
+        "direccion": "SAN GERONIMO 3101 SANTA FE LA CAPITAL",
+        "latitud": "-31.63966",
+        "longitud": "-60.706174"
+    },
+    {
+        "nombre": "GARCIA Santa Fe",
+        "direccion": "Rivadavia 3193 La Capital Santa Fe",
+        "latitud": "-31.639489",
+        "longitud": "-60.70243"
+    },
+    {
+        "nombre": "PASTEUR SANTA FE",
+        "direccion": "Marcial Candioti 3499 Santa Fe La Capital",
+        "latitud": "-31.637425",
+        "longitud": "-60.695642"
+    },
+    {
+        "nombre": "ZAPATA MORAN",
+        "direccion": "AVENIDA BLAS PARERA 6751 SANTA FE",
+        "latitud": "-31.600054",
+        "longitud": "-60.721888"
+    },
+    {
+        "nombre": "MÉNDEZ",
+        "direccion": "Güemes 4359 Santa Fe La Capital",
+        "latitud": "-31.630774",
+        "longitud": "-60.686691"
+    },
+    {
+        "nombre": "DEAN",
+        "direccion": "Av. Peñaloza 7308 La Capital Santa Fe",
+        "latitud": "-31.596628",
+        "longitud": "-60.711993"
+    },
+    {
+        "nombre": "FERRO",
+        "direccion": "Francia 2998 Santa Fe La Capital",
+        "latitud": "-31.639745",
+        "longitud": "-60.712735"
+    },
+    {
+        "nombre": "MARIANO ACOSTA",
+        "direccion": "SUIPACHA 2506 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.640141",
+        "longitud": "-60.704032"
+    },
+    {
+        "nombre": "ASINARI",
+        "direccion": "Crespo 2808 Santa Fe La Capital",
+        "latitud": "-31.640571",
+        "longitud": "-60.707635"
+    },
+    {
+        "nombre": "FACINO",
+        "direccion": "Diagonal España 3176 Santa Fe La Capital",
+        "latitud": "-31.639967",
+        "longitud": "-60.700126"
+    },
+    {
+        "nombre": "MAI",
+        "direccion": "Av. Aristóbulo del Valle 7431 Santa Fe La Capital",
+        "latitud": "-31.599876",
+        "longitud": "-60.692094"
+    },
+    {
+        "nombre": "WAGNER BURGUES",
+        "direccion": "Rivadavia 3098 La Capital Santa Fe",
+        "latitud": "-31.640729",
+        "longitud": "-60.702393"
+    },
+    {
+        "nombre": "BORDIGNON",
+        "direccion": "Suipacha 2310 Santa Fe La Capital",
+        "latitud": "-31.64069",
+        "longitud": "-60.701602"
+    },
+    {
+        "nombre": "BARCAROLO",
+        "direccion": "Hipolito Irigoyen 223 EMILIA LA CAPITAL SANTA FE",
+        "latitud": "-31.640589",
+        "longitud": "-60.714436"
+    },
+    {
+        "nombre": "AZANZA",
+        "direccion": "San Martín 2983 Santa Fe La Capital",
+        "latitud": "-31.641389",
+        "longitud": "-60.705133"
+    },
+    {
+        "nombre": "ARRIMADA",
+        "direccion": "Marcial Candioti 3298 Santa Fe La Capital",
+        "latitud": "-31.63926",
+        "longitud": "-60.695982"
+    },
+    {
+        "nombre": "FANESSI",
+        "direccion": "1 de Mayo 2899 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.641709",
+        "longitud": "-60.709306"
+    },
+    {
+        "nombre": "BOURDIN",
+        "direccion": "Alberdi 3500 Santa Fe La Capital",
+        "latitud": "-31.637776",
+        "longitud": "-60.692086"
+    },
+    {
+        "nombre": "FINELLI",
+        "direccion": "Las Heras 7304 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.602068",
+        "longitud": "-60.68731"
+    },
+    {
+        "nombre": "VILARRUBI",
+        "direccion": "Av. Peñaloza 7512 Santa Fe La Capital",
+        "latitud": "-31.594608",
+        "longitud": "-60.711941"
+    },
+    {
+        "nombre": "MARTINEZ SANTA FE",
+        "direccion": "Av. Galicia 1519 Santa Fe La Capital",
+        "latitud": "-31.607559",
+        "longitud": "-60.682539"
+    },
+    {
+        "nombre": "SCALZO",
+        "direccion": "Gobernador Vera 3206 Santa Fe La Capital",
+        "latitud": "-31.641828",
+        "longitud": "-60.713533"
+    },
+    {
+        "nombre": "BURGUÉS ROMANO",
+        "direccion": "Av. Blas Parera 7001 Santa Fe La Capital",
+        "latitud": "-31.59741",
+        "longitud": "-60.72283"
+    },
+    {
+        "nombre": "JUNGES",
+        "direccion": "guemes 3701 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.636902",
+        "longitud": "-60.68844"
+    },
+    {
+        "nombre": "VALETTI",
+        "direccion": "Gral Paz 6440 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.612221",
+        "longitud": "-60.679371"
+    },
+    {
+        "nombre": "PESCETTI",
+        "direccion": "PADRE GENESIO 1901 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.601816",
+        "longitud": "-60.685196"
+    },
+    {
+        "nombre": "NEBIOLO",
+        "direccion": "ARISTOBULO DEL VALLE 7781 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.596598",
+        "longitud": "-60.69211"
+    },
+    {
+        "nombre": "FERRARASSI",
+        "direccion": "Marcos Rodolfo Candioti 1639 CANDIOTI LA CAPITAL SANTA FE",
+        "latitud": "-31.640825",
+        "longitud": "-60.693572"
+    },
+    {
+        "nombre": "NICOLAU MANZUR",
+        "direccion": "1º de Mayo 2699 La Capital Santa Fe",
+        "latitud": "-31.643902",
+        "longitud": "-60.709953"
+    },
+    {
+        "nombre": "CARDOSO",
+        "direccion": "avda freyre 2638 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.642726",
+        "longitud": "-60.717354"
+    },
+    {
+        "nombre": "QUEGLAS",
+        "direccion": "12 DE INFANTERIA 4400 SANTA FE LA CAPITAL",
+        "latitud": "-31.592863",
+        "longitud": "-60.715771"
+    },
+    {
+        "nombre": "ROJAS",
+        "direccion": "Av. Blas Parera 7202 Santa Fe de la Vera Cruz Santa Fe",
+        "latitud": "-31.595266",
+        "longitud": "-60.722934"
+    },
+    {
+        "nombre": "GOTTERO",
+        "direccion": "San Martín 2699 Santa Fe La Capital",
+        "latitud": "-31.644603",
+        "longitud": "-60.706026"
+    },
+    {
+        "nombre": "ALEJANDRO SENN",
+        "direccion": "4 de Enero 2599 La Capital Santa Fe",
+        "latitud": "-31.644489",
+        "longitud": "-60.711412"
+    },
+    {
+        "nombre": "BANCHIO Santa Fe",
+        "direccion": "Irigoyen Freyre 2200 La Capital Santa Fe",
+        "latitud": "-31.644173",
+        "longitud": "-60.701135"
+    },
+    {
+        "nombre": "TONINI",
+        "direccion": "avellaneda 3498 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.638998",
+        "longitud": "-60.687941"
+    },
+    {
+        "nombre": "IMHOF",
+        "direccion": "M. Candiotti 2796 La Capital Santa Fe",
+        "latitud": "-31.643552",
+        "longitud": "-60.697189"
+    },
+    {
+        "nombre": "SABIO",
+        "direccion": "ANGEL CASANELLO 898 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.612932",
+        "longitud": "-60.676803"
+    },
+    {
+        "nombre": "MONTES SANTA FE",
+        "direccion": "Av. Gral. Paz 6765 Santa Fe La Capital",
+        "latitud": "-31.609048",
+        "longitud": "-60.677918"
+    },
+    {
+        "nombre": "AMHERDT",
+        "direccion": "Saavedra 2499 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.644725",
+        "longitud": "-60.715749"
+    },
+    {
+        "nombre": "LUCIA BANCHIO",
+        "direccion": "Av. General Paz 7165 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.606345",
+        "longitud": "-60.676362"
+    },
+    {
+        "nombre": "GIMÉNEZ SANTA FE",
+        "direccion": "Urquiza 2332 Santa Fe La Capital",
+        "latitud": "-31.647091",
+        "longitud": "-60.713392"
+    },
+    {
+        "nombre": "SOBRERO SANTA FE",
+        "direccion": "Mendoza 3306 Santa Fe La Capital",
+        "latitud": "-31.646595",
+        "longitud": "-60.71634"
+    },
+    {
+        "nombre": "TIMOFIEJUK",
+        "direccion": "Rivadavia 2443 SANTA FE",
+        "latitud": "-31.6478",
+        "longitud": "-60.705457"
+    },
+    {
+        "nombre": "BONAZZOLA",
+        "direccion": "Av. Freyre 2298 Santa Fe La Capital",
+        "latitud": "-31.64639",
+        "longitud": "-60.718916"
+    },
+    {
+        "nombre": "SILEONI",
+        "direccion": "Cassanello 519 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.61406",
+        "longitud": "-60.673121"
+    },
+    {
+        "nombre": "GHECO",
+        "direccion": "Av. Blas Parera 7621 Santa Fe La Capital",
+        "latitud": "-31.591552",
+        "longitud": "-60.72441"
+    },
+    {
+        "nombre": "DOMET HURANI",
+        "direccion": "Av. Gorriti 3751 Santa Fe La Capital",
+        "latitud": "-31.587904",
+        "longitud": "-60.705325"
+    },
+    {
+        "nombre": "NAITO",
+        "direccion": "Mendoza 4098 Santa Fe La Capital",
+        "latitud": "-31.644095",
+        "longitud": "-60.726542"
+    },
+    {
+        "nombre": "PESCETTI MAXIMILIANO",
+        "direccion": "Mendoza 2676 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.648766",
+        "longitud": "-60.708297"
+    },
+    {
+        "nombre": "VALVERDE",
+        "direccion": "1° de Mayo 2215 Santa Fe La Capital",
+        "latitud": "-31.649169",
+        "longitud": "-60.711513"
+    },
+    {
+        "nombre": "SUPPO",
+        "direccion": "A DEL VALLE 6897 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.649428",
+        "longitud": "-60.70958"
+    },
+    {
+        "nombre": "LONG",
+        "direccion": "A DEL VALLE 4026 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.649428",
+        "longitud": "-60.70958"
+    },
+    {
+        "nombre": "EL INCA",
+        "direccion": "San Martín 2255 Santa Fe La Capital",
+        "latitud": "-31.649605",
+        "longitud": "-60.707734"
+    },
+    {
+        "nombre": "CHEMES",
+        "direccion": "Urquiza 2179 La Capital Santa Fe",
+        "latitud": "-31.649281",
+        "longitud": "-60.714229"
+    },
+    {
+        "nombre": "BARRIENTOS",
+        "direccion": "9 DE JULIO 2198 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.649711",
+        "longitud": "-60.710077"
+    },
+    {
+        "nombre": "FIGUEROA SOBRERO",
+        "direccion": "General Paz 7471 SANTA FE LA CAPITAL",
+        "latitud": "-31.603378",
+        "longitud": "-60.675054"
+    },
+    {
+        "nombre": "MERCADO CENTRAL",
+        "direccion": "San Jeronimo 2170 SANTA FE LA CAPITAL",
+        "latitud": "-31.650137",
+        "longitud": "-60.708796"
+    },
+    {
+        "nombre": "MENAPACE SANTA FE",
+        "direccion": "Blas Parera 7831 Santa Fe La Capital",
+        "latitud": "-31.589485",
+        "longitud": "-60.725"
+    },
+    {
+        "nombre": "UGOLINI",
+        "direccion": "Av. Gorriti 4512 Santa Fe La Capital",
+        "latitud": "-31.585253",
+        "longitud": "-60.714963"
+    },
+    {
+        "nombre": "GABRIEL JAUREGUI",
+        "direccion": "canonigo echague 7254 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.606324",
+        "longitud": "-60.670512"
+    },
+    {
+        "nombre": "MAZZALI",
+        "direccion": "Juan de Garay 2915 Santa Fe La Capital",
+        "latitud": "-31.651857",
+        "longitud": "-60.712518"
+    },
+    {
+        "nombre": "ESTERKIN",
+        "direccion": "San Jerónimo 1995 Santa Fe La Capital",
+        "latitud": "-31.652348",
+        "longitud": "-60.709786"
+    },
+    {
+        "nombre": "ARMANDO",
+        "direccion": "25 DE MAYO 3441 SANTA FE LA CAPITAL",
+        "latitud": "-31.58766",
+        "longitud": "-60.688401"
+    },
+    {
+        "nombre": "COLUCCI",
+        "direccion": "Av. Freyre 1908 Santa Fe La Capital",
+        "latitud": "-31.651628",
+        "longitud": "-60.719872"
+    },
+    {
+        "nombre": "LUERO",
+        "direccion": "9 de Julio 1898 Santa Fe La Capital",
+        "latitud": "-31.653346",
+        "longitud": "-60.711156"
+    },
+    {
+        "nombre": "MARTÍNEZ JUAN JOSÉ",
+        "direccion": "Urquiza 1859 Santa Fe La Capital",
+        "latitud": "-31.652994",
+        "longitud": "-60.715379"
+    },
+    {
+        "nombre": "SANTA FE",
+        "direccion": "Saavedra 1822 La Capital Santa Fe",
+        "latitud": "-31.652942",
+        "longitud": "-60.717943"
+    },
+    {
+        "nombre": "WUILLOUD",
+        "direccion": "San Jeronimo 1801 La Capital Santa Fe",
+        "latitud": "-31.65447",
+        "longitud": "-60.710371"
+    },
+    {
+        "nombre": "SELECT CATTANEO",
+        "direccion": "San martin 1811 VERA LA CAPITAL SANTA FE",
+        "latitud": "-31.654565",
+        "longitud": "-60.709137"
+    },
+    {
+        "nombre": "THROENDLY",
+        "direccion": "Av. Blas Parera 8235 Santa Fe La Capital",
+        "latitud": "-31.585436",
+        "longitud": "-60.726081"
+    },
+    {
+        "nombre": "DONADIO",
+        "direccion": "Javier de la Rosa 322 Santa Fe La Capital",
+        "latitud": "-31.604401",
+        "longitud": "-60.668197"
+    },
+    {
+        "nombre": "ARGENTI",
+        "direccion": "San Jeronimo 1746",
+        "latitud": "-31.655105",
+        "longitud": "-60.710378"
+    },
+    {
+        "nombre": "ORTEGA",
+        "direccion": "Blas Parera 8374 Santa Fe La Capital",
+        "latitud": "-31.583884",
+        "longitud": "-60.725972"
+    },
+    {
+        "nombre": "SALVATIERRA",
+        "direccion": "Gral.Lopez 3272 La Capital Santa Fe",
+        "latitud": "-31.655411",
+        "longitud": "-60.718384"
+    },
+    {
+        "nombre": "BONAZZOLA DENISE",
+        "direccion": "Gral. López 2740 Santa Fe La Capital",
+        "latitud": "-31.656604",
+        "longitud": "-60.711347"
+    },
+    {
+        "nombre": "CAMUSSO",
+        "direccion": "4 de Enero 1594 Santa Fe La Capital",
+        "latitud": "-31.656296",
+        "longitud": "-60.71481"
+    },
+    {
+        "nombre": "SAN LORENZO SANTA FE",
+        "direccion": "Av. Freyre 1598 Santa Fe La Capital",
+        "latitud": "-31.655278",
+        "longitud": "-60.721391"
+    },
+    {
+        "nombre": "CAPORIZZO",
+        "direccion": "Av. Aristóbulo del Valle 9284 Santa Fe La Capital",
+        "latitud": "-31.582033",
+        "longitud": "-60.689558"
+    },
+    {
+        "nombre": "LAUXMANN",
+        "direccion": "Bv. Zavalla 1417 Santa Fe La Capital",
+        "latitud": "-31.656726",
+        "longitud": "-60.723458"
+    },
+    {
+        "nombre": "CURTI SANTA FE",
+        "direccion": "Entre Ríos 3288 Santa Fe La Capital",
+        "latitud": "-31.658448",
+        "longitud": "-60.71955"
+    },
+    {
+        "nombre": "CAPRA",
+        "direccion": "Entre Rios 3115 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.659081",
+        "longitud": "-60.717484"
+    },
+    {
+        "nombre": "MANSILLA",
+        "direccion": "9 de Julio 1181 SANTA FE La Capital",
+        "latitud": "-31.661233",
+        "longitud": "-60.713796"
+    },
+    {
+        "nombre": "BERTOLIN",
+        "direccion": "URQUIZA 1067 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.661627",
+        "longitud": "-60.718082"
+    },
+    {
+        "nombre": "STRADA",
+        "direccion": "Bv. Zavalla 1067 Santa Fe La Capital",
+        "latitud": "-31.660268",
+        "longitud": "-60.724466"
+    },
+    {
+        "nombre": "MARCELO GALIZZI",
+        "direccion": "Av. Blas Parera 8953 Santa Fe La Capital",
+        "latitud": "-31.57684",
+        "longitud": "-60.728537"
+    },
+    {
+        "nombre": "ORTIZ DE ZARATE",
+        "direccion": "Av. J. J. Paso 3299 Santa Fe La Capital",
+        "latitud": "-31.662051",
+        "longitud": "-60.720655"
+    },
+    {
+        "nombre": "MORANTE",
+        "direccion": "Barrio El Pozo M.8 Vda.43 Santa Fe La Capital",
+        "latitud": "-31.637462",
+        "longitud": "-60.659608"
+    },
+    {
+        "nombre": "CASTRO KARINA",
+        "direccion": "DRA GRIERSON 8231 SANTA FE LA CAPITAL SANTA FE",
+        "latitud": "-31.583051",
+        "longitud": "-60.744144"
+    },
+    {
+        "nombre": "RITA MARTINEZ",
+        "direccion": "Av. Aristóbulo del Valle 10479 Santa Fe de la Vera Cruz Santa Fe",
+        "latitud": "-31.570466",
+        "longitud": "-60.690104"
+    },
+    {
+        "nombre": "CONTINI",
+        "direccion": "Sarmiento 1776 SANTO TOME LA CAPITAL SANTA FE",
+        "latitud": "-31.661993",
+        "longitud": "-60.758489"
+    },
+    {
+        "nombre": "CIRELLI",
+        "direccion": "25 de Mayo 1654 La Capital Santo Tomé",
+        "latitud": "-31.661942",
+        "longitud": "-60.762265"
+    },
+    {
+        "nombre": "ESCOBAR SANTO TOME",
+        "direccion": "Av. 7 de Marzo 1527 Santo Tome La Capital",
+        "latitud": "-31.667518",
+        "longitud": "-60.756871"
+    },
+    {
+        "nombre": "QUASSOLO",
+        "direccion": "Sarmiento 2343 SANTO TOME LA CAPITAL SANTA FE",
+        "latitud": "-31.661315",
+        "longitud": "-60.764675"
+    },
+    {
+        "nombre": "BONINO Santo Tome",
+        "direccion": "Obispo Gelabert 2198 SANTO TOME LA CAPITAL SANTA FE",
+        "latitud": "-31.663248",
+        "longitud": "-60.763427"
+    },
+    {
+        "nombre": "FIRMANI",
+        "direccion": "25 de Mayo 1878 Santo Tome La Capital",
+        "latitud": "-31.664013",
+        "longitud": "-60.762685"
+    },
+    {
+        "nombre": "PESCETTI JULIETA",
+        "direccion": "Av. 7 de Marzo 1760 SANTO TOME LA CAPITAL SANTA FE",
+        "latitud": "-31.666949",
+        "longitud": "-60.759318"
+    },
+    {
+        "nombre": "CRUZ SANTO TOME",
+        "direccion": "M. Candioti 2494 Santo Tome La Capital",
+        "latitud": "-31.671719",
+        "longitud": "-60.755499"
+    },
+    {
+        "nombre": "SAN ROQUE",
+        "direccion": "Av. 7 de Marzo 2118 Santo Tome La Capital",
+        "latitud": "-31.666513",
+        "longitud": "-60.763268"
+    },
+    {
+        "nombre": "MARTINEZ Santo Tome",
+        "direccion": "hipolito irigoyen 2235 SANTO TOME LA CAPITAL SANTA FE",
+        "latitud": "-31.667969",
+        "longitud": "-60.763722"
+    },
+    {
+        "nombre": "RIVERO",
+        "direccion": "Mariano Candioti 2801 Santo Tome La Capital",
+        "latitud": "-31.675021",
+        "longitud": "-60.755955"
+    },
+    {
+        "nombre": "MACAGNO",
+        "direccion": "Av. 7 de Marzo 2601 Santo Tome La Capital",
+        "latitud": "-31.666201",
+        "longitud": "-60.768572"
+    },
+    {
+        "nombre": "MARIANA GOMEZ",
+        "direccion": "Avenida Lujan 2468 Santo Tome La Capital",
+        "latitud": "-31.669761",
+        "longitud": "-60.766674"
+    },
+    {
+        "nombre": "OLIVERO Santo Tome",
+        "direccion": "HERNANDARIAS 1793 SANTO TOME LA CAPITAL SANTA FE",
+        "latitud": "-31.674435",
+        "longitud": "-60.760811"
+    },
+    {
+        "nombre": "ZIMMERMANN SANTO TOME",
+        "direccion": "Mariano Candioti 3226 Santo Tome La Capital",
+        "latitud": "-31.678863",
+        "longitud": "-60.756866"
+    },
+    {
+        "nombre": "MARCOLINI",
+        "direccion": "AV LUJAN 2692 SANTO TOME LA CAPITAL SANTA FE",
+        "latitud": "-31.671594",
+        "longitud": "-60.76796"
+    },
+    {
+        "nombre": "TERENZI",
+        "direccion": "BELGRANO 3018 La Capital Santo Tomé",
+        "latitud": "-31.67277",
+        "longitud": "-60.768918"
+    },
+    {
+        "nombre": "STESSENS",
+        "direccion": "7 de Marzo 1884 La Capital Santo Tomé",
+        "latitud": "-31.67277",
+        "longitud": "-60.768918"
+    },
+    {
+        "nombre": "MAYORAZ",
+        "direccion": "25 de Mayo 2017 La Capital Santo Tomé",
+        "latitud": "-31.67277",
+        "longitud": "-60.768918"
+    },
+    {
+        "nombre": "GÓMEZ SANTO TOME",
+        "direccion": "La Rioja 2295 Santo Tome La Capital",
+        "latitud": "-31.674438",
+        "longitud": "-60.766988"
+    },
+    {
+        "nombre": "GOMEZ Santo Tome",
+        "direccion": "La Rioja 2295 La Capital Santo Tomé",
+        "latitud": "-31.674438",
+        "longitud": "-60.766988"
+    },
+    {
+        "nombre": "BERTA",
+        "direccion": "EJERCITO ARGENTINO 2695 SANTO TOME LA CAPITAL SANTA FE",
+        "latitud": "-31.672728",
+        "longitud": "-60.770714"
+    },
+    {
+        "nombre": "LEIVA",
+        "direccion": "La Rioja 2511 La Capital Santa Fe",
+        "latitud": "-31.674344",
+        "longitud": "-60.770169"
+    },
+    {
+        "nombre": "PALACIN",
+        "direccion": "Mariano Candioti 3677 Santo Tome La Capital",
+        "latitud": "-31.683145",
+        "longitud": "-60.757379"
+    },
+    {
+        "nombre": "VILLATA",
+        "direccion": "Av. Lujan 2979 La Capital Santo Tomé",
+        "latitud": "-31.674772",
+        "longitud": "-60.770119"
+    },
+    {
+        "nombre": "SAUCO",
+        "direccion": "Alberdi 2154 Santo Tome La Capital",
+        "latitud": "-31.681423",
+        "longitud": "-60.766863"
+    },
+    {
+        "nombre": "TOSELLO",
+        "direccion": "Lopez y Planes 2865 La Capital Santo Tomé",
+        "latitud": "-31.67761",
+        "longitud": "-60.774567"
+    },
+    {
+        "nombre": "MARTA TEPP",
+        "direccion": "Av. Luján 3636 Santo Tome La Capital",
+        "latitud": "-31.680038",
+        "longitud": "-60.774904"
+    },
+    {
+        "nombre": "ERICA TEPP",
+        "direccion": "Av. Richeri 3296 Santo Tome La Capital",
+        "latitud": "-31.685592",
+        "longitud": "-60.781657"
+    },
+    {
+        "nombre": "MONTIBELLI",
+        "direccion": "La Pampa 1238 Monte Vera LA CAPITAL SANTA FE",
+        "latitud": "-31.518805",
+        "longitud": "-60.680215"
+    },
+    {
+        "nombre": "BUIGUEZ",
+        "direccion": "SANTA FE 1543 MONTE VERA LA CAPITAL SANTA FE",
+        "latitud": "-31.518244",
+        "longitud": "-60.678609"
+    },
+    {
+        "nombre": "TURIELLA",
+        "direccion": "Santa Fe 1144 La Capital Monte Vera",
+        "latitud": "-31.518244",
+        "longitud": "-60.678609"
+    },
+    {
+        "nombre": "ADRIAN CARRIZO",
+        "direccion": "Belgrano 3405 Santo Tome La Capital",
+        "latitud": "-31.706664",
+        "longitud": "-60.771676"
+    },
+    {
+        "nombre": "LEDESMA",
+        "direccion": "AV MITRE 995 RECREO LA CAPITAL SANTA FE",
+        "latitud": "-31.492673",
+        "longitud": "-60.732307"
+    },
+    {
+        "nombre": "ANZOISE",
+        "direccion": "Calle 17 S/N Arroyo Leyes LA CAPITAL SANTA FE",
+        "latitud": "-31.573652",
+        "longitud": "-60.535974"
+    },
+    {
+        "nombre": "COLOMBO",
+        "direccion": "Rivadavia 1082 La Capital Sauce Viejo",
+        "latitud": "-31.771099",
+        "longitud": "-60.838097"
+    },
+    {
+        "nombre": "BERARDO",
+        "direccion": "C. Chile 2708 La Capital Sauce Viejo",
+        "latitud": "-31.774531",
+        "longitud": "-60.838542"
+    },
+    {
+        "nombre": "PABLO KESTLER",
+        "direccion": "San Martin 1290 Las Colonias Franck",
+        "latitud": "-31.587203",
+        "longitud": "-60.938352"
+    },
+    {
+        "nombre": "MARIANO",
+        "direccion": "SAN MARTIN 2199 FRANCK LAS COLONIAS SANTA FE",
+        "latitud": "-31.58591",
+        "longitud": "-60.938609"
+    },
+    {
+        "nombre": "ALBRECHT",
+        "direccion": "miguel manfredi 2021 Franck LAS COLONIAS SANTA FE",
+        "latitud": "-31.58672",
+        "longitud": "-60.938961"
+    },
+    {
+        "nombre": "DELMONTE",
+        "direccion": "BRIGADIER LOPEZ 1298 San Agustin LAS COLONIAS SANTA FE",
+        "latitud": "-31.682203",
+        "longitud": "-60.938075"
+    },
+    {
+        "nombre": "SAUGY",
+        "direccion": "Colonizadores 009 ESPERANZA LAS COLONIAS SANTA FE",
+        "latitud": "-31.453259",
+        "longitud": "-60.912671"
+    },
+    {
+        "nombre": "BAR",
+        "direccion": "Castelli 1028 ESPERANZA LAS COLONIAS SANTA FE",
+        "latitud": "-31.452466",
+        "longitud": "-60.926212"
+    },
+    {
+        "nombre": "PIERUCCIONI",
+        "direccion": "BALCARCE 1605 ESPERANZA LAS COLONIAS SANTA FE",
+        "latitud": "-31.458216",
+        "longitud": "-60.933261"
+    },
+    {
+        "nombre": "TKACZYK",
+        "direccion": "1 DE MAYO 2006 Esperanza las colonias",
+        "latitud": "-31.447203",
+        "longitud": "-60.92185"
+    },
+    {
+        "nombre": "FAVARIN",
+        "direccion": "RIVADAVIA 1494 ESPERANZA LAS COLONIAS SANTA FE",
+        "latitud": "-31.454682",
+        "longitud": "-60.929824"
+    },
+    {
+        "nombre": "LOUREYRO",
+        "direccion": "Berutti 906 Las Colonias Esperanza",
+        "latitud": "-31.447701",
+        "longitud": "-60.923233"
+    },
+    {
+        "nombre": "FUENTES",
+        "direccion": "MORENO 742 ESPERANZA LAS COLONIAS SANTA FE",
+        "latitud": "-31.459981",
+        "longitud": "-60.936018"
+    },
+    {
+        "nombre": "ZEHNDER",
+        "direccion": "cullen 1332 ESPERANZA LAS COLONIAS SANTA FE",
+        "latitud": "-31.452609",
+        "longitud": "-60.929726"
+    },
+    {
+        "nombre": "MORELLI",
+        "direccion": "RIVADAVIA 2002 ESPERANZA LAS COLONIAS SANTA FE",
+        "latitud": "-31.450161",
+        "longitud": "-60.928439"
+    },
+    {
+        "nombre": "GAMBOA",
+        "direccion": "Belgrano 2324 Las Colonias Esperanza",
+        "latitud": "-31.447193",
+        "longitud": "-60.928973"
+    }
+]
