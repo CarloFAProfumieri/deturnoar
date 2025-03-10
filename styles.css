@@ -117,7 +117,6 @@ html, body {
     flex-direction: column;
     color: #12418d;
     font-family: Roboto, "Vollkorn", serif;
-    padding: 0 3rem;
 }
 .list-header{
     align-self: center;
@@ -168,7 +167,7 @@ html, body {
 }
 
 .search-form button:hover {
-    background-color: #d1f2eb;
+    background-color: #a4e4c8;
 }
 .card-image{
     cursor: pointer;

@@ -29,8 +29,14 @@ function addCard(pharmacy){
     cardNewNode.appendChild(cardText);
 
     imageNode.addEventListener("click",() => center(pharmacy));
-    cardNewNode.addEventListener("mouseenter", () => highlightPin(pharmacy.nombre,.2));
-    cardNewNode.addEventListener("mouseleave", () => resetPin(pharmacy.nombre,.2));
+    cardNewNode.addEventListener("mouseenter", () => {
+        highlightPin(pharmacy.nombre,.2);
+        highlightCard(pharmacy.nombre, .2);
+    });
+    cardNewNode.addEventListener("mouseleave", () => {
+        resetPin(pharmacy.nombre,.2);
+        resetCard(pharmacy.nombre);
+    });
 
     pharmacyListNode.appendChild(cardNewNode);
 
@@ -58,7 +64,7 @@ function highlightCard(pharmacyName, animationSeconds) {
 
     if (card) {
         card.style.transition = "background-color " + animationSeconds + "s ease-in-out";
-        card.style.backgroundColor = "#d1f2eb";
+        card.style.backgroundColor = "#a4e4c8";
     }
     scrollToCard(pharmacyName)
 
