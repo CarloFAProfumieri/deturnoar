@@ -1,5 +1,6 @@
 let pinDictionary = {};
 let cardDictionary = {};
+let scrollCounter = 0;
 
 function addCard(pharmacy){
     let nameNewNode = document.createElement("h4");
@@ -12,9 +13,10 @@ function addCard(pharmacy){
 
     cardNewNode.className = "card";
     cardText.className = "card-text";
+    addressNewNode.className = "lighter"
 
     imageNode.src = "public/logo.svg";
-
+    imageNode.className = "card-image";
     nameNewNode.textContent = pharmacy.nombre;
     addressNewNode.textContent= pharmacy.direccion;
     extraInformationNewNode.textContent = "Telefono: " + pharmacy.telefono;
@@ -26,6 +28,7 @@ function addCard(pharmacy){
     cardNewNode.appendChild(imageNode);
     cardNewNode.appendChild(cardText);
 
+    imageNode.addEventListener("click",() => center(pharmacy));
     cardNewNode.addEventListener("mouseenter", () => highlightPin(pharmacy.nombre,.2));
     cardNewNode.addEventListener("mouseleave", () => resetPin(pharmacy.nombre,.2));
 
@@ -68,11 +71,12 @@ function scrollToCard(pharmacyName, callback) {
     cards.forEach(card => {
         if (card.querySelector("h4").textContent === pharmacyName) {
             card.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+            let isScrolling;
             container.addEventListener("scroll", () => {
-                let isScrolling;
                 clearTimeout(isScrolling);
                 isScrolling = setTimeout(() => {
-                    console.log("Scrolling finished!");
+                    scrollCounter++;
+                    console.log("Scrolling to " + pharmacyName + " finished! Total scrolls: " + scrollCounter);
                     if (callback) callback(pharmacyName); // Execute the callback when done
                 }, 100); // Adjust timeout for accuracy
             });
@@ -87,15 +91,12 @@ function resetCard(pharmacyName, animationSeconds) {
     }
 }
 
-
-
 function addPharmacy(pharmacy){
     addCard(pharmacy);
     dropPin(pharmacy);
 }
 
 function highlightPin(pharmacyName, animationSeconds) {
-    highlightCard(pharmacyName,animationSeconds);
     let marker = pinDictionary[pharmacyName];
     if (marker) {
         let pin = marker.getElement();
@@ -119,28 +120,32 @@ function resetPin(pharmacyName, animationSeconds) {
     }
 }
 
-let map = new maplibregl.Map({
-    style: 'https://tiles.openfreemap.org/styles/bright',
-    container: 'map',
-    center: [-60.705, -31.630],
-    zoom: 12.2,
-})
-
-let farmacia = {
-    nombre: "Acosta",
-    direccion: "Suipacha 2506",
-    telefono: "0342 - 4556677",
-    latitud: -31.640134534867073,
-    longitud: -60.70403018834733
-};
-fetch("data/farmacias.json")
-    .then(response => response.json())
-    .then(data => {
-        data.forEach(aPharmacy => {
-            addPharmacy(aPharmacy);
-            //console.log(aPharmacy)
-            })
+function center(pharmacy){
+    map.setCenter([pharmacy.longitud, pharmacy.latitud]);
+    map.setZoom(15);
+}
+    let map = new maplibregl.Map({
+        style: 'https://tiles.openfreemap.org/styles/bright',
+        container: 'map',
+        center: [-60.705, -31.630],
+        zoom: 12.2,
     })
-    .catch(error => console.error("Error loading JSON:", error));
 
-addPharmacy(farmacia);
+    let farmacia = {
+        nombre: "Acosta",
+        direccion: "Suipacha 2506",
+        telefono: "0342 - 4556677",
+        latitud: -31.640134534867073,
+        longitud: -60.70403018834733
+    };
+    fetch("data/farmacias.json")
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(aPharmacy => {
+                addPharmacy(aPharmacy);
+                //console.log(aPharmacy)
+                })
+        })
+        .catch(error => console.error("Error loading JSON:", error));
+
+    addPharmacy(farmacia);

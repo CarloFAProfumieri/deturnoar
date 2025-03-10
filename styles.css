@@ -4,9 +4,17 @@
    font-weight: 400;
    font-style: normal;
 }
-body{
-    margin: 0px;
-    padding: 0px;
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-icon-container{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
 }
 .logo-icon{
     max-width: 2rem;
@@ -28,9 +36,10 @@ body{
     font-family: Wotfard, Arial, sans-serif;
     list-style: none;
     padding: 0;
-    max-height: 75vh;
+    max-height: 60vh;
     min-width: 25vw;
     overflow: auto;
+    margin: 0;
 }
 /*
     these two are for hiding the scrollbar in different browsers
@@ -54,25 +63,44 @@ body{
     flex-direction: row;
     align-items: center;
 }
+.header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.banner-text-container{
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+}
+
+.contact-icon{
+    width: 2rem;
+    margin: .5rem;
+}
 .banner-font{
-    font-size: 2rem;
+    color: white;
+    font-size: 1.2rem;
     font-weight: bold;
     font-family: Roboto, Verdana, serif;
 }
 .navbar {
     border-bottom: black solid 1px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    background-color: #12418d;
+    height: 11vh;
 }
 
 .search-form {
     display: flex;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 150px;
     overflow: hidden;
     width: 300px;
     align-self: center;
+    background-color: white;
 }
 
 .main-container{
@@ -81,16 +109,28 @@ body{
     flex-direction: row-reverse;
     justify-content: space-evenly;
     padding: 1.5rem 0;
-    background-color: #f4f2ef;
+    background-color: #f7f5ed;
+    flex: 1;
 }
 .left-container{
     display: flex;
     flex-direction: column;
-
+    color: #12418d;
+    font-family: Roboto, "Vollkorn", serif;
+    padding: 0 3rem;
 }
 .list-header{
-    margin: 1rem;
     align-self: center;
+}
+
+.lighter{
+    font-weight: lighter;
+}
+.bolder{
+    font-weight: bolder;
+}
+.list-header h4{
+    text-align: center;
 }
 .card p{
     margin: 0.3rem 0;
@@ -104,42 +144,57 @@ body{
     font-size: 1.2rem;
 }
 
-
 .search-form input {
     flex: 1;
     border: none;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #12418d;
     outline: none;
 }
 .search-form-container{
     margin: 1rem;
 }
 .search-form button {
-    background-color: #00b140;
+    background: transparent;
+    margin: 0 .5rem;
     color: white;
     border: none;
-    padding: 10px 15px;
+    border-radius: 15px;
     font-size: 16px;
     cursor: pointer;
+    width: 15%;
 }
 
 .search-form button:hover {
-    background-color: #00912d;
+    background-color: #d1f2eb;
 }
-
+.card-image{
+    cursor: pointer;
+}
 #map{
     width: 35%;
-    height: 800px;
+    height: 80vh;
     border: grey solid 1.5px;
     border-radius: 20px;
 }
-
+.footer{
+    background-color: #12418d;
+    min-height: 4vh;
+}
 .mobile-hint{
     display: none;
 }
 
 @media (max-width: 768px) {
+    .navbar{
+        align-items: stretch;
+    }
+    .header-container{
+        flex-grow: 1;
+        justify-content: space-between;
+    }
     .search-form-container{
         display: none;
     }
@@ -160,7 +215,8 @@ body{
     }
 
     .left-container {
-        width: 100%;  /* Make the list take full width */
+        width: 100%;
+        padding: 0;
     }
     div .mobile-hint{
         display: flex;

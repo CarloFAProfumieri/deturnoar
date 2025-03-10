@@ -15,16 +15,25 @@
 </head>
 <body>
   <div class="navbar">
-    <div>
+    <div class="header-container">
         <div class="logo-container">
             <img src="public/logo.svg" alt="logo de la página" class="logo-icon">
-            <span class="banner-font"> De Turno Santa Fe</span>
+            <div class="banner-text-container">
+                <span class="banner-font">DE TURNO</span>
+                <span class="banner-font">ARGENTINA</span>
+            </div>
+        </div>
+        <div class="contact-icon-container">
+            <img src="public/icon-twitter.svg" class="contact-icon">
+            <img src="public/mail-icon.svg" class="contact-icon">
         </div>
     </div>
     <div class="search-form-container">
         <form class="search-form"  >
-            <input type="text" placeholder="Buscar por dirección" aria-label="Buscar por dirección">
-            <button type="submit">Buscar</button>
+            <input type="text" placeholder="BUSCAR POR DIRECCIÓN" aria-label="Buscar por dirección">
+            <button type="submit">
+                <img src="public/search-button.svg">
+            </button>
         </form>
     </div>
   </div>
@@ -36,9 +45,14 @@
           <img src="public/drag-handle.svg" alt="ayuda visual tactil">
       </div>
       <div class="left-container">
-          <h1 class="list-header">
-              Farmacias de Turno
-          </h1>
+          <div class="list-header">
+              <h1>
+                  Farmacias de turno
+              </h1>
+              <h4 CLASS="lighter">
+                  HASTA LAS $HS DE $(HOY/MAÑANA)
+              </h4>
+          </div>
           <ul class="card-list" id="pharmacyList">
               <li class="card-container">
                   <div class="mobile-hint">
@@ -48,7 +62,7 @@
                   </div>
                   <!--
                   <div class="card">
-                      <img src="public/logo.svg" alt="pin icon" class="item-icon">
+                      <img src="public/logo.svg" alt="pin icon" class="card-image">
                       <div class="card-text">
                           <h4>Pharmacy Name</h4>
                           <h5>pharmacy address and pharmacy phone</h5>
@@ -62,8 +76,6 @@
           </ul>
       </div>
   </div>
+  <div class="footer"></div>
 </body>
-<script>
-    "index.js"
-</script>
 </html>
