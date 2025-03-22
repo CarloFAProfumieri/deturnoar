@@ -29,43 +29,42 @@ def getYpoint(anImage):
     return split_index
 
 def getTurnos(turnos):
-    for turno, y_coord in turnos:
-        drawLine(turno, y_coord)
-        cv2.imshow("FUCK", turno)
-        cv2.waitKey(0)
+
     # REMINDER the issue is that you're resizing the inmage!!!!
     turnos_text_raw = []
     for i, (turno, coordinate_y) in enumerate(turnos, start=1):
+        cabecera = turno[:coordinate_y, :]
+        turnera = turno[coordinate_y:, :]
         #if i > 1: return
-        img = turno
         # img = imutils.resize(img, width=img.shape[1] * 4)
-        img = cv2.resize(img, (img.shape[1] * 2, img.shape[0] * 2), interpolation=cv2.INTER_CUBIC)
+        cabecera = cv2.resize(cabecera, (cabecera.shape[1] * 2, cabecera.shape[0] * 2), interpolation=cv2.INTER_CUBIC)
+        turnera = cv2.resize(turnera, (turnera.shape[1] * 2, turnera.shape[0] * 2), interpolation=cv2.INTER_CUBIC)
         # show(img)
         # img = cv2.GaussianBlur(img, (3, 3), 2)
         # img = cv2.bilateralFilter(img, 5, 75, 75) its for noise removal but there's no noise here
         # show(img)
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        cabecera = cv2.cvtColor(cabecera, cv2.COLOR_BGR2GRAY)
+        turnera = cv2.cvtColor(turnera, cv2.COLOR_BGR2GRAY)
         # show(img)
-        img = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 40)
+        cabecera = cv2.adaptiveThreshold(cabecera, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 40)
+        turnera = cv2.adaptiveThreshold(turnera, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 40)
+        cabecera = thick_font(cabecera)
+        turnera = thick_font(turnera)
         # img = cv2.threshold(img, 200, 230, cv2.THRESH_BINARY)[1]
         # show(img)
         # img = cv2.filter2D(img, -1, kernel2)
         # show(img)
-        img = thick_font(img)
         # show(img)
-        drawLine(turno,coordinate_y)
-        cv2.imshow("ME", img)
+        cv2.imshow("cabecera",cabecera)
+        cv2.imshow("turnera",turnera)
         cv2.waitKey(0)
-        upper_part = img[:coordinate_y, :]
-        lower_part = img[coordinate_y:, :]
-        cv2.imshow("fuck", upper_part)
-        cv2.waitKey(0)
-        horarios = pytesseract.image_to_string(upper_part, lang='spa', config='--psm 12 --oem 3')
-        farmacias = pytesseract.image_to_string(lower_part, lang='spa', config='--psm 12 --oem 3')
+        horarios = pytesseract.image_to_string(cabecera, lang='spa', config='--psm 6 --oem 3')
+        farmacias = pytesseract.image_to_string(turnera, lang='spa', config='--psm 6 --oem 3')
         turnos_text_raw.append((horarios, farmacias))
         print("-----------------------------turno ", i, " agregado-----------------------------")
         print(horarios)
         print("--------------------------------------------------------------------------------")
+        print(farmacias)
     return turnos_text_raw
 
 def getCleanTurnos(turnos_ordenados):
