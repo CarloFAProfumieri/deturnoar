@@ -55,8 +55,7 @@ def getTurnos(turnos):
         # img = cv2.filter2D(img, -1, kernel2)
         # show(img)
         # show(img)
-        cv2.imshow("cabecera",cabecera)
-        cv2.imshow("turnera",turnera)
+
         cv2.waitKey(0)
         horarios = pytesseract.image_to_string(cabecera, lang='spa', config='--psm 6 --oem 3')
         farmacias = pytesseract.image_to_string(turnera, lang='spa', config='--psm 6 --oem 3')
@@ -65,28 +64,71 @@ def getTurnos(turnos):
         print(horarios)
         print("--------------------------------------------------------------------------------")
         print(farmacias)
+        cv2.imshow("cabecera", cabecera)
+        cv2.imshow("turnera", turnera)
     return turnos_text_raw
-
-def getCleanTurnos(turnos_ordenados):
+def cleanIcons(turnos_ordenados):
     turnos_clean = []
-    for turno, separador_y in turnos_ordenados:
-        img = thin_font(turno)
+    for turno, separador_cabecera, separador_pie in turnos_ordenados:
         gray = cv2.cvtColor(turno, cv2.COLOR_BGR2GRAY)
-        edges = cv2.Canny(gray, 200, 300)
-        #show(edges)
-        kernel_tiny = cv2.getStructuringElement(cv2.MORPH_RECT, (2, 3))  # Thin horizontal dilation
-        dilate_tiny = cv2.dilate(edges, kernel_tiny, iterations=2)
-        # show(dilate_tiny)
-
+        # edges = cv2.Canny(gray, 200, 300)
+        edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 70)
+        show(edges)
+        kernel_tiny = cv2.getStructuringElement(cv2.MORPH_RECT, (4, 4))
+        dilate_tiny = cv2.dilate(edges, kernel_tiny, iterations=1)
+        show(dilate_tiny)
         cnts, hierarchy = cv2.findContours(dilate_tiny, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         for c in cnts:
             x, y, w, h = cv2.boundingRect(c)
-            if h < 14 and w > 3:
+            if 8 < h < 12 and 12 < w < 16:
                 turno[y:y + h, x:x + w] = 255  # Replace the region with white
-        turnos_clean.append((turno, separador_y))
+                cv2.rectangle(turno, (x, y), (x + w, y + h), (255, 0, 0), 1)  # Blue for inner boxes
+                cv2.imshow("outlines", turno)
+                print("h: ", h, " w: ", w)
+                cv2.waitKey(0)
+        turnos_clean.append((turno, separador_cabecera))
     return turnos_clean
-
-
+def cleanDots(turnos_ordenados):
+    turnos_clean = []
+    for turno, separador_cabecera in turnos_ordenados:
+        img = thin_font(turno)
+        gray = cv2.cvtColor(turno, cv2.COLOR_BGR2GRAY)
+        # edges = cv2.Canny(gray, 200, 300)
+        edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 15)
+        # show(edges)
+        # kernel_tiny = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 4))  # Thin horizontal dilation
+        # dilate_tiny = cv2.dilate(edges, kernel_tiny, iterations=1)
+        # show(dilate_tiny)
+        cnts, hierarchy = cv2.findContours(edges, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        for c in cnts:
+            x, y, w, h = cv2.boundingRect(c)
+            if h < 4 and w < 4:
+                turno[y:y + h, x:x + w] = 255  # Replace the region with white
+                # cv2.rectangle(turno, (x, y), (x + w, y + h), (255, 0, 0), 2)  # Blue for inner boxes
+                # cv2.imshow("outlines", turno)
+        turnos_clean.append((turno, separador_cabecera))
+    return turnos_clean
+def getCleanFooters(turnos_ordenados):
+    turnos_separated = []
+    for turno, separador_cabecera in turnos_ordenados:
+        foot_separator = 0
+        img = thin_font(turno)
+        gray = cv2.cvtColor(turno, cv2.COLOR_BGR2GRAY)
+        edges = cv2.Canny(gray, 300, 400)
+        # edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 15)
+        # show(edges)
+        kernel_tiny = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 4))  # Thin horizontal dilation
+        dilate_tiny = cv2.dilate(edges, kernel_tiny, iterations=1)
+        #cv2.imshow("kernel:", dilate_tiny)
+        #show(dilate_tiny)
+        cnts, hierarchy = cv2.findContours(dilate_tiny, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        for c in cnts:
+            x, y, w, h = cv2.boundingRect(c)
+            if 5 < h < 10 and w > 200:
+                turno[y:y + h, x:x + w] = 255
+                foot_separator = y + h
+        turnos_separated.append((turno, separador_cabecera, foot_separator))
+    return turnos_separated
 def verTurnosCroppedImgs(turnos_imagenes):
     global turno
     for turno in turnos_imagenes:
@@ -181,10 +223,10 @@ def main():
                 turno_crop = image[y + cut_corners + titulo_turno: y + h - cut_corners, x + cut_corners:x + w - cut_corners]
                 snippet = image[y + cut_corners + titulo_turno: y + h - cut_corners*2, x + cut_corners:x + cut_corners + 2]
 
-                section_separator_y = getYpoint(snippet)  # This function returns a y-coordinate to draw the line
+                header_separator = getYpoint(snippet)  # This function returns a y-coordinate to draw the line
 
 
-                turnos.append((x, y, turno_crop, section_separator_y))
+                turnos.append((x, y, turno_crop, header_separator))
 
     # por el formato de imagen, si ordeno por "y, x" obtengo los turnos ordenados y puedo prescindir de detectar el titulo
     # del turno
@@ -193,21 +235,25 @@ def main():
 
     turnos_ordenados_santoto = []
     turnos_ordenados_santafe = []
-    for x, y, turno, section_separator_y in sorted_turnos:
+    for x, y, turno, header_separator in sorted_turnos:
         if x > santoto_line:
-            turnos_ordenados_santoto.append((turno, section_separator_y))
+            turnos_ordenados_santoto.append((turno, header_separator))
         else:
-            turnos_ordenados_santafe.append((turno, section_separator_y))
+            turnos_ordenados_santafe.append((turno, header_separator))
 
     # debugging
     # verTurnosCroppedImgs(turnos_ordenados_santafe)
     # verTurnosCroppedImgs(turnos_ordenados_santoto)
 
-    turnos_clean_santafe = getCleanTurnos(turnos_ordenados_santafe)
-    turnos_clean_santoto = getCleanTurnos(turnos_ordenados_santoto)
+    turnos_clean_santafe = cleanDots(turnos_ordenados_santafe)
+    turnos_clean_santoto = cleanDots(turnos_ordenados_santoto)
 
+    turnos_header_footer_santafe = getCleanFooters(turnos_clean_santafe)
+    turnos_header_footer_santoto = getCleanFooters(turnos_clean_santoto)
 
-    turnos_text_raw = getTurnos(turnos_clean_santafe)
+    clean = cleanIcons(turnos_header_footer_santafe)
+
+    #turnos_text_raw = getTurnos(turnos_clean_santafe)
 
 
 
@@ -220,7 +266,7 @@ def main():
     # cv2.destroyAllWindows()
 
     # Save output
-    cv2.imwrite("../../../../PycharmProjects/learning/turnos-sampleado.png", image)
+    # cv2.imwrite("../../../../PycharmProjects/learning/turnos-sampleado.png", image)
 
 if __name__ == "__main__":
     main()
