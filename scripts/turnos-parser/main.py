@@ -86,7 +86,7 @@ def cleanPhoneIcons(turnos_ordenados):
                 cv2.imshow("outlines", turno)
                 print("h: ", h, " w: ", w)
                 cv2.waitKey(0)
-        turnos_clean.append((turno, separador_cabecera))
+        turnos_clean.append((turno, separador_cabecera, separador_pie))
     return turnos_clean
 def cleanDots(turnos_ordenados):
     turnos_clean = []
