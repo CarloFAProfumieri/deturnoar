@@ -67,7 +67,7 @@ def getTurnos(turnos):
         cv2.imshow("cabecera", cabecera)
         cv2.imshow("turnera", turnera)
     return turnos_text_raw
-def cleanIcons(turnos_ordenados):
+def cleanPhoneIcons(turnos_ordenados):
     turnos_clean = []
     for turno, separador_cabecera, separador_pie in turnos_ordenados:
         gray = cv2.cvtColor(turno, cv2.COLOR_BGR2GRAY)
@@ -251,7 +251,7 @@ def main():
     turnos_header_footer_santafe = getCleanFooters(turnos_clean_santafe)
     turnos_header_footer_santoto = getCleanFooters(turnos_clean_santoto)
 
-    clean = cleanIcons(turnos_header_footer_santafe)
+    clean = cleanPhoneIcons(turnos_header_footer_santafe)
 
     #turnos_text_raw = getTurnos(turnos_clean_santafe)
 
