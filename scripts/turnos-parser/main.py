@@ -1,10 +1,12 @@
+import re
+
 import cv2
 import numpy as np
 import imutils
 import pytesseract
 import json
 from pathlib import Path
-
+from rapidfuzz import process, fuzz
 def drawLine(anImage, anYCoordinate):
     cv2.line(anImage, (0, anYCoordinate), (anImage.shape[1], anYCoordinate), (0, 255, 0), 2)
 
@@ -31,6 +33,7 @@ def getYpoint(anImage):
 def getTurnos(turnos):
     turnos_text_raw = []
     for i, (turno, separador_cabecera, separador_pie) in enumerate(turnos, start=1):
+        observaciones=""
         cv2.destroyAllWindows()
         cabecera = turno[:separador_cabecera, :]
         if separador_pie == 0:
@@ -69,18 +72,16 @@ def getTurnos(turnos):
         farmacias = pytesseract.image_to_string(turnera, lang='spa', config='--psm 6 --oem 3')
         if pie is not None:
             observaciones = pytesseract.image_to_string(pie, lang='spa', config='--psm 6 --oem 3')
-        turnos_text_raw.append((horarios, farmacias))
 
-        print("-----------------------------turno ", i, " agregado-----------------------------")
-        print(horarios)
-        print("--------------------------------------------------------------------------------")
-        print(farmacias)
-        if pie is not None:
-            print("--------------------------------------------------------------------------------")
-            print(observaciones)
+        #print("-----------------------------turno ", i, " agregado-----------------------------")
+        #print(horarios)
+        #print("--------------------------------------------------------------------------------")
+        #print(farmacias)
+        #if pie is not None:
+        #    print("--------------------------------------------------------------------------------")
+        #    print(observaciones)
+        turnos_text_raw.append((horarios, farmacias, observaciones))
 
-        if pie is not None:
-            cv2.imshow("pie", pie)
     return turnos_text_raw
 def cleanPhoneIcons(turnos_ordenados):
     turnos_clean = []
@@ -149,7 +150,12 @@ def verTurnosCroppedImgs(turnos_imagenes):
         cv2.imshow("turno:", turno)
         cv2.waitKey(0)
 
-
+def extract_dates(cabecera):
+    matches = re.findall(r"(\d{2}/\d{2})", cabecera)
+    dates = []
+    for match in matches:
+        dates.append(match)
+    return dates
 def show(image):
     cv2.imshow("", image)
     cv2.waitKey(0)
@@ -180,8 +186,19 @@ def thin_font(image):
     thined = cv2.bitwise_not(dilated)
     return thined
 
+
+def extract_pharmacy_names(turno, nombres_farmacias):
+    potential_names = [re.split(r"[.\«,\-]", line)[0].strip().upper() for line in turno.strip().split("\n")]
+    matched_names = []
+    for name in potential_names:
+        best_match, score, _ = process.extractOne(name, nombres_farmacias, scorer=fuzz.ratio)
+
+        if score >= 75:
+            matched_names.append(best_match)
+
+    return matched_names
 def main():
-    with open("../../data/farmacias.json", "r", encoding="utf-8") as f:
+    with open("../../data/pharmacies_with_phones.json", "r", encoding="utf-8") as f:
         pharmacies = json.load(f)  # Expecting a list of names
     image = cv2.imread("../../../../PycharmProjects/learning/turnos.png")
 
@@ -267,9 +284,24 @@ def main():
 
     cleanPhoneIcons(turnos_header_footer_santafe)
 
+
     turnos_text_raw = getTurnos(turnos_header_footer_santafe)
 
+    nombres_farmacias=[]
+    for pharmacy in pharmacies:
+        if pharmacy["localidad"].upper() == "SANTA FE LA CAPITAL":
+            nombres_farmacias.append(pharmacy["nombre"])
 
+    for cabecera, turno, pie in turnos_text_raw:
+        print("----------------------------------------------------------------")
+        #print(turno)
+        turno = turno.upper().replace(" A.", " A ").replace("SEN - COLTRINARI", "SEN COLTRINARI")
+        farmacias_en_el_turno = extract_pharmacy_names(turno, nombres_farmacias)
+        fechas_del_turno = extract_dates(cabecera)
+        #print(cabecera)
+        print(fechas_del_turno)
+        print(farmacias_en_el_turno)
+        #print(pie)
 
     # Show results
     # cv2.imshow("edges", cv2.resize(edges,(850, 1000)))

@@ -1,6 +1,6 @@
 [
     {
-        "nombre": "PEDRO A. KORNIJUK",
+        "nombre": "PEDRO A KORNIJUK",
         "direccion": "F. ZUVIRIA 5323",
         "latitud": "-31.617248",
         "longitud": "-60.705674",
@@ -110,6 +110,17 @@
         "telefono": "0342 452-6519"
     },
     {
+        "nombre": "MARIO MARTINEZ",
+        "direccion": "ARISTÓBULO DEL VALLE 4499",
+        "latitud": "-31.626565374166887",
+        "longitud": "-60.700410800032365",
+        "calle": "ARISTÓBULO DEL VALLE",
+        "altura": "4499",
+        "localidad": "SANTA FE LA CAPITAL",
+        "googlePlaceId": "",
+        "telefono": "0342 453 1597"
+    },
+    {
         "nombre": "PACCE",
         "direccion": "AV. ARISTÓBULO DEL VALLE 4900",
         "latitud": "-31.62275",
@@ -154,7 +165,7 @@
         "telefono": "0342 469-6396"
     },
     {
-        "nombre": "MORELLO SANTA FE",
+        "nombre": "MORELLO",
         "direccion": "FACUNDO ZUVIRIA 4201",
         "latitud": "-31.628153",
         "longitud": "-60.705346",
@@ -187,7 +198,7 @@
         "telefono": "0342 15-626-5796"
     },
     {
-        "nombre": "COSTA SANTA FE",
+        "nombre": "COSTA",
         "direccion": "AV. BLAS PARERA 5671",
         "latitud": "-31.611125",
         "longitud": "-60.718959",
@@ -209,7 +220,7 @@
         "telefono": "0342 452-6526"
     },
     {
-        "nombre": "LAGGER ZURBRIGGEN (ART. 57)",
+        "nombre": "LAGGER ZURBRIGGEN",
         "direccion": "LAS HERAS 5401",
         "latitud": "-31.619169",
         "longitud": "-60.693023",
@@ -231,7 +242,7 @@
         "telefono": "0342 484-1208"
     },
     {
-        "nombre": "TRUCCO SANTA FE",
+        "nombre": "TRUCCO",
         "direccion": "LAS HERAS 4501",
         "latitud": "-31.627605",
         "longitud": "-60.694892",
@@ -330,7 +341,7 @@
         "telefono": "0342 460-2586"
     },
     {
-        "nombre": "CAMILATTO (ART. 57)",
+        "nombre": "CAMILATTO",
         "direccion": "E. ZEBALLOS 2702",
         "latitud": "-31.605073",
         "longitud": "-60.695903",
@@ -374,13 +385,13 @@
         "telefono": "0342 453-8276"
     },
     {
-        "nombre": "LILIANA MARTINEZ",
+        "nombre": "LILIANA MARTÍNEZ",
         "direccion": "BELGRANO ",
         "latitud": "-31.609027",
         "longitud": "-60.690748",
         "calle": "BELGRANO",
         "altura": "",
-        "localidad": "",
+        "localidad": "SANTA FE LA CAPITAL",
         "googlePlaceId": "ChIJgVG_61gHtZURt0HYWuO4zyc",
         "telefono": "0342 460-6780"
     },
@@ -418,7 +429,7 @@
         "telefono": "0342 456-6267"
     },
     {
-        "nombre": "GÓMEZ SANTA FE",
+        "nombre": "GÓMEZ",
         "direccion": "AV. VERA PEÑALOZA 6839",
         "latitud": "-31.601073",
         "longitud": "-60.712867",
@@ -429,7 +440,7 @@
         "telefono": "0342 580-5041"
     },
     {
-        "nombre": "JULLIER Santa Fe",
+        "nombre": "JULLIER",
         "direccion": "AV. FREYRE N° 3313",
         "latitud": "-31.634799",
         "longitud": "-60.715573",
@@ -594,7 +605,7 @@
         "telefono": "0342 455-8880"
     },
     {
-        "nombre": "ZIMERMAN SANTA FE",
+        "nombre": "ZIMMERMANN",
         "direccion": "PADRE GENESIO 2971",
         "latitud": "-31.599045",
         "longitud": "-60.697622",
@@ -605,7 +616,7 @@
         "telefono": "0342 469-1616"
     },
     {
-        "nombre": "Belgrano Santa Fe",
+        "nombre": "BELGRANO",
         "direccion": "RIVADAVIA 3237",
         "latitud": "-31.63899",
         "longitud": "-60.702136",
@@ -660,7 +671,7 @@
         "telefono": "0342 453-2805"
     },
     {
-        "nombre": "GARCIA Santa Fe",
+        "nombre": "GARCIA",
         "direccion": "RIVADAVIA 3193",
         "latitud": "-31.639489",
         "longitud": "-60.70243",
@@ -671,7 +682,7 @@
         "telefono": "0342 455-0724"
     },
     {
-        "nombre": "PASTEUR SANTA FE",
+        "nombre": "PASTEUR",
         "direccion": "MARCIAL CANDIOTI 3499",
         "latitud": "-31.637425",
         "longitud": "-60.695642",
@@ -726,7 +737,7 @@
         "telefono": "0342 455-5962"
     },
     {
-        "nombre": "MARIANO ACOSTA",
+        "nombre": "ACOSTA",
         "direccion": "SUIPACHA 2506",
         "latitud": "-31.640141",
         "longitud": "-60.704032",
@@ -869,7 +880,7 @@
         "telefono": "0342 15-545-7371"
     },
     {
-        "nombre": "MARTINEZ SANTA FE",
+        "nombre": "MARTINEZ",
         "direccion": "AV. GALICIA 1519",
         "latitud": "-31.607559",
         "longitud": "-60.682539",
@@ -980,7 +991,7 @@
     },
     {
         "nombre": "QUEGLAS",
-        "direccion": "DE INFANTERIA 4400",
+        "direccion": "12 DE INFANTERIA 4400",
         "latitud": "-31.592863",
         "longitud": "-60.715771",
         "calle": "DE INFANTERIA",
@@ -996,9 +1007,20 @@
         "longitud": "-60.722934",
         "calle": "AV. BLAS PARERA",
         "altura": "7202",
-        "localidad": "SANTA FE DE LA VERA CRUZ SANTA FE",
+        "localidad": "SANTA FE LA CAPITAL",
         "googlePlaceId": "ChIJqaKnWKAHtZURQ3rU4TmJk7U",
         "telefono": "0342 489-2747"
+    },
+    {
+        "nombre": "MERGEN",
+        "direccion": "AV. PEÑALOZA 7308",
+        "latitud": "-31.60108494483283",
+        "longitud": "-60.71287489815396",
+        "calle": "AV. PEÑALOZA",
+        "altura": "7308",
+        "localidad": "SANTA FE LA CAPITAL",
+        "googlePlaceId": "",
+        "telefono": "155 849314"
     },
     {
         "nombre": "GOTTERO",
@@ -1023,7 +1045,7 @@
         "telefono": "0342 452-9302"
     },
     {
-        "nombre": "BANCHIO Santa Fe",
+        "nombre": "BANCHIO",
         "direccion": "IRIGOYEN FREYRE 2200",
         "latitud": "-31.644173",
         "longitud": "-60.701135",
@@ -1067,7 +1089,7 @@
         "telefono": "0342 460-8172"
     },
     {
-        "nombre": "MONTES SANTA FE",
+        "nombre": "MONTES",
         "direccion": "AV. GRAL. PAZ 6765",
         "latitud": "-31.609048",
         "longitud": "-60.677918",
@@ -1100,7 +1122,7 @@
         "telefono": "0342 460-3500"
     },
     {
-        "nombre": "GIMÉNEZ SANTA FE",
+        "nombre": "GIMÉNEZ",
         "direccion": "URQUIZA 2332",
         "latitud": "-31.647091",
         "longitud": "-60.713392",
@@ -1111,7 +1133,7 @@
         "telefono": "Unavailable"
     },
     {
-        "nombre": "SOBRERO SANTA FE",
+        "nombre": "SOBRERO",
         "direccion": "MENDOZA 3306",
         "latitud": "-31.646595",
         "longitud": "-60.71634",
@@ -1287,7 +1309,7 @@
         "telefono": "0342 459-7200"
     },
     {
-        "nombre": "MENAPACE SANTA FE",
+        "nombre": "MENAPACE",
         "direccion": "BLAS PARERA 7831",
         "latitud": "-31.589485",
         "longitud": "-60.725",
@@ -1447,7 +1469,7 @@
         "longitud": "-60.710378",
         "calle": "SAN JERONIMO",
         "altura": "1746",
-        "localidad": "",
+        "localidad": "SANTA FE LA CAPITAL",
         "googlePlaceId": "ChIJW_Xeh6iptZUR8GKgaQmvuhI",
         "telefono": "0342 459-2943"
     },
@@ -1496,7 +1518,7 @@
         "telefono": "0342 459-4678"
     },
     {
-        "nombre": "SAN LORENZO SANTA FE",
+        "nombre": "SAN LORENZO",
         "direccion": "AV. FREYRE 1598",
         "latitud": "-31.655278",
         "longitud": "-60.721391",
@@ -1529,7 +1551,7 @@
         "telefono": "0342 630-8586"
     },
     {
-        "nombre": "CURTI SANTA FE",
+        "nombre": "CURTI",
         "direccion": "ENTRE RÍOS 3288",
         "latitud": "-31.658448",
         "longitud": "-60.71955",
@@ -1634,7 +1656,7 @@
         "longitud": "-60.690104",
         "calle": "AV. ARISTÓBULO DEL VALLE",
         "altura": "1047",
-        "localidad": "9 SANTA FE DE LA VERA CRUZ SANTA FE",
+        "localidad": "SANTA FE LA CAPITAL",
         "googlePlaceId": "ChIJdRURUMKptZURnbTLB8st390",
         "telefono": "0342 453-1597"
     },
