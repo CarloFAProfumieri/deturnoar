@@ -29,43 +29,58 @@ def getYpoint(anImage):
     return split_index
 
 def getTurnos(turnos):
-
-    # REMINDER the issue is that you're resizing the inmage!!!!
     turnos_text_raw = []
-    for i, (turno, coordinate_y) in enumerate(turnos, start=1):
-        cabecera = turno[:coordinate_y, :]
-        turnera = turno[coordinate_y:, :]
-        #if i > 1: return
-        # img = imutils.resize(img, width=img.shape[1] * 4)
+    for i, (turno, separador_cabecera, separador_pie) in enumerate(turnos, start=1):
+        cv2.destroyAllWindows()
+        cabecera = turno[:separador_cabecera, :]
+        if separador_pie == 0:
+            turnera = turno[separador_cabecera:, :]
+            pie = None  # No hay pie
+        else:
+            turnera = turno[separador_cabecera:separador_pie, :]
+            pie = turno[separador_pie:, :]
+
         cabecera = cv2.resize(cabecera, (cabecera.shape[1] * 2, cabecera.shape[0] * 2), interpolation=cv2.INTER_CUBIC)
-        turnera = cv2.resize(turnera, (turnera.shape[1] * 2, turnera.shape[0] * 2), interpolation=cv2.INTER_CUBIC)
-        # show(img)
-        # img = cv2.GaussianBlur(img, (3, 3), 2)
-        # img = cv2.bilateralFilter(img, 5, 75, 75) its for noise removal but there's no noise here
-        # show(img)
+        turnera = cv2.resize(turnera, (turnera.shape[1] * 3, turnera.shape[0] * 3), interpolation=cv2.INTER_CUBIC)
+        if pie is not None:
+            pie = cv2.resize(pie, (pie.shape[1] * 3, pie.shape[0] * 3), interpolation=cv2.INTER_CUBIC)
+        #cv2.imshow("turnera:", turnera)
         cabecera = cv2.cvtColor(cabecera, cv2.COLOR_BGR2GRAY)
         turnera = cv2.cvtColor(turnera, cv2.COLOR_BGR2GRAY)
-        # show(img)
+        if pie is not None:
+            pie = cv2.cvtColor(pie, cv2.COLOR_BGR2GRAY)
+
         cabecera = cv2.adaptiveThreshold(cabecera, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 40)
-        turnera = cv2.adaptiveThreshold(turnera, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 40)
+        #turnera = cv2.adaptiveThreshold(turnera, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 50)
+        _, turnera = cv2.threshold(turnera, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+        if pie is not None:
+            pie = cv2.adaptiveThreshold(pie, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 40)
+        #cv2.imshow("turnera:", turnera)
+
+        # kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (2, 3))
+        #turnera = cv2.morphologyEx(turnera, cv2.MORPH_OPEN, kernel, iterations=2)
+
         cabecera = thick_font(cabecera)
         turnera = thick_font(turnera)
-        # img = cv2.threshold(img, 200, 230, cv2.THRESH_BINARY)[1]
-        # show(img)
-        # img = cv2.filter2D(img, -1, kernel2)
-        # show(img)
-        # show(img)
+        if pie is not None:
+            pie = thick_font(pie)
 
-        cv2.waitKey(0)
         horarios = pytesseract.image_to_string(cabecera, lang='spa', config='--psm 6 --oem 3')
         farmacias = pytesseract.image_to_string(turnera, lang='spa', config='--psm 6 --oem 3')
+        if pie is not None:
+            observaciones = pytesseract.image_to_string(pie, lang='spa', config='--psm 6 --oem 3')
         turnos_text_raw.append((horarios, farmacias))
+
         print("-----------------------------turno ", i, " agregado-----------------------------")
         print(horarios)
         print("--------------------------------------------------------------------------------")
         print(farmacias)
-        cv2.imshow("cabecera", cabecera)
-        cv2.imshow("turnera", turnera)
+        if pie is not None:
+            print("--------------------------------------------------------------------------------")
+            print(observaciones)
+
+        if pie is not None:
+            cv2.imshow("pie", pie)
     return turnos_text_raw
 def cleanPhoneIcons(turnos_ordenados):
     turnos_clean = []
@@ -73,19 +88,13 @@ def cleanPhoneIcons(turnos_ordenados):
         gray = cv2.cvtColor(turno, cv2.COLOR_BGR2GRAY)
         # edges = cv2.Canny(gray, 200, 300)
         edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 70)
-        show(edges)
         kernel_tiny = cv2.getStructuringElement(cv2.MORPH_RECT, (4, 4))
         dilate_tiny = cv2.dilate(edges, kernel_tiny, iterations=1)
-        show(dilate_tiny)
         cnts, hierarchy = cv2.findContours(dilate_tiny, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         for c in cnts:
             x, y, w, h = cv2.boundingRect(c)
             if 8 < h < 12 and 12 < w < 16:
                 turno[y:y + h, x:x + w] = 255  # Replace the region with white
-                cv2.rectangle(turno, (x, y), (x + w, y + h), (255, 0, 0), 1)  # Blue for inner boxes
-                cv2.imshow("outlines", turno)
-                print("h: ", h, " w: ", w)
-                cv2.waitKey(0)
         turnos_clean.append((turno, separador_cabecera, separador_pie))
     return turnos_clean
 def cleanDots(turnos_ordenados):
@@ -94,6 +103,7 @@ def cleanDots(turnos_ordenados):
         img = thin_font(turno)
         gray = cv2.cvtColor(turno, cv2.COLOR_BGR2GRAY)
         # edges = cv2.Canny(gray, 200, 300)
+
         edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 15)
         # show(edges)
         # kernel_tiny = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 4))  # Thin horizontal dilation
@@ -102,10 +112,14 @@ def cleanDots(turnos_ordenados):
         cnts, hierarchy = cv2.findContours(edges, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         for c in cnts:
             x, y, w, h = cv2.boundingRect(c)
-            if h < 4 and w < 4:
+            if 1 < h < 4 and 2 <= w < 4 and y == last_y and last_x - x < 7:
+                #print("h: ", h, " w: ", w, " y: ", y, " last_y: ", last_y, " x: ", x, " last_x:", last_x)
                 turno[y:y + h, x:x + w] = 255  # Replace the region with white
-                # cv2.rectangle(turno, (x, y), (x + w, y + h), (255, 0, 0), 2)  # Blue for inner boxes
-                # cv2.imshow("outlines", turno)
+                #cv2.rectangle(turno, (x, y), (x + w, y + h), (255, 0, 0), 1)  # Blue for inner boxes
+                #cv2.imshow("outlines", turno)
+                #cv2.waitKey(0)
+            last_y = y
+            last_x = x
         turnos_clean.append((turno, separador_cabecera))
     return turnos_clean
 def getCleanFooters(turnos_ordenados):
@@ -248,12 +262,12 @@ def main():
     turnos_clean_santafe = cleanDots(turnos_ordenados_santafe)
     turnos_clean_santoto = cleanDots(turnos_ordenados_santoto)
 
-    turnos_header_footer_santafe = getCleanFooters(turnos_clean_santafe)
+    turnos_header_footer_santafe = getCleanFooters(turnos_ordenados_santafe)
     turnos_header_footer_santoto = getCleanFooters(turnos_clean_santoto)
 
-    clean = cleanPhoneIcons(turnos_header_footer_santafe)
+    cleanPhoneIcons(turnos_header_footer_santafe)
 
-    #turnos_text_raw = getTurnos(turnos_clean_santafe)
+    turnos_text_raw = getTurnos(turnos_header_footer_santafe)
 
 
 
