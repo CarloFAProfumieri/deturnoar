@@ -93,7 +93,7 @@ function scrollToCard(pharmacyName, callback) {
                 clearTimeout(isScrolling);
                 isScrolling = setTimeout(() => {
                     scrollCounter++;
-                    console.log("Scrolling to " + pharmacyName + " finished! Total scrolls: " + scrollCounter);
+                    //console.log("Scrolling to " + pharmacyName + " finished! Total scrolls: " + scrollCounter);
                     if (callback) callback(pharmacyName); // Execute the callback when done
                 }, 100); // Adjust timeout for accuracy
             });
@@ -186,7 +186,9 @@ let map = new maplibregl.Map({
 
 
 let currentDate = getCurrentDate2();
+console.log("current date: " + currentDate);
 let currentHour = getCurrentHour();
+console.log("current hour: " + currentHour);
 let pharmaciesOnDuty = [];
 
 setFromToText(currentHour);
