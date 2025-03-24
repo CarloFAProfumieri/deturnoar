@@ -1,0 +1,1802 @@
+[
+    {
+        "nombre": "PEDRO ANDRES KORNIJUK",
+        "direccion": "F. ZUVIRIA 5323",
+        "latitud": "-31.617248",
+        "longitud": "-60.705674",
+        "calle": "F. ZUVIRIA",
+        "altura": "5323",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "BOLOGNESI",
+        "direccion": "FACUNDO ZUVIRIA 5079",
+        "latitud": "-31.619682",
+        "longitud": "-60.705618",
+        "calle": "FACUNDO ZUVIRIA",
+        "altura": "5079",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "BERRON",
+        "direccion": "DIAGONAL GOYENA 3221",
+        "latitud": "-31.615785",
+        "longitud": "-60.706266",
+        "calle": "DIAGONAL GOYENA",
+        "altura": "3221",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "CARABALLO",
+        "direccion": "DIAG GOYENA 3460",
+        "latitud": "-31.61556",
+        "longitud": "-60.709329",
+        "calle": "DIAG GOYENA",
+        "altura": "3460",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "GHERSI",
+        "direccion": "PRES. JULIO A. ROCA 2993",
+        "latitud": "-31.61488",
+        "longitud": "-60.702767",
+        "calle": "PRES. JULIO A. ROCA",
+        "altura": "2993",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "CHELINI",
+        "direccion": "AV. FACUNDO ZUVIRIA 4679",
+        "latitud": "-31.623669",
+        "longitud": "-60.705523",
+        "calle": "AV. FACUNDO ZUVIRIA",
+        "altura": "4679",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "CONIGLIO",
+        "direccion": "F. ZUVIRIA 5918",
+        "latitud": "-31.611834",
+        "longitud": "-60.704592",
+        "calle": "F. ZUVIRIA",
+        "altura": "5918",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "IMOBERDORF",
+        "direccion": "FRAY CAYETANO RODRIGUEZ 3889",
+        "latitud": "-31.618429",
+        "longitud": "-60.716146",
+        "calle": "FRAY CAYETANO RODRIGUEZ",
+        "altura": "3889",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "IRRAZABAL",
+        "direccion": "AV. LÓPEZ Y PLANES 4499",
+        "latitud": "-31.62374",
+        "longitud": "-60.713793",
+        "calle": "AV. LÓPEZ Y PLANES",
+        "altura": "4499",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "BONAZZOLA ESTEFANÍA",
+        "direccion": "ARISTÓBULO DEL VALLE 5118",
+        "latitud": "-31.620801",
+        "longitud": "-60.698664",
+        "calle": "ARISTÓBULO DEL VALLE",
+        "altura": "5118",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "PACCE",
+        "direccion": "AV. ARISTÓBULO DEL VALLE 4900",
+        "latitud": "-31.62275",
+        "longitud": "-60.69909",
+        "calle": "AV. ARISTÓBULO DEL VALLE",
+        "altura": "4900",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "LOPEZ",
+        "direccion": "AV LOPEZ Y PLANES 4267",
+        "latitud": "-31.625669",
+        "longitud": "-60.714006",
+        "calle": "AV LOPEZ Y PLANES",
+        "altura": "4267",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "GIULIONI",
+        "direccion": "GOROSTIAGA 3038",
+        "latitud": "-31.610409",
+        "longitud": "-60.702088",
+        "calle": "GOROSTIAGA",
+        "altura": "3038",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "MORALES",
+        "direccion": "ARISTOBULO DEL VALLE 5827",
+        "latitud": "-31.614688",
+        "longitud": "-60.696916",
+        "calle": "ARISTOBULO DEL VALLE",
+        "altura": "5827",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "MORELLO SANTA FE",
+        "direccion": "FACUNDO ZUVIRIA 4201",
+        "latitud": "-31.628153",
+        "longitud": "-60.705346",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "FACUNDO ZUVIRIA",
+        "altura": "4201"
+    },
+    {
+        "nombre": "PEIRO",
+        "direccion": "AV. FACUNDO ZUVIRÍA 6253",
+        "latitud": "-31.608525",
+        "longitud": "-60.704312",
+        "calle": "AV. FACUNDO ZUVIRÍA",
+        "altura": "6253",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "COLL",
+        "direccion": "AV. ARISTÓBULO DEL VALLE 6029",
+        "latitud": "-31.612611",
+        "longitud": "-60.695715",
+        "calle": "AV. ARISTÓBULO DEL VALLE",
+        "altura": "6029",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "COSTA SANTA FE",
+        "direccion": "AV. BLAS PARERA 5671",
+        "latitud": "-31.611125",
+        "longitud": "-60.718959",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "AV. BLAS PARERA",
+        "altura": "5671"
+    },
+    {
+        "nombre": "IGNACIO AZANZA",
+        "direccion": "AV. LÓPEZ Y PLANES 3901",
+        "latitud": "-31.629232",
+        "longitud": "-60.71405",
+        "calle": "AV. LÓPEZ Y PLANES",
+        "altura": "3901",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "LAGGER ZURBRIGGEN (ART. 57)",
+        "direccion": "LAS HERAS 5401",
+        "latitud": "-31.619169",
+        "longitud": "-60.693023",
+        "calle": "LAS HERAS",
+        "altura": "5401",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "DANIEL LAGGER",
+        "direccion": "AV. F. ZUVIRIA 6536",
+        "latitud": "-31.606151",
+        "longitud": "-60.703217",
+        "calle": "AV. F. ZUVIRIA",
+        "altura": "6536",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "TRUCCO SANTA FE",
+        "direccion": "LAS HERAS 4501",
+        "latitud": "-31.627605",
+        "longitud": "-60.694892",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "LAS HERAS",
+        "altura": "4501"
+    },
+    {
+        "nombre": "COSTA SAMITA",
+        "direccion": "ARTISTOBULO DEL VALLE 6378",
+        "latitud": "-31.60973",
+        "longitud": "-60.69395",
+        "calle": "ARTISTOBULO DEL VALLE",
+        "altura": "6378",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "JUDITH ACEVEDO",
+        "direccion": "CASTELLI 3642",
+        "latitud": "-31.60338",
+        "longitud": "-60.708318",
+        "calle": "CASTELLI",
+        "altura": "3642",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "BRAMBILLA",
+        "direccion": "ESTANISLAO ZEBALLOS 3731",
+        "latitud": "-31.602454",
+        "longitud": "-60.709225",
+        "calle": "ESTANISLAO ZEBALLOS",
+        "altura": "3731",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "VINDEROLA",
+        "direccion": "BV. PELLEGRINI 3060",
+        "latitud": "-31.634039",
+        "longitud": "-60.709279",
+        "calle": "BV. PELLEGRINI",
+        "altura": "3060",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "BURGI",
+        "direccion": "BV. PELLEGRINI 3187",
+        "latitud": "-31.634051",
+        "longitud": "-60.711125",
+        "calle": "BV. PELLEGRINI",
+        "altura": "3187",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "PELLEGRINI",
+        "direccion": "BV PELLEGRINI 3465",
+        "latitud": "-31.633363",
+        "longitud": "-60.714462",
+        "calle": "BV PELLEGRINI",
+        "altura": "3465",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "MARÍA SELVA",
+        "direccion": "AV. ARISTÓBULO DEL VALLE 6600",
+        "latitud": "-31.607614",
+        "longitud": "-60.693139",
+        "calle": "AV. ARISTÓBULO DEL VALLE",
+        "altura": "6600",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "CAMILATTO",
+        "direccion": "ESTANISLAO ZEBALLOS 2702",
+        "latitud": "-31.605073",
+        "longitud": "-60.695903",
+        "calle": "ESTANISLAO ZEBALLOS",
+        "altura": "2702",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "CAMILATTO (ART. 57)",
+        "direccion": "E. ZEBALLOS 2702",
+        "latitud": "-31.605073",
+        "longitud": "-60.695903",
+        "calle": "E. ZEBALLOS",
+        "altura": "2702",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "SEN COLTRINARI",
+        "direccion": "SALVADOR DEL CARRIL 1672",
+        "latitud": "-31.620072",
+        "longitud": "-60.687884",
+        "calle": "SALVADOR DEL CARRIL",
+        "altura": "1672",
+        "localidad": "SANTA FE"
+    },
+    {
+        "nombre": "CLAVE",
+        "direccion": "AV. GRAL. PAZ 4548",
+        "latitud": "-31.627948",
+        "longitud": "-60.691169",
+        "calle": "AV. GRAL. PAZ",
+        "altura": "4548",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "VIGNOLO",
+        "direccion": "AV GENERAL PAZ 4698",
+        "latitud": "-31.626785",
+        "longitud": "-60.690297",
+        "calle": "AV GENERAL PAZ",
+        "altura": "4698",
+        "localidad": "SANTA FE"
+    },
+    {
+        "nombre": "LILIANA MARTINEZ",
+        "direccion": "BELGRANO ",
+        "latitud": "-31.609027",
+        "longitud": "-60.690748",
+        "calle": "BELGRANO",
+        "altura": "",
+        "localidad": ""
+    },
+    {
+        "nombre": "ROJAS SOTELO",
+        "direccion": "ALVEAR 6303",
+        "latitud": "-31.611321",
+        "longitud": "-60.689153",
+        "calle": "ALVEAR",
+        "altura": "6303",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "PLANK",
+        "direccion": "AV. GRAL PAZ 4880",
+        "latitud": "-31.625311",
+        "longitud": "-60.689225",
+        "calle": "AV. GRAL PAZ",
+        "altura": "4880",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "PARDO",
+        "direccion": "DE JULIO 3443",
+        "latitud": "-31.635757",
+        "longitud": "-60.706208",
+        "calle": "DE JULIO",
+        "altura": "3443",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "GÓMEZ SANTA FE",
+        "direccion": "AV. VERA PEÑALOZA 6839",
+        "latitud": "-31.601073",
+        "longitud": "-60.712867",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "AV. VERA PEÑALOZA",
+        "altura": "6839"
+    },
+    {
+        "nombre": "JULLIER Santa Fe",
+        "direccion": "AV. FREYRE N° 3313",
+        "latitud": "-31.634799",
+        "longitud": "-60.715573",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "AV. FREYRE N°",
+        "altura": "3313"
+    },
+    {
+        "nombre": "GERMAN LOPEZ",
+        "direccion": "GRAL. PAZ 5210",
+        "latitud": "-31.62234",
+        "longitud": "-60.687169",
+        "calle": "GRAL. PAZ",
+        "altura": "5210",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "STRICKER",
+        "direccion": "CHACABUCO 2116",
+        "latitud": "-31.63377",
+        "longitud": "-60.696939",
+        "calle": "CHACABUCO",
+        "altura": "2116",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "LABATH",
+        "direccion": "STGO. DEL ESTERO 3142",
+        "latitud": "-31.63621",
+        "longitud": "-60.711049",
+        "calle": "STGO. DEL ESTERO",
+        "altura": "3142",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "SANTIAGO",
+        "direccion": "NECOCHEA 4162",
+        "latitud": "-31.631424",
+        "longitud": "-60.692447",
+        "calle": "NECOCHEA",
+        "altura": "4162",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "MONICA WAGNER",
+        "direccion": "MARCIAL CANDIOTI 3899",
+        "latitud": "-31.63363",
+        "longitud": "-60.694539",
+        "calle": "MARCIAL CANDIOTI",
+        "altura": "3899",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "BOSCH",
+        "direccion": "SANTIAGO DEL ESTERO 2764",
+        "latitud": "-31.637235",
+        "longitud": "-60.706088",
+        "calle": "SANTIAGO DEL ESTERO",
+        "altura": "2764",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "BRUNO",
+        "direccion": "GRAL. PAZ 5550",
+        "latitud": "-31.619532",
+        "longitud": "-60.685164",
+        "calle": "GRAL. PAZ",
+        "altura": "5550",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "LENCINAS",
+        "direccion": "BALCARCE 2384",
+        "latitud": "-31.637149",
+        "longitud": "-60.701186",
+        "calle": "BALCARCE",
+        "altura": "2384",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "DAMIANI",
+        "direccion": "URQUIZA 3180",
+        "latitud": "-31.637874",
+        "longitud": "-60.710679",
+        "calle": "URQUIZA",
+        "altura": "3180",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "THEILLER",
+        "direccion": "AV. GRAL. PAZ 5773",
+        "latitud": "-31.617645",
+        "longitud": "-60.684309",
+        "calle": "AV. GRAL. PAZ",
+        "altura": "5773",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "SANTIVÁÑEZ",
+        "direccion": "ESTANISLAO ZEBALLOS 4453",
+        "latitud": "-31.600347",
+        "longitud": "-60.718515",
+        "calle": "ESTANISLAO ZEBALLOS",
+        "altura": "4453",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "SARTOR",
+        "direccion": "RIVADAVIA 3300",
+        "latitud": "-31.638412",
+        "longitud": "-60.701938",
+        "calle": "RIVADAVIA",
+        "altura": "3300",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "FUCKSMANN",
+        "direccion": "SAAVEDRA 3081",
+        "latitud": "-31.63833",
+        "longitud": "-60.713899",
+        "calle": "SAAVEDRA",
+        "altura": "3081",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "VERÓNICA CANO",
+        "direccion": "SUIPACHA 2912",
+        "latitud": "-31.639255",
+        "longitud": "-60.7088",
+        "calle": "SUIPACHA",
+        "altura": "2912",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "ZIMERMAN SANTA FE",
+        "direccion": "PADRE GENESIO 2971",
+        "latitud": "-31.599045",
+        "longitud": "-60.697622",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "PADRE GENESIO",
+        "altura": "2971"
+    },
+    {
+        "nombre": "Belgrano Santa Fe",
+        "direccion": "RIVADAVIA 3237",
+        "latitud": "-31.63899",
+        "longitud": "-60.702136",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "RIVADAVIA",
+        "altura": "3237"
+    },
+    {
+        "nombre": "IMVINKELRIED",
+        "direccion": "LAVALLE 4201",
+        "latitud": "-31.631742",
+        "longitud": "-60.688363",
+        "calle": "LAVALLE",
+        "altura": "4201",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "ESCUDERO",
+        "direccion": "AV. GALICIA 1881",
+        "latitud": "-31.606828",
+        "longitud": "-60.68642",
+        "calle": "AV. GALICIA",
+        "altura": "1881",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "ABREGU",
+        "direccion": "AV. FREYRE 3029",
+        "latitud": "-31.63832",
+        "longitud": "-60.716602",
+        "calle": "AV. FREYRE",
+        "altura": "3029",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "ZENTNER",
+        "direccion": "SAN GERONIMO 3101",
+        "latitud": "-31.63966",
+        "longitud": "-60.706174",
+        "calle": "SAN GERONIMO",
+        "altura": "3101",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "GARCIA Santa Fe",
+        "direccion": "RIVADAVIA 3193",
+        "latitud": "-31.639489",
+        "longitud": "-60.70243",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "RIVADAVIA",
+        "altura": "3193"
+    },
+    {
+        "nombre": "PASTEUR SANTA FE",
+        "direccion": "MARCIAL CANDIOTI 3499",
+        "latitud": "-31.637425",
+        "longitud": "-60.695642",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "MARCIAL CANDIOTI",
+        "altura": "3499"
+    },
+    {
+        "nombre": "ZAPATA MORAN",
+        "direccion": "AVENIDA BLAS PARERA 6751",
+        "latitud": "-31.600054",
+        "longitud": "-60.721888",
+        "calle": "AVENIDA BLAS PARERA",
+        "altura": "6751",
+        "localidad": "SANTA FE"
+    },
+    {
+        "nombre": "MÉNDEZ",
+        "direccion": "GÜEMES 4359",
+        "latitud": "-31.630774",
+        "longitud": "-60.686691",
+        "calle": "GÜEMES",
+        "altura": "4359",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "DEAN",
+        "direccion": "AV. PEÑALOZA 7308",
+        "latitud": "-31.596628",
+        "longitud": "-60.711993",
+        "calle": "AV. PEÑALOZA",
+        "altura": "7308",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "FERRO",
+        "direccion": "FRANCIA 2998",
+        "latitud": "-31.639745",
+        "longitud": "-60.712735",
+        "calle": "FRANCIA",
+        "altura": "2998",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "MARIANO ACOSTA",
+        "direccion": "SUIPACHA 2506",
+        "latitud": "-31.640141",
+        "longitud": "-60.704032",
+        "calle": "SUIPACHA",
+        "altura": "2506",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "ASINARI",
+        "direccion": "CRESPO 2808",
+        "latitud": "-31.640571",
+        "longitud": "-60.707635",
+        "calle": "CRESPO",
+        "altura": "2808",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "FACINO",
+        "direccion": "DIAGONAL ESPAÑA 3176",
+        "latitud": "-31.639967",
+        "longitud": "-60.700126",
+        "calle": "DIAGONAL ESPAÑA",
+        "altura": "3176",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "MAI",
+        "direccion": "AV. ARISTÓBULO DEL VALLE 7431",
+        "latitud": "-31.599876",
+        "longitud": "-60.692094",
+        "calle": "AV. ARISTÓBULO DEL VALLE",
+        "altura": "7431",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "WAGNER BURGUES",
+        "direccion": "RIVADAVIA 3098",
+        "latitud": "-31.640729",
+        "longitud": "-60.702393",
+        "calle": "RIVADAVIA",
+        "altura": "3098",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "BORDIGNON",
+        "direccion": "SUIPACHA 2310",
+        "latitud": "-31.64069",
+        "longitud": "-60.701602",
+        "calle": "SUIPACHA",
+        "altura": "2310",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "BARCAROLO",
+        "direccion": "HIPOLITO IRIGOYEN 223",
+        "latitud": "-31.640589",
+        "longitud": "-60.714436",
+        "calle": "HIPOLITO IRIGOYEN",
+        "altura": "223",
+        "localidad": "EMILIA LA CAPITAL SANTA FE"
+    },
+    {
+        "nombre": "AZANZA",
+        "direccion": "SAN MARTÍN 2983",
+        "latitud": "-31.641389",
+        "longitud": "-60.705133",
+        "calle": "SAN MARTÍN",
+        "altura": "2983",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "ARRIMADA",
+        "direccion": "MARCIAL CANDIOTI 3298",
+        "latitud": "-31.63926",
+        "longitud": "-60.695982",
+        "calle": "MARCIAL CANDIOTI",
+        "altura": "3298",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "FANESSI",
+        "direccion": "DE MAYO 2899",
+        "latitud": "-31.641709",
+        "longitud": "-60.709306",
+        "calle": "DE MAYO",
+        "altura": "2899",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "BOURDIN",
+        "direccion": "ALBERDI 3500",
+        "latitud": "-31.637776",
+        "longitud": "-60.692086",
+        "calle": "ALBERDI",
+        "altura": "3500",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "FINELLI",
+        "direccion": "LAS HERAS 7304",
+        "latitud": "-31.602068",
+        "longitud": "-60.68731",
+        "calle": "LAS HERAS",
+        "altura": "7304",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "VILARRUBI",
+        "direccion": "AV. PEÑALOZA 7512",
+        "latitud": "-31.594608",
+        "longitud": "-60.711941",
+        "calle": "AV. PEÑALOZA",
+        "altura": "7512",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "MARTINEZ SANTA FE",
+        "direccion": "AV. GALICIA 1519",
+        "latitud": "-31.607559",
+        "longitud": "-60.682539",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "AV. GALICIA",
+        "altura": "1519"
+    },
+    {
+        "nombre": "SCALZO",
+        "direccion": "GOBERNADOR VERA 3206",
+        "latitud": "-31.641828",
+        "longitud": "-60.713533",
+        "calle": "GOBERNADOR VERA",
+        "altura": "3206",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "BURGUÉS ROMANO",
+        "direccion": "AV. BLAS PARERA 7001",
+        "latitud": "-31.59741",
+        "longitud": "-60.72283",
+        "calle": "AV. BLAS PARERA",
+        "altura": "7001",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "JUNGES",
+        "direccion": "GUEMES 3701",
+        "latitud": "-31.636902",
+        "longitud": "-60.68844",
+        "calle": "GUEMES",
+        "altura": "3701",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "VALETTI",
+        "direccion": "GRAL PAZ 6440",
+        "latitud": "-31.612221",
+        "longitud": "-60.679371",
+        "calle": "GRAL PAZ",
+        "altura": "6440",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "PESCETTI",
+        "direccion": "PADRE GENESIO 1901",
+        "latitud": "-31.601816",
+        "longitud": "-60.685196",
+        "calle": "PADRE GENESIO",
+        "altura": "1901",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "NEBIOLO",
+        "direccion": "ARISTOBULO DEL VALLE 7781",
+        "latitud": "-31.596598",
+        "longitud": "-60.69211",
+        "calle": "ARISTOBULO DEL VALLE",
+        "altura": "7781",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "FERRARASSI",
+        "direccion": "MARCOS RODOLFO CANDIOTI 1639",
+        "latitud": "-31.640825",
+        "longitud": "-60.693572",
+        "calle": "MARCOS RODOLFO CANDIOTI",
+        "altura": "1639",
+        "localidad": "CANDIOTI LA CAPITAL SANTA FE"
+    },
+    {
+        "nombre": "NICOLAU MANZUR",
+        "direccion": "º DE MAYO 2699",
+        "latitud": "-31.643902",
+        "longitud": "-60.709953",
+        "calle": "º DE MAYO",
+        "altura": "2699",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "CARDOSO",
+        "direccion": "AVDA FREYRE 2638",
+        "latitud": "-31.642726",
+        "longitud": "-60.717354",
+        "calle": "AVDA FREYRE",
+        "altura": "2638",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "QUEGLAS",
+        "direccion": "DE INFANTERIA 4400",
+        "latitud": "-31.592863",
+        "longitud": "-60.715771",
+        "calle": "DE INFANTERIA",
+        "altura": "4400",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "ROJAS",
+        "direccion": "AV. BLAS PARERA 7202",
+        "latitud": "-31.595266",
+        "longitud": "-60.722934",
+        "calle": "AV. BLAS PARERA",
+        "altura": "7202",
+        "localidad": "SANTA FE DE LA VERA CRUZ SANTA FE"
+    },
+    {
+        "nombre": "GOTTERO",
+        "direccion": "SAN MARTÍN 2699",
+        "latitud": "-31.644603",
+        "longitud": "-60.706026",
+        "calle": "SAN MARTÍN",
+        "altura": "2699",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "ALEJANDRO SENN",
+        "direccion": "DE ENERO 2599",
+        "latitud": "-31.644489",
+        "longitud": "-60.711412",
+        "calle": "DE ENERO",
+        "altura": "2599",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "BANCHIO Santa Fe",
+        "direccion": "IRIGOYEN FREYRE 2200",
+        "latitud": "-31.644173",
+        "longitud": "-60.701135",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "IRIGOYEN FREYRE",
+        "altura": "2200"
+    },
+    {
+        "nombre": "TONINI",
+        "direccion": "AVELLANEDA 3498",
+        "latitud": "-31.638998",
+        "longitud": "-60.687941",
+        "calle": "AVELLANEDA",
+        "altura": "3498",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "IMHOF",
+        "direccion": "M. CANDIOTTI 2796",
+        "latitud": "-31.643552",
+        "longitud": "-60.697189",
+        "calle": "M. CANDIOTTI",
+        "altura": "2796",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "SABIO",
+        "direccion": "ANGEL CASANELLO 898",
+        "latitud": "-31.612932",
+        "longitud": "-60.676803",
+        "calle": "ANGEL CASANELLO",
+        "altura": "898",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "MONTES SANTA FE",
+        "direccion": "AV. GRAL. PAZ 6765",
+        "latitud": "-31.609048",
+        "longitud": "-60.677918",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "AV. GRAL. PAZ",
+        "altura": "6765"
+    },
+    {
+        "nombre": "AMHERDT",
+        "direccion": "SAAVEDRA 2499",
+        "latitud": "-31.644725",
+        "longitud": "-60.715749",
+        "calle": "SAAVEDRA",
+        "altura": "2499",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "LUCIA BANCHIO",
+        "direccion": "AV. GENERAL PAZ 7165",
+        "latitud": "-31.606345",
+        "longitud": "-60.676362",
+        "calle": "AV. GENERAL PAZ",
+        "altura": "7165",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "GIMÉNEZ SANTA FE",
+        "direccion": "URQUIZA 2332",
+        "latitud": "-31.647091",
+        "longitud": "-60.713392",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "URQUIZA",
+        "altura": "2332"
+    },
+    {
+        "nombre": "SOBRERO SANTA FE",
+        "direccion": "MENDOZA 3306",
+        "latitud": "-31.646595",
+        "longitud": "-60.71634",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "MENDOZA",
+        "altura": "3306"
+    },
+    {
+        "nombre": "TIMOFIEJUK",
+        "direccion": "RIVADAVIA 2443",
+        "latitud": "-31.6478",
+        "longitud": "-60.705457",
+        "calle": "RIVADAVIA",
+        "altura": "2443",
+        "localidad": "SANTA FE"
+    },
+    {
+        "nombre": "BONAZZOLA",
+        "direccion": "AV. FREYRE 2298",
+        "latitud": "-31.64639",
+        "longitud": "-60.718916",
+        "calle": "AV. FREYRE",
+        "altura": "2298",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "SILEONI",
+        "direccion": "CASSANELLO 519",
+        "latitud": "-31.61406",
+        "longitud": "-60.673121",
+        "calle": "CASSANELLO",
+        "altura": "519",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "GHECO",
+        "direccion": "AV. BLAS PARERA 7621",
+        "latitud": "-31.591552",
+        "longitud": "-60.72441",
+        "calle": "AV. BLAS PARERA",
+        "altura": "7621",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "DOMET HURANI",
+        "direccion": "AV. GORRITI 3751",
+        "latitud": "-31.587904",
+        "longitud": "-60.705325",
+        "calle": "AV. GORRITI",
+        "altura": "3751",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "NAITO",
+        "direccion": "MENDOZA 4098",
+        "latitud": "-31.644095",
+        "longitud": "-60.726542",
+        "calle": "MENDOZA",
+        "altura": "4098",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "PESCETTI MAXIMILIANO",
+        "direccion": "MENDOZA 2676",
+        "latitud": "-31.648766",
+        "longitud": "-60.708297",
+        "calle": "MENDOZA",
+        "altura": "2676",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "VALVERDE",
+        "direccion": "° DE MAYO 2215",
+        "latitud": "-31.649169",
+        "longitud": "-60.711513",
+        "calle": "° DE MAYO",
+        "altura": "2215",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "SUPPO",
+        "direccion": "A DEL VALLE 6897",
+        "latitud": "-31.649428",
+        "longitud": "-60.70958",
+        "calle": "A DEL VALLE",
+        "altura": "6897",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "LONG",
+        "direccion": "A DEL VALLE 4026",
+        "latitud": "-31.649428",
+        "longitud": "-60.70958",
+        "calle": "A DEL VALLE",
+        "altura": "4026",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "EL INCA",
+        "direccion": "SAN MARTÍN 2255",
+        "latitud": "-31.649605",
+        "longitud": "-60.707734",
+        "calle": "SAN MARTÍN",
+        "altura": "2255",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "CHEMES",
+        "direccion": "URQUIZA 2179",
+        "latitud": "-31.649281",
+        "longitud": "-60.714229",
+        "calle": "URQUIZA",
+        "altura": "2179",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "BARRIENTOS",
+        "direccion": "DE JULIO 2198",
+        "latitud": "-31.649711",
+        "longitud": "-60.710077",
+        "calle": "DE JULIO",
+        "altura": "2198",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "FIGUEROA SOBRERO",
+        "direccion": "GENERAL PAZ 7471",
+        "latitud": "-31.603378",
+        "longitud": "-60.675054",
+        "calle": "GENERAL PAZ",
+        "altura": "7471",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "MERCADO CENTRAL",
+        "direccion": "SAN JERONIMO 2170",
+        "latitud": "-31.650137",
+        "longitud": "-60.708796",
+        "calle": "SAN JERONIMO",
+        "altura": "2170",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "MENAPACE SANTA FE",
+        "direccion": "BLAS PARERA 7831",
+        "latitud": "-31.589485",
+        "longitud": "-60.725",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "BLAS PARERA",
+        "altura": "7831"
+    },
+    {
+        "nombre": "UGOLINI",
+        "direccion": "AV. GORRITI 4512",
+        "latitud": "-31.585253",
+        "longitud": "-60.714963",
+        "calle": "AV. GORRITI",
+        "altura": "4512",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "GABRIEL JAUREGUI",
+        "direccion": "CANONIGO ECHAGUE 7254",
+        "latitud": "-31.606324",
+        "longitud": "-60.670512",
+        "calle": "CANONIGO ECHAGUE",
+        "altura": "7254",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "MAZZALI",
+        "direccion": "JUAN DE GARAY 2915",
+        "latitud": "-31.651857",
+        "longitud": "-60.712518",
+        "calle": "JUAN DE GARAY",
+        "altura": "2915",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "ESTERKIN",
+        "direccion": "SAN JERÓNIMO 1995",
+        "latitud": "-31.652348",
+        "longitud": "-60.709786",
+        "calle": "SAN JERÓNIMO",
+        "altura": "1995",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "ARMANDO",
+        "direccion": "DE MAYO 3441",
+        "latitud": "-31.58766",
+        "longitud": "-60.688401",
+        "calle": "DE MAYO",
+        "altura": "3441",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "COLUCCI",
+        "direccion": "AV. FREYRE 1908",
+        "latitud": "-31.651628",
+        "longitud": "-60.719872",
+        "calle": "AV. FREYRE",
+        "altura": "1908",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "LUERO",
+        "direccion": "DE JULIO 1898",
+        "latitud": "-31.653346",
+        "longitud": "-60.711156",
+        "calle": "DE JULIO",
+        "altura": "1898",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "MARTÍNEZ JUAN JOSÉ",
+        "direccion": "URQUIZA 1859",
+        "latitud": "-31.652994",
+        "longitud": "-60.715379",
+        "calle": "URQUIZA",
+        "altura": "1859",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "SANTA FE",
+        "direccion": "SAAVEDRA 1822",
+        "latitud": "-31.652942",
+        "longitud": "-60.717943",
+        "calle": "SAAVEDRA",
+        "altura": "1822",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "WUILLOUD",
+        "direccion": "SAN JERONIMO 1801",
+        "latitud": "-31.65447",
+        "longitud": "-60.710371",
+        "calle": "SAN JERONIMO",
+        "altura": "1801",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "SELECT CATTANEO",
+        "direccion": "SAN MARTIN 1811",
+        "latitud": "-31.654565",
+        "longitud": "-60.709137",
+        "calle": "SAN MARTIN",
+        "altura": "1811",
+        "localidad": "VERA LA CAPITAL SANTA FE"
+    },
+    {
+        "nombre": "THROENDLY",
+        "direccion": "AV. BLAS PARERA 8235",
+        "latitud": "-31.585436",
+        "longitud": "-60.726081",
+        "calle": "AV. BLAS PARERA",
+        "altura": "8235",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "DONADIO",
+        "direccion": "JAVIER DE LA ROSA 322",
+        "latitud": "-31.604401",
+        "longitud": "-60.668197",
+        "calle": "JAVIER DE LA ROSA",
+        "altura": "322",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "ARGENTI",
+        "direccion": "SAN JERONIMO 1746",
+        "latitud": "-31.655105",
+        "longitud": "-60.710378",
+        "calle": "SAN JERONIMO",
+        "altura": "1746",
+        "localidad": ""
+    },
+    {
+        "nombre": "ORTEGA",
+        "direccion": "BLAS PARERA 8374",
+        "latitud": "-31.583884",
+        "longitud": "-60.725972",
+        "calle": "BLAS PARERA",
+        "altura": "8374",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "SALVATIERRA",
+        "direccion": "GRAL.LOPEZ 3272",
+        "latitud": "-31.655411",
+        "longitud": "-60.718384",
+        "calle": "GRAL.LOPEZ",
+        "altura": "3272",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "BONAZZOLA DENISE",
+        "direccion": "GRAL. LÓPEZ 2740",
+        "latitud": "-31.656604",
+        "longitud": "-60.711347",
+        "calle": "GRAL. LÓPEZ",
+        "altura": "2740",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "CAMUSSO",
+        "direccion": "DE ENERO 1594",
+        "latitud": "-31.656296",
+        "longitud": "-60.71481",
+        "calle": "DE ENERO",
+        "altura": "1594",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "SAN LORENZO SANTA FE",
+        "direccion": "AV. FREYRE 1598",
+        "latitud": "-31.655278",
+        "longitud": "-60.721391",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "AV. FREYRE",
+        "altura": "1598"
+    },
+    {
+        "nombre": "CAPORIZZO",
+        "direccion": "AV. ARISTÓBULO DEL VALLE 9284",
+        "latitud": "-31.582033",
+        "longitud": "-60.689558",
+        "calle": "AV. ARISTÓBULO DEL VALLE",
+        "altura": "9284",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "LAUXMANN",
+        "direccion": "BV. ZAVALLA 1417",
+        "latitud": "-31.656726",
+        "longitud": "-60.723458",
+        "calle": "BV. ZAVALLA",
+        "altura": "1417",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "CURTI SANTA FE",
+        "direccion": "ENTRE RÍOS 3288",
+        "latitud": "-31.658448",
+        "longitud": "-60.71955",
+        "localidad": "SANTA FE LA CAPITAL",
+        "calle": "ENTRE RÍOS",
+        "altura": "3288"
+    },
+    {
+        "nombre": "CAPRA",
+        "direccion": "ENTRE RIOS 3115",
+        "latitud": "-31.659081",
+        "longitud": "-60.717484",
+        "calle": "ENTRE RIOS",
+        "altura": "3115",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "MANSILLA",
+        "direccion": "DE JULIO 1181",
+        "latitud": "-31.661233",
+        "longitud": "-60.713796",
+        "calle": "DE JULIO",
+        "altura": "1181",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "BERTOLIN",
+        "direccion": "URQUIZA 1067",
+        "latitud": "-31.661627",
+        "longitud": "-60.718082",
+        "calle": "URQUIZA",
+        "altura": "1067",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "STRADA",
+        "direccion": "BV. ZAVALLA 1067",
+        "latitud": "-31.660268",
+        "longitud": "-60.724466",
+        "calle": "BV. ZAVALLA",
+        "altura": "1067",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "MARCELO GALIZZI",
+        "direccion": "AV. BLAS PARERA 8953",
+        "latitud": "-31.57684",
+        "longitud": "-60.728537",
+        "calle": "AV. BLAS PARERA",
+        "altura": "8953",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "ORTIZ DE ZARATE",
+        "direccion": "AV. J. J. PASO 3299",
+        "latitud": "-31.662051",
+        "longitud": "-60.720655",
+        "calle": "AV. J. J. PASO",
+        "altura": "3299",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "MORANTE",
+        "direccion": "BARRIO EL POZO M.8 VDA.43 ",
+        "latitud": "-31.637462",
+        "longitud": "-60.659608",
+        "calle": "BARRIO EL POZO M.8 VDA.43",
+        "altura": "",
+        "localidad": "SANTA FE"
+    },
+    {
+        "nombre": "CASTRO KARINA",
+        "direccion": "DRA GRIERSON 8231",
+        "latitud": "-31.583051",
+        "longitud": "-60.744144",
+        "calle": "DRA GRIERSON",
+        "altura": "8231",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "RITA MARTINEZ",
+        "direccion": "AV. ARISTÓBULO DEL VALLE 1047",
+        "latitud": "-31.570466",
+        "longitud": "-60.690104",
+        "calle": "AV. ARISTÓBULO DEL VALLE",
+        "altura": "1047",
+        "localidad": "9 SANTA FE DE LA VERA CRUZ SANTA FE"
+    },
+    {
+        "nombre": "CONTINI",
+        "direccion": "SARMIENTO 1776",
+        "latitud": "-31.661993",
+        "longitud": "-60.758489",
+        "calle": "SARMIENTO",
+        "altura": "1776",
+        "localidad": "SANTO TOME LA CAPITAL SANTA FE"
+    },
+    {
+        "nombre": "CIRELLI",
+        "direccion": "DE MAYO 1654",
+        "latitud": "-31.661942",
+        "longitud": "-60.762265",
+        "calle": "DE MAYO",
+        "altura": "1654",
+        "localidad": "LA CAPITAL SANTO TOMÉ"
+    },
+    {
+        "nombre": "ESCOBAR SANTO TOME",
+        "direccion": "DE MARZO 1527",
+        "latitud": "-31.667518",
+        "longitud": "-60.756871",
+        "localidad": "SANTO TOME LA CAPITAL",
+        "calle": "DE MARZO",
+        "altura": "1527"
+    },
+    {
+        "nombre": "QUASSOLO",
+        "direccion": "SARMIENTO 2343",
+        "latitud": "-31.661315",
+        "longitud": "-60.764675",
+        "calle": "SARMIENTO",
+        "altura": "2343",
+        "localidad": "SANTO TOME LA CAPITAL SANTA FE"
+    },
+    {
+        "nombre": "BONINO Santo Tome",
+        "direccion": "OBISPO GELABERT 2198",
+        "latitud": "-31.663248",
+        "longitud": "-60.763427",
+        "localidad": "SANTO TOME LA CAPITAL SANTA FE",
+        "calle": "OBISPO GELABERT",
+        "altura": "2198"
+    },
+    {
+        "nombre": "FIRMANI",
+        "direccion": "DE MAYO 1878",
+        "latitud": "-31.664013",
+        "longitud": "-60.762685",
+        "calle": "DE MAYO",
+        "altura": "1878",
+        "localidad": "SANTO TOME LA CAPITAL"
+    },
+    {
+        "nombre": "PESCETTI JULIETA",
+        "direccion": "DE MARZO 1760",
+        "latitud": "-31.666949",
+        "longitud": "-60.759318",
+        "calle": "DE MARZO",
+        "altura": "1760",
+        "localidad": "SANTO TOME LA CAPITAL SANTA FE"
+    },
+    {
+        "nombre": "CRUZ SANTO TOME",
+        "direccion": "M. CANDIOTI 2494",
+        "latitud": "-31.671719",
+        "longitud": "-60.755499",
+        "localidad": "SANTO TOME LA CAPITAL",
+        "calle": "M. CANDIOTI",
+        "altura": "2494"
+    },
+    {
+        "nombre": "SAN ROQUE",
+        "direccion": "DE MARZO 2118",
+        "latitud": "-31.666513",
+        "longitud": "-60.763268",
+        "calle": "DE MARZO",
+        "altura": "2118",
+        "localidad": "SANTO TOME LA CAPITAL"
+    },
+    {
+        "nombre": "MARTINEZ Santo Tome",
+        "direccion": "HIPOLITO IRIGOYEN 2235",
+        "latitud": "-31.667969",
+        "longitud": "-60.763722",
+        "localidad": "SANTO TOME LA CAPITAL SANTA FE",
+        "calle": "HIPOLITO IRIGOYEN",
+        "altura": "2235"
+    },
+    {
+        "nombre": "RIVERO",
+        "direccion": "MARIANO CANDIOTI 2801",
+        "latitud": "-31.675021",
+        "longitud": "-60.755955",
+        "calle": "MARIANO CANDIOTI",
+        "altura": "2801",
+        "localidad": "SANTO TOME LA CAPITAL"
+    },
+    {
+        "nombre": "MACAGNO",
+        "direccion": "DE MARZO 2601",
+        "latitud": "-31.666201",
+        "longitud": "-60.768572",
+        "calle": "DE MARZO",
+        "altura": "2601",
+        "localidad": "SANTO TOME LA CAPITAL"
+    },
+    {
+        "nombre": "MARIANA GOMEZ",
+        "direccion": "AVENIDA LUJAN 2468",
+        "latitud": "-31.669761",
+        "longitud": "-60.766674",
+        "calle": "AVENIDA LUJAN",
+        "altura": "2468",
+        "localidad": "SANTO TOME LA CAPITAL"
+    },
+    {
+        "nombre": "OLIVERO Santo Tome",
+        "direccion": "HERNANDARIAS 1793",
+        "latitud": "-31.674435",
+        "longitud": "-60.760811",
+        "localidad": "SANTO TOME LA CAPITAL SANTA FE",
+        "calle": "HERNANDARIAS",
+        "altura": "1793"
+    },
+    {
+        "nombre": "ZIMMERMANN SANTO TOME",
+        "direccion": "MARIANO CANDIOTI 3226",
+        "latitud": "-31.678863",
+        "longitud": "-60.756866",
+        "localidad": "SANTO TOME LA CAPITAL",
+        "calle": "MARIANO CANDIOTI",
+        "altura": "3226"
+    },
+    {
+        "nombre": "MARCOLINI",
+        "direccion": "AV LUJAN 2692",
+        "latitud": "-31.671594",
+        "longitud": "-60.76796",
+        "calle": "AV LUJAN",
+        "altura": "2692",
+        "localidad": "SANTO TOME LA CAPITAL SANTA FE"
+    },
+    {
+        "nombre": "TERENZI",
+        "direccion": "BELGRANO 3018",
+        "latitud": "-31.67277",
+        "longitud": "-60.768918",
+        "calle": "BELGRANO",
+        "altura": "3018",
+        "localidad": "LA CAPITAL SANTO TOMÉ"
+    },
+    {
+        "nombre": "STESSENS",
+        "direccion": "DE MARZO 1884",
+        "latitud": "-31.67277",
+        "longitud": "-60.768918",
+        "calle": "DE MARZO",
+        "altura": "1884",
+        "localidad": "LA CAPITAL SANTO TOMÉ"
+    },
+    {
+        "nombre": "MAYORAZ",
+        "direccion": "DE MAYO 2017",
+        "latitud": "-31.67277",
+        "longitud": "-60.768918",
+        "calle": "DE MAYO",
+        "altura": "2017",
+        "localidad": "LA CAPITAL SANTO TOMÉ"
+    },
+    {
+        "nombre": "GÓMEZ SANTO TOME",
+        "direccion": "LA RIOJA 2295",
+        "latitud": "-31.674438",
+        "longitud": "-60.766988",
+        "localidad": "SANTO TOME LA CAPITAL",
+        "calle": "LA RIOJA",
+        "altura": "2295"
+    },
+    {
+        "nombre": "GOMEZ Santo Tome",
+        "direccion": "LA RIOJA 2295",
+        "latitud": "-31.674438",
+        "longitud": "-60.766988",
+        "localidad": "LA CAPITAL SANTO TOMÉ",
+        "calle": "LA RIOJA",
+        "altura": "2295"
+    },
+    {
+        "nombre": "BERTA",
+        "direccion": "EJERCITO ARGENTINO 2695",
+        "latitud": "-31.672728",
+        "longitud": "-60.770714",
+        "calle": "EJERCITO ARGENTINO",
+        "altura": "2695",
+        "localidad": "SANTO TOME LA CAPITAL SANTA FE"
+    },
+    {
+        "nombre": "LEIVA",
+        "direccion": "LA RIOJA 2511",
+        "latitud": "-31.674344",
+        "longitud": "-60.770169",
+        "calle": "LA RIOJA",
+        "altura": "2511",
+        "localidad": "SANTA FE LA CAPITAL"
+    },
+    {
+        "nombre": "PALACIN",
+        "direccion": "MARIANO CANDIOTI 3677",
+        "latitud": "-31.683145",
+        "longitud": "-60.757379",
+        "calle": "MARIANO CANDIOTI",
+        "altura": "3677",
+        "localidad": "SANTO TOME LA CAPITAL"
+    },
+    {
+        "nombre": "VILLATA",
+        "direccion": "AV. LUJAN 2979",
+        "latitud": "-31.674772",
+        "longitud": "-60.770119",
+        "calle": "AV. LUJAN",
+        "altura": "2979",
+        "localidad": "LA CAPITAL SANTO TOMÉ"
+    },
+    {
+        "nombre": "SAUCO",
+        "direccion": "ALBERDI 2154",
+        "latitud": "-31.681423",
+        "longitud": "-60.766863",
+        "calle": "ALBERDI",
+        "altura": "2154",
+        "localidad": "SANTO TOME LA CAPITAL"
+    },
+    {
+        "nombre": "TOSELLO",
+        "direccion": "LOPEZ Y PLANES 2865",
+        "latitud": "-31.67761",
+        "longitud": "-60.774567",
+        "calle": "LOPEZ Y PLANES",
+        "altura": "2865",
+        "localidad": "LA CAPITAL SANTO TOMÉ"
+    },
+    {
+        "nombre": "MARTA TEPP",
+        "direccion": "AV. LUJÁN 3636",
+        "latitud": "-31.680038",
+        "longitud": "-60.774904",
+        "calle": "AV. LUJÁN",
+        "altura": "3636",
+        "localidad": "SANTO TOME LA CAPITAL"
+    },
+    {
+        "nombre": "ERICA TEPP",
+        "direccion": "AV. RICHERI 3296",
+        "latitud": "-31.685592",
+        "longitud": "-60.781657",
+        "calle": "AV. RICHERI",
+        "altura": "3296",
+        "localidad": "SANTO TOME LA CAPITAL"
+    },
+    {
+        "nombre": "MONTIBELLI",
+        "direccion": "LA PAMPA 1238",
+        "latitud": "-31.518805",
+        "longitud": "-60.680215",
+        "calle": "LA PAMPA",
+        "altura": "1238",
+        "localidad": "MONTE VERA LA CAPITAL SANTA FE"
+    },
+    {
+        "nombre": "BUIGUEZ",
+        "direccion": "SANTA FE 1543",
+        "latitud": "-31.518244",
+        "longitud": "-60.678609",
+        "calle": "SANTA FE",
+        "altura": "1543",
+        "localidad": "MONTE VERA LA CAPITAL SANTA FE"
+    },
+    {
+        "nombre": "TURIELLA",
+        "direccion": "SANTA FE 1144",
+        "latitud": "-31.518244",
+        "longitud": "-60.678609",
+        "calle": "SANTA FE",
+        "altura": "1144",
+        "localidad": "LA CAPITAL MONTE VERA"
+    },
+    {
+        "nombre": "ADRIAN CARRIZO",
+        "direccion": "BELGRANO 3405",
+        "latitud": "-31.706664",
+        "longitud": "-60.771676",
+        "calle": "BELGRANO",
+        "altura": "3405",
+        "localidad": "SANTO TOME LA CAPITAL"
+    },
+    {
+        "nombre": "LEDESMA",
+        "direccion": "AV MITRE 995",
+        "latitud": "-31.492673",
+        "longitud": "-60.732307",
+        "calle": "AV MITRE",
+        "altura": "995",
+        "localidad": "RECREO LA CAPITAL SANTA FE"
+    },
+    {
+        "nombre": "ANZOISE",
+        "direccion": "CALLE 17 ",
+        "latitud": "-31.573652",
+        "longitud": "-60.535974",
+        "calle": "CALLE 17",
+        "altura": "",
+        "localidad": "ARROYO LEYES"
+    },
+    {
+        "nombre": "COLOMBO",
+        "direccion": "RIVADAVIA 1082",
+        "latitud": "-31.771099",
+        "longitud": "-60.838097",
+        "calle": "RIVADAVIA",
+        "altura": "1082",
+        "localidad": "LA CAPITAL SAUCE VIEJO"
+    },
+    {
+        "nombre": "BERARDO",
+        "direccion": "C. CHILE 2708",
+        "latitud": "-31.774531",
+        "longitud": "-60.838542",
+        "calle": "C. CHILE",
+        "altura": "2708",
+        "localidad": "LA CAPITAL SAUCE VIEJO"
+    },
+    {
+        "nombre": "PABLO KESTLER",
+        "direccion": "SAN MARTIN 1290",
+        "latitud": "-31.587203",
+        "longitud": "-60.938352",
+        "calle": "SAN MARTIN",
+        "altura": "1290",
+        "localidad": "LAS COLONIAS FRANCK"
+    },
+    {
+        "nombre": "MARIANO",
+        "direccion": "SAN MARTIN 2199",
+        "latitud": "-31.58591",
+        "longitud": "-60.938609",
+        "calle": "SAN MARTIN",
+        "altura": "2199",
+        "localidad": "FRANCK LAS COLONIAS SANTA FE"
+    },
+    {
+        "nombre": "ALBRECHT",
+        "direccion": "MIGUEL MANFREDI 2021",
+        "latitud": "-31.58672",
+        "longitud": "-60.938961",
+        "calle": "MIGUEL MANFREDI",
+        "altura": "2021",
+        "localidad": "FRANCK LAS COLONIAS SANTA FE"
+    },
+    {
+        "nombre": "DELMONTE",
+        "direccion": "BRIGADIER LOPEZ 1298",
+        "latitud": "-31.682203",
+        "longitud": "-60.938075",
+        "calle": "BRIGADIER LOPEZ",
+        "altura": "1298",
+        "localidad": "SAN AGUSTIN LAS COLONIAS SANTA FE"
+    },
+    {
+        "nombre": "SAUGY",
+        "direccion": "COLONIZADORES 009",
+        "latitud": "-31.453259",
+        "longitud": "-60.912671",
+        "calle": "COLONIZADORES",
+        "altura": "009",
+        "localidad": "ESPERANZA LAS COLONIAS SANTA FE"
+    },
+    {
+        "nombre": "BAR",
+        "direccion": "CASTELLI 1028",
+        "latitud": "-31.452466",
+        "longitud": "-60.926212",
+        "calle": "CASTELLI",
+        "altura": "1028",
+        "localidad": "ESPERANZA LAS COLONIAS SANTA FE"
+    },
+    {
+        "nombre": "PIERUCCIONI",
+        "direccion": "BALCARCE 1605",
+        "latitud": "-31.458216",
+        "longitud": "-60.933261",
+        "calle": "BALCARCE",
+        "altura": "1605",
+        "localidad": "ESPERANZA LAS COLONIAS SANTA FE"
+    },
+    {
+        "nombre": "TKACZYK",
+        "direccion": "DE MAYO 2006",
+        "latitud": "-31.447203",
+        "longitud": "-60.92185",
+        "calle": "DE MAYO",
+        "altura": "2006",
+        "localidad": "ESPERANZA LAS COLONIAS"
+    },
+    {
+        "nombre": "FAVARIN",
+        "direccion": "RIVADAVIA 1494",
+        "latitud": "-31.454682",
+        "longitud": "-60.929824",
+        "calle": "RIVADAVIA",
+        "altura": "1494",
+        "localidad": "ESPERANZA LAS COLONIAS SANTA FE"
+    },
+    {
+        "nombre": "LOUREYRO",
+        "direccion": "BERUTTI 906",
+        "latitud": "-31.447701",
+        "longitud": "-60.923233",
+        "calle": "BERUTTI",
+        "altura": "906",
+        "localidad": "LAS COLONIAS ESPERANZA"
+    },
+    {
+        "nombre": "FUENTES",
+        "direccion": "MORENO 742",
+        "latitud": "-31.459981",
+        "longitud": "-60.936018",
+        "calle": "MORENO",
+        "altura": "742",
+        "localidad": "ESPERANZA LAS COLONIAS SANTA FE"
+    },
+    {
+        "nombre": "ZEHNDER",
+        "direccion": "CULLEN 1332",
+        "latitud": "-31.452609",
+        "longitud": "-60.929726",
+        "calle": "CULLEN",
+        "altura": "1332",
+        "localidad": "ESPERANZA LAS COLONIAS SANTA FE"
+    },
+    {
+        "nombre": "MORELLI",
+        "direccion": "RIVADAVIA 2002",
+        "latitud": "-31.450161",
+        "longitud": "-60.928439",
+        "calle": "RIVADAVIA",
+        "altura": "2002",
+        "localidad": "ESPERANZA LAS COLONIAS SANTA FE"
+    },
+    {
+        "nombre": "GAMBOA",
+        "direccion": "BELGRANO 2324",
+        "latitud": "-31.447193",
+        "longitud": "-60.928973",
+        "calle": "BELGRANO",
+        "altura": "2324",
+        "localidad": "LAS COLONIAS ESPERANZA"
+    }
+]
