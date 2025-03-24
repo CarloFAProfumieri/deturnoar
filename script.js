@@ -144,9 +144,15 @@ function center(pharmacy){
 
 function getCurrentDate() {
     let today = new Date();
+    let day = String(today.getDate()).padStart(2, '0');
+    let month = String(today.getMonth() + 1).padStart(2, '0');
+    return `${day}/${month}`; // Return formatted date as "DD/MM HH:mm"
+}
+function getCurrentDate2() {
+    let today = new Date();
     let options = { timeZone: 'America/Argentina/Buenos_Aires', day: '2-digit', month: '2-digit' };
-    let currentDate = new Intl.DateTimeFormat('en-US', options).format(today);
-    return currentDate;
+    let formattedDate = new Intl.DateTimeFormat('en-GB', options).format(today);
+    return formattedDate; // Returns the date in "DD/MM" format in Buenos Aires time
 }
 function getCurrentHour() {
     let today = new Date();
