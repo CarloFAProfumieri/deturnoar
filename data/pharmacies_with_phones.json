@@ -1,6 +1,6 @@
 [
     {
-        "nombre": "PEDRO ANDRES KORNIJUK",
+        "nombre": "PEDRO A. KORNIJUK",
         "direccion": "F. ZUVIRIA 5323",
         "latitud": "-31.617248",
         "longitud": "-60.705674",
@@ -347,7 +347,7 @@
         "longitud": "-60.687884",
         "calle": "SALVADOR DEL CARRIL",
         "altura": "1672",
-        "localidad": "SANTA FE",
+        "localidad": "SANTA FE LA CAPITAL",
         "googlePlaceId": "ChIJSXtbXuWptZURtfqzclLnaig",
         "telefono": "0342 460-5463"
     },
@@ -369,7 +369,7 @@
         "longitud": "-60.690297",
         "calle": "AV GENERAL PAZ",
         "altura": "4698",
-        "localidad": "SANTA FE",
+        "localidad": "SANTA FE LA CAPITAL",
         "googlePlaceId": "ChIJ4f6VI-yptZURRzqflw80q_g",
         "telefono": "0342 453-8276"
     },
@@ -688,7 +688,7 @@
         "longitud": "-60.721888",
         "calle": "AVENIDA BLAS PARERA",
         "altura": "6751",
-        "localidad": "SANTA FE",
+        "localidad": "SANTA FE LA CAPITAL",
         "googlePlaceId": "ChIJL7oWfQAHtZURKxLWqYQU21U",
         "telefono": "342 489 1979"
     },
@@ -1128,7 +1128,7 @@
         "longitud": "-60.705457",
         "calle": "RIVADAVIA",
         "altura": "2443",
-        "localidad": "SANTA FE",
+        "localidad": "SANTA FE LA CAPITAL",
         "googlePlaceId": "ChIJUUpJXmWptZURzwzhROTwpF4",
         "telefono": "0342 514-2104"
     },
@@ -1612,7 +1612,7 @@
         "longitud": "-60.659608",
         "calle": "BARRIO EL POZO M.8 VDA.43",
         "altura": "",
-        "localidad": "SANTA FE",
+        "localidad": "SANTA FE LA CAPITAL",
         "googlePlaceId": "ChIJp5mgpIurtZURzxrkKGXad9s",
         "telefono": "0342 451-1485"
     },
