@@ -200,7 +200,7 @@ def extract_pharmacy_names(turno, nombres_farmacias):
 def main():
     with open("../../data/pharmacies_with_phones.json", "r", encoding="utf-8") as f:
         pharmacies = json.load(f)  # Expecting a list of names
-    image = cv2.imread("../../../../PycharmProjects/learning/turnos.png")
+    image = cv2.imread("turnos.png")
 
     base_image = image.copy()
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -292,27 +292,19 @@ def main():
         if pharmacy["localidad"].upper() == "SANTA FE LA CAPITAL":
             nombres_farmacias.append(pharmacy["nombre"])
 
+    turnos_extracted_text = []
     for cabecera, turno, pie in turnos_text_raw:
-        print("----------------------------------------------------------------")
-        #print(turno)
         turno = turno.upper().replace(" A.", " A ").replace("SEN - COLTRINARI", "SEN COLTRINARI")
         farmacias_en_el_turno = extract_pharmacy_names(turno, nombres_farmacias)
         fechas_del_turno = extract_dates(cabecera)
-        #print(cabecera)
-        print(fechas_del_turno)
-        print(farmacias_en_el_turno)
-        #print(pie)
+        turnos_extracted_text.append((fechas_del_turno, farmacias_en_el_turno))
 
-    # Show results
-    # cv2.imshow("edges", cv2.resize(edges,(850, 1000)))
-    # cv2.imshow("dilate_large", cv2.resize(dilate_large,(850, 1000)))
-    # cv2.imshow("dilate_small", cv2.resize(dilate_small,(850, 1000)))
-    # cv2.imshow("Detected Boxes", cv2.resize(image, (850, 1000)))
-    # cv2.waitKey(0)
-    # cv2.destroyAllWindows()
+    turnos_json = [{"dates": fechas, "pharmacies": farmacias} for fechas, farmacias in turnos_extracted_text]
 
-    # Save output
-    # cv2.imwrite("../../../../PycharmProjects/learning/turnos-sampleado.png", image)
+    with open("../../data/turnos.json", "w", encoding="utf-8") as f:
+        json.dump(turnos_json, f, indent=4, ensure_ascii=False)
+    print("turnos guardados correctamente")
+
 
 if __name__ == "__main__":
     main()

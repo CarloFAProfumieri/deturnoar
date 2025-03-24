@@ -1,0 +1,278 @@
+[
+    {
+        "dates": [
+            "05/03",
+            "06/03",
+            "17/03",
+            "18/03",
+            "29/03",
+            "30/03"
+        ],
+        "pharmacies": [
+            "BANCHIO",
+            "BELGRANO",
+            "BONAZZOLA",
+            "BRUNO",
+            "CAMILATTO",
+            "CAMUSSO",
+            "COSTA",
+            "GHECO",
+            "MORALES",
+            "MORELLO",
+            "NEBIOLO",
+            "ORTIZ DE ZARATE"
+        ]
+    },
+    {
+        "dates": [
+            "06/03",
+            "07/03",
+            "18/03",
+            "19/03",
+            "30/03",
+            "31/03"
+        ],
+        "pharmacies": [
+            "AMHERDT",
+            "BOURDIN",
+            "ESCUDERO",
+            "GHERSI",
+            "JULLIER",
+            "LAUXMANN",
+            "THEILLER",
+            "TRUCCO",
+            "THROENDLY",
+            "TIMOFIEJUK",
+            "WUILLOUD"
+        ]
+    },
+    {
+        "dates": [
+            "07/03",
+            "08/03",
+            "19/03",
+            "20/03",
+            "31/03",
+            "01/04"
+        ],
+        "pharmacies": [
+            "ARMANDO",
+            "ARRIMADA",
+            "DANIEL LAGGER",
+            "EL INCA",
+            "BURGUÉS ROMANO",
+            "LUCIA BANCHIO",
+            "MAZZALI",
+            "PELLEGRINI",
+            "PLANK",
+            "SOBRERO",
+            "STRADA"
+        ]
+    },
+    {
+        "dates": [
+            "08/03",
+            "09/03",
+            "20/03",
+            "21/03"
+        ],
+        "pharmacies": [
+            "ABREGU",
+            "IGNACIO AZANZA",
+            "GOTTERO",
+            "LILIANA MARTÍNEZ",
+            "LUERO",
+            "MARCELO GALIZZI",
+            "MARIO MARTINEZ",
+            "PARDO",
+            "SABIO",
+            "SAN LORENZO",
+            "SANTIVÁÑEZ",
+            "TONINI",
+            "ZIMMERMANN"
+        ]
+    },
+    {
+        "dates": [
+            "09/03",
+            "10/03",
+            "21/03",
+            "22/03"
+        ],
+        "pharmacies": [
+            "ACOSTA",
+            "ALEJANDRO SENN",
+            "BONAZZOLA DENISE",
+            "CHELINI",
+            "GIULIONI",
+            "LOPEZ",
+            "MAI",
+            "MARTÍNEZ JUAN JOSÉ",
+            "MÉNDEZ",
+            "NAITO",
+            "PASTEUR",
+            "ROJAS",
+            "VALETTI"
+        ]
+    },
+    {
+        "dates": [
+            "10/03",
+            "11/03",
+            "22/03",
+            "23/03"
+        ],
+        "pharmacies": [
+            "CAPRA",
+            "COSTA SAMITA",
+            "CAPORIZZO",
+            "DONADIO",
+            "JUNGES",
+            "LONG",
+            "MERGEN",
+            "ORTEGA",
+            "PEDRO A KORNIJUK",
+            "SARTOR",
+            "VALVERDE",
+            "VERÓNICA CANO",
+            "VIGNOLO"
+        ]
+    },
+    {
+        "dates": [
+            "11/03",
+            "12/03",
+            "23/03",
+            "24/03"
+        ],
+        "pharmacies": [
+            "BOLOGNESI",
+            "CARDOSO",
+            "CURTI",
+            "ESTERKIN",
+            "FIGUEROA SOBRERO",
+            "GÓMEZ",
+            "IMHOF",
+            "LAGGER ZURBRIGGEN",
+            "LENCINAS",
+            "MARÍA SELVA",
+            "SANTIAGO",
+            "VINDEROLA"
+        ]
+    },
+    {
+        "dates": [
+            "28/02",
+            "01/03",
+            "12/03",
+            "13/03",
+            "24/03",
+            "25/03"
+        ],
+        "pharmacies": [
+            "BARRIENTOS",
+            "CARABALLO",
+            "CLAVE",
+            "FANESSI",
+            "FERRO",
+            "JUDITH ACEVEDO",
+            "MONTES",
+            "SANTA FE",
+            "SEN COLTRINARI",
+            "SUPPO",
+            "UGOLINI"
+        ]
+    },
+    {
+        "dates": [
+            "01/03",
+            "02/03",
+            "13/03",
+            "14/03",
+            "25/03",
+            "26/03"
+        ],
+        "pharmacies": [
+            "BERTOLIN",
+            "CHEMES",
+            "COLL",
+            "DAMIANI",
+            "DOMET HURANI",
+            "GABRIEL JAUREGUI",
+            "IRRAZABAL",
+            "NICOLAU MANZUR",
+            "PACCE",
+            "PEIRO",
+            "STRICKER",
+            "ZAPATA MORAN"
+        ]
+    },
+    {
+        "dates": [
+            "02/03",
+            "03/03",
+            "14/03",
+            "15/03",
+            "26/03",
+            "27/03"
+        ],
+        "pharmacies": [
+            "CONIGLIO",
+            "FINELLI",
+            "FUCKSMANN",
+            "LEIVA",
+            "MERCADO CENTRAL",
+            "MORANTE",
+            "QUEGLAS",
+            "SALVATIERRA",
+            "SILEONI"
+        ]
+    },
+    {
+        "dates": [
+            "03/03",
+            "04/03",
+            "15/03",
+            "16/03",
+            "27/03",
+            "28/03"
+        ],
+        "pharmacies": [
+            "ARGENTI",
+            "BERRON",
+            "CASTRO KARINA",
+            "FACINO",
+            "LABATH",
+            "MARTINEZ",
+            "MONICA WAGNER",
+            "RITA MARTINEZ",
+            "ROJAS SOTELO",
+            "PESCETTI MAXIMILIANO",
+            "SCALZO",
+            "VILARRUBI"
+        ]
+    },
+    {
+        "dates": [
+            "04/03",
+            "05/03",
+            "16/03",
+            "17/03",
+            "28/03",
+            "29/03"
+        ],
+        "pharmacies": [
+            "BONAZZOLA ESTEFANÍA",
+            "BRAMBILLA",
+            "BURGI",
+            "COLUCCI",
+            "GERMAN LOPEZ",
+            "GIMÉNEZ",
+            "IMOBERDORF",
+            "IMVINKELRIED",
+            "MANSILLA",
+            "MENAPACE",
+            "PESCETTI"
+        ]
+    }
+]
