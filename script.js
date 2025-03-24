@@ -184,6 +184,7 @@ let map = new maplibregl.Map({
     zoom: 12.2,
 })
 
+
 let currentDate = getCurrentDate();
 let currentHour = getCurrentHour();
 let pharmaciesOnDuty = [];
