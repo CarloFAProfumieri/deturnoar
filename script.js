@@ -1,6 +1,17 @@
 let pinDictionary = {};
 let cardDictionary = {};
 let scrollCounter = 0;
+let pharmaciesWithDetails = {};
+
+function setFromToText(currentHour){
+    let desdeHastaElement = document.getElementById("desdehasta");
+
+    if (currentHour >= 8) {
+        desdeHastaElement.textContent = "ABIERTAS HASTA LAS 8HS DE MAÑANA";
+    } else {
+        desdeHastaElement.textContent = "ABIERTAS HASTA LAS 8HS DE HOY";
+    }
+}
 
 function addCard(pharmacy){
     let nameNewNode = document.createElement("h4");
@@ -130,28 +141,78 @@ function center(pharmacy){
     map.setCenter([pharmacy.longitud, pharmacy.latitud]);
     map.setZoom(15);
 }
-    let map = new maplibregl.Map({
-        style: 'https://tiles.openfreemap.org/styles/bright',
-        container: 'map',
-        center: [-60.705, -31.630],
-        zoom: 12.2,
-    })
 
-    let farmacia = {
-        nombre: "Acosta",
-        direccion: "Suipacha 2506",
-        telefono: "0342 - 4556677",
-        latitud: -31.640134534867073,
-        longitud: -60.70403018834733
-    };
-    fetch("data/turnos.json")
-        .then(response => response.json())
-        .then(data => {
-            data.forEach(aPharmacy => {
-                addPharmacy(aPharmacy);
-                //console.log(aPharmacy)
-                })
-        })
-        .catch(error => console.error("Error loading JSON:", error));
+function getCurrentDate() {
+    let today = new Date();
+    let options = { timeZone: 'America/Argentina/Buenos_Aires', day: '2-digit', month: '2-digit' };
+    let currentDate = new Intl.DateTimeFormat('en-US', options).format(today);
+    return currentDate;
+}
+function getCurrentHour() {
+    let today = new Date();
+    let options = { timeZone: 'America/Argentina/Buenos_Aires', hour: '2-digit', hour12: false };
+    let currentHour = new Intl.DateTimeFormat('en-US', options).format(today);
+    return currentHour;
+}
+function getPharmaciesOnDuty(turnosData, currentDate, currentHour) {
+    let pharmacies = [];
+    turnosData.forEach(entry => {
+        if (currentHour >= 8){
+            if (entry.datesFrom.includes(currentDate)) {
+                pharmacies = pharmacies.concat(entry.pharmacies);
+            }
+        }
+        else {
+            if (entry.datesTo.includes(currentDate)) {
+                pharmacies = pharmacies.concat(entry.pharmacies);
+            }
+        }
+    });
+    return pharmacies;
+}
 
-    addPharmacy(farmacia);
+let map = new maplibregl.Map({
+    style: 'https://tiles.openfreemap.org/styles/bright',
+    container: 'map',
+    center: [-60.705, -31.630],
+    zoom: 12.2,
+})
+
+let currentDate = getCurrentDate();
+let currentHour = getCurrentHour();
+let pharmaciesOnDuty = [];
+
+setFromToText(currentHour);
+
+let farmacia = {
+    nombre: "ACOSTA (24hs)",
+    direccion: "SUIPACHA 2506",
+    telefono: "0342 - 4556677",
+    latitud: -31.640134534867073,
+    longitud: -60.70403018834733
+};
+
+Promise.all([
+    fetch("data/turnos.json").then(res => res.json()),
+    fetch("data/pharmacies_with_phones.json").then(res => res.json())
+]).then(([turnosData, pharmaciesData]) => {
+    // Find pharmacies on duty today
+    pharmaciesOnDuty = getPharmaciesOnDuty(turnosData, currentDate, currentHour);
+
+    // Create a dictionary of pharmacies with details
+    pharmaciesData.forEach(pharmacy => {
+        pharmaciesWithDetails[pharmacy.nombre.toUpperCase()] = pharmacy;
+    });
+
+    // Match pharmacies on duty with their details
+    pharmaciesOnDuty.forEach(pharmacyName => {
+        let pharmacyDetails = pharmaciesWithDetails[pharmacyName];
+        if (pharmacyDetails) {
+            addPharmacy(pharmacyDetails);
+        } else {
+            console.warn("No details found for pharmacy:", pharmacyName);
+        }
+    });
+}).catch(error => console.error("Error loading JSON:", error));
+
+addPharmacy(farmacia);
