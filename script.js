@@ -39,7 +39,7 @@ function addCard(pharmacy){
     cardNewNode.appendChild(imageNode);
     cardNewNode.appendChild(cardText);
 
-    imageNode.addEventListener("click",() => center(pharmacy));
+    cardNewNode.addEventListener("click",() => center(pharmacy));
     cardNewNode.addEventListener("mouseenter", () => {
         highlightPin(pharmacy.nombre,.2);
         highlightCard(pharmacy.nombre, .2);

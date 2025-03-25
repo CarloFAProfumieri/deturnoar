@@ -31,6 +31,7 @@ html, body {
     font-family: Roboto, "Vollkorn", serif;
     border-radius: 10px;
     background-color: white;
+    cursor: pointer;
 }
 .card-list{
     font-family: Wotfard, Arial, sans-serif;
@@ -169,9 +170,7 @@ html, body {
 .search-form button:hover {
     background-color: #a4e4c8;
 }
-.card-image{
-    cursor: pointer;
-}
+
 #map{
     width: 35%;
     height: 80vh;
