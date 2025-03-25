@@ -20,13 +20,14 @@ This project aims to **solve these issues** by providing an interactive and acce
 
 ## 🛠️ How It Was Made
 ### **Frontend**
-- Developed using **HTML, CSS, and JavaScript**.
-- The map module was built using **OpenStreetMap** (via OpenFreemap), as I don’t have the resources for a paid API like Google Maps.
+- Developed using just **HTML, CSS, JavaScript**, and Node.js live server
+- The map module was built using **OpenStreetMap** (via OpenFreemap), which was extremely helpful since this project has been done with close to no budget
+- **The page is responsive** and will place the map on top of the list in mobile view, this was a priority since the nature of the app will require mobile use. The buttons are touch friendly and a handle will appear if you open it in mobile!
 
-### **Backend**
+### **Data Processing Pipeline (Precomputed Data)**
 - **Python** was used to **scrape pharmacy data** (name, address, coordinates) from the local College of Pharmacists' website.
 - The data was curated to remove inconsistencies.
-- Each pharmacy was linked to a **Google Place ID** by searching the name and address via the **Google API**.
+- Each pharmacy was linked to a **Google Place ID** by searching the name and address via the **Google Places API**.
 - The Place ID was then used to **retrieve updated phone numbers** for each pharmacy.
 - The final data was saved in `data/pharmacies_with_phones.json`.
 
@@ -40,11 +41,11 @@ This project aims to **solve these issues** by providing an interactive and acce
 ---
 
 ## 🚀 Future Improvements
-- **Better geolocation integration** for determining the nearest pharmacy automatically.
-- **Mobile app version** for easier access.
-- **Multilingual support** to make the service more inclusive.
-- **Improved OCR accuracy** using machine learning-based text recognition.
-
+- **Better geolocation integration** for determining the nearest pharmacy via address search.
+- More Locations
+- Easy navigation button that pops up Google Maps to improve ease of use in mobile
+- Report button to flag pharmacies that haven't actually stayed open on their shift (which is a relatively common ocurrency)
+- Pipeline automation for the backend so the site run autonomously
 ---
 <!--
 ## 📜 License
@@ -57,7 +58,7 @@ This project is open-source and available under the **MIT License**.
 ## ♿ Accessibility
 This was the central point of this project.
 
-- The frontend was checked for **colorblindness accessibility** using the **Let's Get Colorblind** extension in Chrome, and later in Firefox because Chrome disabled Ublock Origin and now I dislike them.
+- The frontend was checked for **colorblindness accessibility** using the **Let's Get Colorblind** extension in Chrome, and later in Firefox because Chrome disabled Ublock Origin and now I hate Chrome.
 - The **HTML includes alternate text** to ensure **screen reader support**.
 - The goal is to **get direct feedback from non-sighted individuals** to improve accessibility further.
 
