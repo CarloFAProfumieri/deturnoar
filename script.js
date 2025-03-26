@@ -177,6 +177,79 @@ function getPharmaciesOnDuty(turnosData, currentDate, currentHour) {
     return pharmacies;
 }
 
+async function getCoordinates(address) {
+    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
+
+    try {
+        const response = await fetch(url, {
+            headers: { 'User-Agent': 'YourAppName/1.0 (YourEmail@example.com)' } // Required by Nominatim
+        });
+
+        if (!response.ok) {
+            throw new Error("Failed to fetch data");
+        }
+
+        const data = await response.json();
+        if (data.length === 0) {
+            console.error("No coordinates found for this address.");
+            return null;
+        }
+
+        const { lat, lon } = data[0];
+        console.log(`Latitude: ${lat}, Longitude: ${lon}`);
+        return { lat, lon };
+    } catch (error) {
+        console.error("Error fetching coordinates:", error);
+        return null;
+    }
+}
+function addSearchListener(){
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select the form
+        const searchForm = document.querySelector(".search-form");
+
+        // Add event listener to handle submit
+        searchForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevents the page from reloading
+
+            // Get the input value
+            const addressInput = searchForm.querySelector("input").value.trim();
+
+            if (addressInput) {
+                let searchInput = addressInput + ", SANTA FE DE LA VERA CRUZ, SANTA FE, ARGENTINA"
+                console.log("Buscando:", searchInput);
+
+                // Call getCoordinates and handle the response correctly
+                getCoordinates(searchInput).then(coords => {
+                    if (coords) {
+                        let { lat, lon } = coords; // Extract lat & lon FIRST
+                        console.log("Coordinates received:", coords);
+                        console.log("lat: " + lat + " lon: " + lon); // Now lat & lon exist
+
+                        let searchInputPin = document.createElement("img");
+                        let animationSeconds = 0.2;
+                        searchInputPin.src = "public/classic-pin.svg";
+                        searchInputPin.style.width = '35px';
+
+                        // Add marker to the map with retrieved coordinates
+                        new maplibregl.Marker({
+                            element: searchInputPin,
+                            anchor: 'bottom'
+                        }).setLngLat([lon, lat]).addTo(map);
+                    } else {
+                        console.log("No coordinates found for this address.");
+                    }
+                }).catch(error => {
+                    console.error("Error fetching coordinates:", error);
+                });
+            } else {
+                console.log("Please enter an address.");
+            }
+        });
+    });
+}
+
+addSearchListener();
 let map = new maplibregl.Map({
     style: 'https://tiles.openfreemap.org/styles/bright',
     container: 'map',
