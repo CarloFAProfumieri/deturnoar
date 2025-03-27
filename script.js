@@ -177,6 +177,110 @@ function getPharmaciesOnDuty(turnosData, currentDate, currentHour) {
     return pharmacies;
 }
 
+async function getCoordinates(address) {
+    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
+
+    try {
+        const response = await fetch(url, {
+            headers: { 'User-Agent': 'deturnoarBeta/1.0 (YourEmail@example.com)' }
+        });
+
+        if (!response.ok) {
+            throw new Error("Failed to fetch data");
+        }
+
+        const data = await response.json();
+        if (data.length === 0) {
+            console.error("No coordinates found for this address.");
+            return null;
+        }
+
+        const { lat, lon } = data[0];
+        console.log(`Latitude: ${lat}, Longitude: ${lon}`);
+        return { lat, lon };
+    } catch (error) {
+        console.error("Error fetching coordinates:", error);
+        return null;
+    }
+}
+
+function calculateDistance(fromLat, fromLon, toLat, toLon) {
+    const DEG_TO_RAD = 0.017453292519943295769236907684886;
+    const EARTH_RADIUS_IN_METERS = 6372797.560856;
+    let latitudeArc = (fromLat - toLat) * DEG_TO_RAD;
+    let longitudeArc = (fromLon - toLon) * DEG_TO_RAD;
+
+    let latitudeH = Math.sin(latitudeArc * 0.5);
+    latitudeH *= latitudeH;
+
+    let longitudeH = Math.sin(longitudeArc * 0.5);
+    longitudeH *= longitudeH;
+
+    let tmp = Math.cos(fromLat * DEG_TO_RAD) * Math.cos(toLat * DEG_TO_RAD);
+
+    return EARTH_RADIUS_IN_METERS * 2.0 * Math.asin(Math.sqrt(latitudeH + tmp * longitudeH));
+}
+
+function orderCardsByDistance(lat, lon) {
+    let cardsArray = Array.from(document.querySelectorAll("#pharmacyList .card"));
+    pharmaciesOnDuty.forEach(pharmacyName => {
+        let pharmacyDetails = pharmaciesWithDetails[pharmacyName];
+        if (pharmacyDetails) {
+            console.log("farmacia: "
+                + pharmacyDetails.nombre
+                + " "
+                + Math.round(calculateDistance(lat,lon,pharmacyDetails.latitud, pharmacyDetails.longitud))
+                + " metros");
+        } else {
+            console.warn("No details found for pharmacy:", pharmacyName);
+        }
+    });
+}
+
+function addSearchListener(){
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select the form
+        const searchForm = document.querySelector(".search-form");
+
+        // Add event listener to handle submit
+        searchForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevents the page from reloading
+
+            // Get the input value
+            const addressInput = searchForm.querySelector("input").value.trim();
+
+            if (addressInput) {
+                let searchInput = addressInput + ", SANTA FE DE LA VERA CRUZ, SANTA FE, ARGENTINA"
+                console.log("Buscando:", searchInput);
+
+                getCoordinates(searchInput).then(coords => {
+                    if (coords) {
+                        let { lat, lon } = coords;
+                        console.log("lat: " + lat + " lon: " + lon);
+
+                        let searchInputPin = document.createElement("img");
+                        searchInputPin.src = "public/classic-pin.svg";
+                        searchInputPin.style.width = '35px';
+
+                        orderCardsByDistance(lat,lon);
+                        new maplibregl.Marker({
+                            element: searchInputPin,
+                            anchor: 'bottom'
+                        }).setLngLat([lon, lat]).addTo(map);
+                    } else {
+                        console.log("No se encontró la dirección");
+                    }
+                }).catch(error => {
+                    console.error("Error de la api de coordenadas: ", error);
+                });
+            } else {
+                console.log("Por favor ingrese una dirección.");
+            }
+        });
+    });
+}
+
+addSearchListener();
 let map = new maplibregl.Map({
     style: 'https://tiles.openfreemap.org/styles/bright',
     container: 'map',
