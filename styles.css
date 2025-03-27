@@ -122,6 +122,11 @@ html, body {
 .list-header{
     align-self: center;
 }
+.spinner {
+    width: 25px;
+    height: 25px;
+}
+
 
 .lighter{
     font-weight: lighter;

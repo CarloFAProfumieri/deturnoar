@@ -246,6 +246,7 @@ function addSearchListener(){
     document.addEventListener("DOMContentLoaded", function () {
         // Select the form
         const searchForm = document.querySelector(".search-form");
+        const searchButton = searchForm.querySelector("button"); // Select the button
 
         // Add event listener to handle submit
         searchForm.addEventListener("submit", function (event) {
@@ -257,6 +258,10 @@ function addSearchListener(){
             if (addressInput) {
                 let searchInput = addressInput + ", SANTA FE DE LA VERA CRUZ, SANTA FE, ARGENTINA"
                 console.log("Buscando:", searchInput);
+
+                // pongo un indicador de que se está fetcheando la direccion
+                searchButton.disabled = true;
+                searchButton.innerHTML = `<img src="public/loading-spinner.svg" class="spinner" alt="loading">`;
 
                 getCoordinates(searchInput).then(coords => {
                     if (coords) {
@@ -281,6 +286,10 @@ function addSearchListener(){
                     }
                 }).catch(error => {
                     console.error("Error de la api de coordenadas: ", error);
+                }).finally(() => {
+                    // Reset button state
+                    searchButton.disabled = false;
+                    searchButton.innerHTML = `<img src="public/search-button.svg">`;
                 });
             } else {
                 console.log("Por favor ingrese una dirección.");
