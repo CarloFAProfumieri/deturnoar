@@ -9,7 +9,7 @@ function setFromToText(currentHour){
     if (currentHour >= 8) {
         desdeHastaElement.textContent = "ABIERTAS HASTA LAS 8HS DE MAÑANA";
     } else {
-        desdeHastaElement.textContent = "ABIERTAS HASTA LAS 8HS DE HOY";
+        desdeHastaElement.textContent = "ABIERTAS HASTA LAS 8HS DE HOY: ";
     }
 }
 
@@ -95,7 +95,7 @@ function scrollToCard(pharmacyName, callback) {
                     scrollCounter++;
                     //console.log("Scrolling to " + pharmacyName + " finished! Total scrolls: " + scrollCounter);
                     if (callback) callback(pharmacyName); // Execute the callback when done
-                }, 100); // Adjust timeout for accuracy
+                }, 100);
             });
         }
     });
@@ -130,10 +130,10 @@ function resetPin(pharmacyName, animationSeconds) {
         pin.style.transition = "transform " + animationSeconds + "s ease-in-out";
         marker.setOffset([0, 0]);
 
-        //if you don't set this timeout, once your mouse leaves the card the animation will end abruptly
+        //if I don't add this timeout, animation ends abruptly after your mouse leaves the card
         setTimeout(() => {
             pin.style.transition = "";
-        }, animationSeconds*1000);//miliseconds
+        }, animationSeconds*1000); // timeout is in milliseconds
     }
 }
 
@@ -146,13 +146,14 @@ function getCurrentDate() {
     let today = new Date();
     let day = String(today.getDate()).padStart(2, '0');
     let month = String(today.getMonth() + 1).padStart(2, '0');
-    return `${day}/${month}`; // Return formatted date as "DD/MM HH:mm"
+    return `${day}/${month}`;
 }
 function getCurrentDate2() {
+    //an improvement on getcurrentDate1, to make sure this works outside of Argentina's time zone
     let today = new Date();
     let options = { timeZone: 'America/Argentina/Buenos_Aires', day: '2-digit', month: '2-digit' };
     let formattedDate = new Intl.DateTimeFormat('en-GB', options).format(today);
-    return formattedDate; // Returns the date in "DD/MM" format in Buenos Aires time
+    return formattedDate;
 }
 function getCurrentHour() {
     let today = new Date();
@@ -223,17 +224,21 @@ function calculateDistance(fromLat, fromLon, toLat, toLon) {
 
 function orderCardsByDistance(lat, lon) {
     let cardsArray = Array.from(document.querySelectorAll("#pharmacyList .card"));
-    pharmaciesOnDuty.forEach(pharmacyName => {
-        let pharmacyDetails = pharmaciesWithDetails[pharmacyName];
-        if (pharmacyDetails) {
-            console.log("farmacia: "
-                + pharmacyDetails.nombre
-                + " "
-                + Math.round(calculateDistance(lat,lon,pharmacyDetails.latitud, pharmacyDetails.longitud))
-                + " metros");
-        } else {
-            console.warn("No details found for pharmacy:", pharmacyName);
-        }
+
+    pharmaciesOnDutyData.forEach(pharmacy => {
+            pharmacy.distance = Math.round(calculateDistance(lat,lon,pharmacy.latitud, pharmacy.longitud));
+    });
+
+    pharmaciesOnDutyData.sort((a, b) => a.distance - b.distance);
+
+    cardsArray.forEach((card) => {
+        card.remove();
+    })
+
+    Object.values(pinDictionary).forEach(pin => pin.remove());
+
+    pharmaciesOnDutyData.forEach(pharmacy => {
+        addPharmacy(pharmacy);
     });
 }
 
@@ -263,10 +268,14 @@ function addSearchListener(){
                         searchInputPin.style.width = '35px';
 
                         orderCardsByDistance(lat,lon);
-                        new maplibregl.Marker({
+                        if (personalAddressPin) {
+                            personalAddressPin.remove()
+                        }
+                        personalAddressPin = new maplibregl.Marker({
                             element: searchInputPin,
                             anchor: 'bottom'
                         }).setLngLat([lon, lat]).addTo(map);
+
                     } else {
                         console.log("No se encontró la dirección");
                     }
@@ -288,25 +297,24 @@ let map = new maplibregl.Map({
     zoom: 12.2,
 })
 
-
-let currentDate = getCurrentDate2();
-console.log("current date: " + currentDate);
-let currentHour = getCurrentHour();
-console.log("current hour: " + currentHour);
-let pharmaciesOnDuty = [];
-
-setFromToText(currentHour);
-
-let farmacia = {
+//por ahora lo dejo asi porque total hay una sola en santa fe
+let farmacias24HS = {
     nombre: "ACOSTA (24hs)",
     direccion: "SUIPACHA 2506",
     telefono: "0342 - 4556677",
     latitud: -31.640134534867073,
     longitud: -60.70403018834733
 };
-
+let personalAddressPin;
+let currentDate = getCurrentDate2();
+console.log("current date: " + currentDate);
+let currentHour = getCurrentHour();
+console.log("current hour: " + currentHour);
+let pharmaciesOnDuty = [];
 let pharmaciesOnDutyData = [];
 
+pharmaciesOnDutyData.push(farmacias24HS);
+addPharmacy(farmacias24HS)
 Promise.all([
     fetch("data/turnos.json").then(res => res.json()),
     fetch("data/pharmacies_with_phones.json").then(res => res.json())
@@ -314,12 +322,10 @@ Promise.all([
     // Find pharmacies on duty today
     pharmaciesOnDuty = getPharmaciesOnDuty(turnosData, currentDate, currentHour);
 
-    // Create a dictionary of pharmacies with details
     pharmaciesData.forEach(pharmacy => {
         pharmaciesWithDetails[pharmacy.nombre.toUpperCase()] = pharmacy;
     });
 
-    // Match pharmacies on duty with their details
     pharmaciesOnDuty.forEach(pharmacyName => {
         let pharmacyDetails = pharmaciesWithDetails[pharmacyName];
         if (pharmacyDetails) {
@@ -330,5 +336,7 @@ Promise.all([
         }
     });
 }).catch(error => console.error("Error loading JSON:", error));
-console.log(pharmaciesOnDutyData);
-addPharmacy(farmacia);
+
+
+setFromToText(currentHour);
+
