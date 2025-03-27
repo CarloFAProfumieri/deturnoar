@@ -305,6 +305,8 @@ let farmacia = {
     longitud: -60.70403018834733
 };
 
+let pharmaciesOnDutyData = [];
+
 Promise.all([
     fetch("data/turnos.json").then(res => res.json()),
     fetch("data/pharmacies_with_phones.json").then(res => res.json())
@@ -322,10 +324,11 @@ Promise.all([
         let pharmacyDetails = pharmaciesWithDetails[pharmacyName];
         if (pharmacyDetails) {
             addPharmacy(pharmacyDetails);
+            pharmaciesOnDutyData.push(pharmacyDetails);
         } else {
-            console.warn("No details found for pharmacy:", pharmacyName);
+            console.warn("No se encontro la farmacia:", pharmacyName);
         }
     });
 }).catch(error => console.error("Error loading JSON:", error));
-
+console.log(pharmaciesOnDutyData);
 addPharmacy(farmacia);
