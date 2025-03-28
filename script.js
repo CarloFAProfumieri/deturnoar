@@ -7,9 +7,9 @@ function setFromToText(currentHour){
     let desdeHastaElement = document.getElementById("desdehasta");
 
     if (currentHour >= 8) {
-        desdeHastaElement.textContent = "ABIERTAS HASTA LAS 8HS DE MAÑANA";
+        desdeHastaElement.textContent = "ESTARÁN ABIERTAS HASTA LAS 8HS DE MAÑANA";
     } else {
-        desdeHastaElement.textContent = "ABIERTAS HASTA LAS 8HS DE HOY: ";
+        desdeHastaElement.textContent = "ESTARÁN ABIERTAS HASTA LAS 8HS DE HOY: ";
     }
 }
 
@@ -28,13 +28,18 @@ function addCard(pharmacy){
 
     imageNode.src = "public/logo.svg";
     imageNode.className = "card-image";
+    imageNode.role = "presentation"
     nameNewNode.textContent = pharmacy.nombre;
-    addressNewNode.textContent= pharmacy.direccion;
+    addressNewNode.textContent= pharmacy.direccion + " (" + pharmacy.distance + " metros)";
     extraInformationNewNode.textContent = "Telefono: " + pharmacy.telefono;
-
     cardText.appendChild(nameNewNode);
     cardText.appendChild(addressNewNode);
     cardText.appendChild(extraInformationNewNode);
+    if (pharmacy.distance){
+        distanceNode = document.createElement("h5");
+        distanceNode.textContent = pharmacy.distance + " metros";
+        cardText.appendChild(distanceNode);
+    }
 
     cardNewNode.appendChild(imageNode);
     cardNewNode.appendChild(cardText);

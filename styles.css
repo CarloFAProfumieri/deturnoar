@@ -84,6 +84,7 @@ html, body {
     font-size: 1.2rem;
     font-weight: bold;
     font-family: Roboto, Verdana, serif;
+    margin: 0;
 }
 .navbar {
     border-bottom: black solid 1px;
@@ -120,7 +121,15 @@ html, body {
     font-family: Roboto, "Vollkorn", serif;
 }
 .list-header{
+    display: flex;
+    flex-direction: column;
     align-self: center;
+    justify-content: center;
+}
+.left-header{
+    align-self: center;
+    font-size: 2rem;
+    margin: 0.5rem 0;
 }
 .spinner {
     width: 25px;
@@ -130,6 +139,7 @@ html, body {
 
 .lighter{
     font-weight: lighter;
+    margin: 1rem 0;
 }
 .bolder{
     font-weight: bolder;
