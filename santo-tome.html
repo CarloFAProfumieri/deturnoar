@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacias de Turno en Santo Tome - Encuentra la farmacia de turno más cercana</title>
+    <link rel="canonical" href="https://deturno.ar/">
+    <link rel="shortcut icon" href="public/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="santotomescript.js" defer></script>
+    <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
+    <meta name="description" content="Encuentra farmacias de turno en Santo tome rápidamente con nuestro mapa interactivo.">
+    <meta name="keywords" content="farmacias de turno Santo tome, farmacias de turno, Santo tome, farmacias abiertas, mapa de farmacias">
+</head>
+<body>
+  <div class="navbar">
+    <div class="header-container">
+        <div class="logo-container">
+            <img src="public/logo.svg" alt="logo de la página" class="logo-icon">
+            <div class="banner-text-container">
+                <h1 class="banner-font">DE TURNO</h1>
+                <h1 class="banner-font">SANTOTO</h1>
+            </div>
+        </div>
+        <div class="contact-icon-container">
+            <img src="public/icon-twitter.svg" class="contact-icon">
+            <img src="public/mail-icon.svg" class="contact-icon">
+        </div>
+    </div>
+    <div class="search-form-container">
+        <form class="search-form"  >
+            <input type="text" placeholder="BUSCAR POR DIRECCIÓN" aria-label="Buscar por dirección">
+            <button type="submit">
+                <img src="public/search-button.svg">
+            </button>
+        </form>
+    </div>
+  </div>
+  <div class="main-container">
+      <div id="map">
+
+      </div>
+      <div class="mobile-hint">
+          <img src="public/drag-handle.svg" alt="ayuda visual tactil">
+      </div>
+      <div class="left-container">
+          <div class="list-header">
+              <h2 class="left-header">
+                  Farmacias de Turno
+              </h2>
+              <h4 id ="desdehasta" CLASS="lighter">
+                  HASTA LAS 8HS DE $(HOY/MAÑANA)
+              </h4>
+          </div>
+          <ul class="card-list" id="pharmacyList">
+              <li class="card-container">
+                  <div class="mobile-hint">
+                      <h3>
+                          Toque una ubicación para ver la información de la farmacia
+                      </h3>
+                  </div>
+                  <!--
+                  <div class="card">
+                      <img src="public/logo.svg" alt="pin icon" class="card-image">
+                      <div class="card-text">
+                          <h4>Pharmacy Name</h4>
+                          <h5>pharmacy address and pharmacy phone</h5>
+                          <p>
+                              this is some extra information that might be relevant to this pharmacy
+                          </p>
+                      </div>
+                  </div>
+                  -->
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer"></div>
+</body>
+</html>

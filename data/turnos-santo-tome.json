@@ -1,0 +1,166 @@
+[
+    {
+        "datesFrom": [
+            "01/03",
+            "10/03",
+            "19/03",
+            "28/03"
+        ],
+        "datesTo": [
+            "02/03",
+            "11/03",
+            "20/03",
+            "29/03"
+        ],
+        "pharmacies": [
+            "ERICA TEPP",
+            "STESSENS",
+            "VILLATA"
+        ]
+    },
+    {
+        "datesFrom": [
+            "02/03",
+            "11/03",
+            "20/03",
+            "29/03"
+        ],
+        "datesTo": [
+            "03/03",
+            "12/03",
+            "21/03",
+            "30/03"
+        ],
+        "pharmacies": [
+            "SAUCO",
+            "OLIVERO",
+            "ESCOBAR"
+        ]
+    },
+    {
+        "datesFrom": [
+            "03/03",
+            "12/03",
+            "21/03",
+            "30/03"
+        ],
+        "datesTo": [
+            "04/03",
+            "13/03",
+            "22/03",
+            "31/03"
+        ],
+        "pharmacies": [
+            "CIRELLI",
+            "GÓMEZ",
+            "ZIMMERMANN"
+        ]
+    },
+    {
+        "datesFrom": [
+            "04/03",
+            "13/03",
+            "22/03",
+            "31/03"
+        ],
+        "datesTo": [
+            "05/03",
+            "14/03",
+            "23/03",
+            "01/04"
+        ],
+        "pharmacies": [
+            "MARTA TEPP",
+            "BONINO",
+            "MARTINEZ"
+        ]
+    },
+    {
+        "datesFrom": [
+            "05/03",
+            "14/03",
+            "23/03"
+        ],
+        "datesTo": [
+            "06/03",
+            "15/03",
+            "24/03"
+        ],
+        "pharmacies": [
+            "PESCETTI JULIETA",
+            "BERTA",
+            "CRUZ"
+        ]
+    },
+    {
+        "datesFrom": [
+            "06/03",
+            "15/03",
+            "24/03"
+        ],
+        "datesTo": [
+            "07/03",
+            "16/03",
+            "25/03"
+        ],
+        "pharmacies": [
+            "MAYORAZ",
+            "MACAGNO",
+            "RIVERO",
+            "TOSELLO"
+        ]
+    },
+    {
+        "datesFrom": [
+            "07/03",
+            "16/03",
+            "25/03"
+        ],
+        "datesTo": [
+            "08/03",
+            "17/03",
+            "26/03"
+        ],
+        "pharmacies": [
+            "CONTINI",
+            "MARCOLINI",
+            "SAN ROQUE"
+        ]
+    },
+    {
+        "datesFrom": [
+            "08/03",
+            "17/03",
+            "26/03"
+        ],
+        "datesTo": [
+            "09/03",
+            "18/03",
+            "27/03"
+        ],
+        "pharmacies": [
+            "QUASSOLO",
+            "MARIANA GOMEZ",
+            "TERENZI"
+        ]
+    },
+    {
+        "datesFrom": [
+            "28/02",
+            "09/03",
+            "18/03",
+            "27/03"
+        ],
+        "datesTo": [
+            "01/03",
+            "10/03",
+            "19/03",
+            "28/03"
+        ],
+        "pharmacies": [
+            "ADRIAN CARRIZO",
+            "FIRMANI",
+            "PALACIN"
+        ]
+    }
+]

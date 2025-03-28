@@ -37,10 +37,13 @@ def debug_print(header_text, shift_text, footer_text, i):
 
 
 def get_shifts(turnos):
-    # this function is where ocr is performed
-    # it receives an array that contains each shift cropped into header, tabular data, and footer
-    # the point is to be able to preprocess each differently since each has a different font weight, font size, and
-    # general structure
+    """
+    this function is where ocr is performed
+    it receives an array that contains each shift cropped into header, tabular data, and footer
+    the point is to be able to preprocess each differently since each has a different font weight, font size, and
+    general structure
+    """
+
     turnos_text_raw = []
     for i, (turno, separador_cabecera, separador_pie) in enumerate(turnos, start=1):
         observaciones = ""
