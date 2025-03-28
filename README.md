@@ -59,10 +59,9 @@ This project is open-source and available under the **MIT License**.
 This was the central point of this project.
 
 - The frontend was checked for **colorblindness accessibility** using the **Let's Get Colorblind** extension in Chrome, and later in Firefox because Chrome disabled Ublock Origin and now I hate Chrome.
+- If you input any address in the search box, pharmacies are automatically sorted by closest first! :)
 - The **HTML includes alternate text** to ensure **screen reader support**.
 - The goal is to **get direct feedback from non-sighted individuals** to improve accessibility further.
-
-As of now, I'm still trying to find a feasible way to implement the **search box** so that pharmacies are ordered by proximity to an address.
 
 ## 💡 Contributions
 Contributions are welcome! Feel free to open issues or submit pull requests to improve the project.
