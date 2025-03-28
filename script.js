@@ -330,7 +330,7 @@ let pharmaciesOnDutyData = [];
 pharmaciesOnDutyData.push(farmacias24HS);
 addPharmacy(farmacias24HS)
 Promise.all([
-    fetch("data/turnos.json").then(res => res.json()),
+    fetch("data/turnos-santa-fe.json").then(res => res.json()),
     fetch("data/pharmacies_with_phones.json").then(res => res.json())
 ]).then(([turnosData, pharmaciesData]) => {
     // Find pharmacies on duty today

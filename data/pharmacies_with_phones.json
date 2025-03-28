@@ -1667,7 +1667,7 @@
         "longitud": "-60.758489",
         "calle": "SARMIENTO",
         "altura": "1776",
-        "localidad": "SANTO TOME LA CAPITAL SANTA FE",
+        "localidad": "SANTO TOME LA CAPITAL",
         "googlePlaceId": "ChIJ1fP-SH-otZURnoEcfZsFico",
         "telefono": "0342 474-0422"
     },
@@ -1678,12 +1678,12 @@
         "longitud": "-60.762265",
         "calle": "25 DE MAYO",
         "altura": "1654",
-        "localidad": "LA CAPITAL SANTO TOMÉ",
+        "localidad": "SANTO TOME LA CAPITAL",
         "googlePlaceId": "ChIJ1fP-SH-otZURcvHPBXbHEYE",
         "telefono": "0342 474-0427"
     },
     {
-        "nombre": "ESCOBAR SANTO TOME",
+        "nombre": "ESCOBAR",
         "direccion": "DE MARZO 1527",
         "latitud": "-31.667518",
         "longitud": "-60.756871",
@@ -1700,16 +1700,16 @@
         "longitud": "-60.764675",
         "calle": "SARMIENTO",
         "altura": "2343",
-        "localidad": "SANTO TOME LA CAPITAL SANTA FE",
+        "localidad": "SANTO TOME LA CAPITAL",
         "googlePlaceId": "ChIJkfQdzHmotZURcE8dsIx_Te8",
         "telefono": "0342 474-7428"
     },
     {
-        "nombre": "BONINO Santo Tome",
+        "nombre": "BONINO",
         "direccion": "OBISPO GELABERT 2198",
         "latitud": "-31.663248",
         "longitud": "-60.763427",
-        "localidad": "SANTO TOME LA CAPITAL SANTA FE",
+        "localidad": "SANTO TOME LA CAPITAL",
         "calle": "OBISPO GELABERT",
         "altura": "2198",
         "googlePlaceId": "ChIJ1fP-SH-otZUR91SRZkZxAig",
@@ -1733,12 +1733,12 @@
         "longitud": "-60.759318",
         "calle": "DE MARZO",
         "altura": "1760",
-        "localidad": "SANTO TOME LA CAPITAL SANTA FE",
+        "localidad": "SANTO TOME LA CAPITAL",
         "googlePlaceId": "ChIJPwBqqn2otZUR7VOrq0APmJE",
         "telefono": "0342 474-0375"
     },
     {
-        "nombre": "CRUZ SANTO TOME",
+        "nombre": "CRUZ",
         "direccion": "M. CANDIOTI 2494",
         "latitud": "-31.671719",
         "longitud": "-60.755499",
@@ -1760,11 +1760,11 @@
         "telefono": "0342 474-0466"
     },
     {
-        "nombre": "MARTINEZ Santo Tome",
+        "nombre": "MARTINEZ",
         "direccion": "HIPOLITO IRIGOYEN 2235",
         "latitud": "-31.667969",
         "longitud": "-60.763722",
-        "localidad": "SANTO TOME LA CAPITAL SANTA FE",
+        "localidad": "SANTO TOME LA CAPITAL",
         "calle": "HIPOLITO IRIGOYEN",
         "altura": "2235",
         "googlePlaceId": "ChIJH99e9maptZURqXInYgicsEQ",
@@ -1804,18 +1804,18 @@
         "telefono": "0342 474-2737"
     },
     {
-        "nombre": "OLIVERO Santo Tome",
+        "nombre": "OLIVERO",
         "direccion": "HERNANDARIAS 1793",
         "latitud": "-31.674435",
         "longitud": "-60.760811",
-        "localidad": "SANTO TOME LA CAPITAL SANTA FE",
+        "localidad": "SANTO TOME LA CAPITAL",
         "calle": "HERNANDARIAS",
         "altura": "1793",
         "googlePlaceId": "ChIJj_OUtYaotZURhMqyrjBxD4g",
         "telefono": "0342 475-1075"
     },
     {
-        "nombre": "ZIMMERMANN SANTO TOME",
+        "nombre": "ZIMMERMANN",
         "direccion": "MARIANO CANDIOTI 3226",
         "latitud": "-31.678863",
         "longitud": "-60.756866",
@@ -1832,7 +1832,7 @@
         "longitud": "-60.76796",
         "calle": "AV LUJAN",
         "altura": "2692",
-        "localidad": "SANTO TOME LA CAPITAL SANTA FE",
+        "localidad": "SANTO TOME LA CAPITAL",
         "googlePlaceId": "ChIJ1fP-SH-otZURYI0RNdu71gk",
         "telefono": "0342 474-1354"
     },
@@ -1843,7 +1843,7 @@
         "longitud": "-60.768918",
         "calle": "BELGRANO",
         "altura": "3018",
-        "localidad": "LA CAPITAL SANTO TOMÉ",
+        "localidad": "SANTO TOME LA CAPITAL",
         "googlePlaceId": "ChIJ1fP-SH-otZURPg8tAb6xdvQ",
         "telefono": "0342 474-4371"
     },
@@ -1854,7 +1854,7 @@
         "longitud": "-60.768918",
         "calle": "DE MARZO",
         "altura": "1884",
-        "localidad": "LA CAPITAL SANTO TOMÉ",
+        "localidad": "SANTO TOME LA CAPITAL",
         "googlePlaceId": "ChIJ1fP-SH-otZURS-gMWf5Kl9g",
         "telefono": "0342 474-3669"
     },
@@ -1865,12 +1865,12 @@
         "longitud": "-60.768918",
         "calle": "25 DE MAYO",
         "altura": "2017",
-        "localidad": "LA CAPITAL SANTO TOMÉ",
+        "localidad": "SANTO TOME LA CAPITAL",
         "googlePlaceId": "ChIJH3QsRn-otZURRV3voDm01Z4",
         "telefono": "0342 474-7057"
     },
     {
-        "nombre": "GÓMEZ SANTO TOME",
+        "nombre": "GÓMEZ",
         "direccion": "LA RIOJA 2295",
         "latitud": "-31.674438",
         "longitud": "-60.766988",
@@ -1881,11 +1881,11 @@
         "telefono": "0342 475-3219"
     },
     {
-        "nombre": "GOMEZ Santo Tome",
+        "nombre": "GOMEZ",
         "direccion": "LA RIOJA 2295",
         "latitud": "-31.674438",
         "longitud": "-60.766988",
-        "localidad": "LA CAPITAL SANTO TOMÉ",
+        "localidad": "SANTO TOME LA CAPITAL",
         "calle": "LA RIOJA",
         "altura": "2295",
         "googlePlaceId": "ChIJA6W9qEmotZURbwZAn4BRq6U",
@@ -1898,7 +1898,7 @@
         "longitud": "-60.770714",
         "calle": "EJERCITO ARGENTINO",
         "altura": "2695",
-        "localidad": "SANTO TOME LA CAPITAL SANTA FE",
+        "localidad": "SANTO TOME LA CAPITAL",
         "googlePlaceId": "ChIJX8400XiotZURCo3EuZP8uew",
         "telefono": "0342 474-9893"
     },
@@ -1931,7 +1931,7 @@
         "longitud": "-60.770119",
         "calle": "AV. LUJAN",
         "altura": "2979",
-        "localidad": "LA CAPITAL SANTO TOMÉ",
+        "localidad": "SANTO TOME LA CAPITAL",
         "googlePlaceId": "ChIJCVcAViqmtZUR-6vCti1qVSo",
         "telefono": "0342 474-3371"
     },
@@ -1953,7 +1953,7 @@
         "longitud": "-60.774567",
         "calle": "LOPEZ Y PLANES",
         "altura": "2865",
-        "localidad": "LA CAPITAL SANTO TOMÉ",
+        "localidad": "SANTO TOME LA CAPITAL",
         "googlePlaceId": "ChIJAefz9zCntZURoPK9zv9fFDg",
         "telefono": "0342 447-0671"
     },

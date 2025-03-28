@@ -200,6 +200,8 @@ def thin_font(image):
 
 
 def extract_pharmacy_names(turno, nombres_farmacias):
+    # this parses through the set of image extracted names and then compares it with all pharmacy names given
+    # if it finds no match, it iterates over the split, but with a much lower tolerance for error
     potential_names = [re.split(r"[.«,\-]", line)[0].strip().upper() for line in turno.strip().split("\n")]
     matched_names = []
     for name in potential_names:
@@ -207,8 +209,15 @@ def extract_pharmacy_names(turno, nombres_farmacias):
 
         if score >= 75:
             matched_names.append(best_match)
-
+        else:
+            words = name.split()
+            for word in words:
+                best_match, score, _ = process.extractOne(word, nombres_farmacias, scorer=fuzz.ratio)
+                if score >= 90:
+                    matched_names.append(best_match)
+                    break
     return matched_names
+
 
 def separate_dates(dates):
     dates_from = []
@@ -224,6 +233,8 @@ def separate_dates(dates):
             dates_to.append(date)
 
     return dates_from, dates_to
+
+
 def main():
     # The (?) as follows:
     # I load the image, gray it out, then apply a small and a large kernel
@@ -311,28 +322,52 @@ def main():
     turnos_header_footer_santoto = get_footer_separator(turnos_clean_santoto)
 
     clean_phone_icons(turnos_header_footer_santafe)
+    clean_phone_icons(turnos_header_footer_santoto)
 
-    turnos_text_raw = get_shifts(turnos_header_footer_santafe)
+    turnos_text_raw_santa_fe = get_shifts(turnos_header_footer_santafe)
+    turnos_text_raw_santoto = get_shifts(turnos_header_footer_santoto)
 
-    nombres_farmacias = []
+    nombres_farmacias_santa_fe = []
     for pharmacy in pharmacies:
         if pharmacy["localidad"].upper() == "SANTA FE LA CAPITAL":
-            nombres_farmacias.append(pharmacy["nombre"])
+            nombres_farmacias_santa_fe.append(pharmacy["nombre"])
 
-    turnos_extracted_text = []
-    for cabecera, turno, pie in turnos_text_raw:
+    nombres_farmacias_santoto = []
+    for pharmacy in pharmacies:
+        if pharmacy["localidad"].upper() == "SANTO TOME LA CAPITAL":
+            nombres_farmacias_santoto.append(pharmacy["nombre"])
+
+    turnos_extracted_text_santa_fe = []
+    for cabecera, turno, pie in turnos_text_raw_santa_fe:
         turno = turno.upper().replace(" A.", " A ").replace("SEN - COLTRINARI", "SEN COLTRINARI")
-        farmacias_en_el_turno = extract_pharmacy_names(turno, nombres_farmacias)
+        farmacias_en_el_turno = extract_pharmacy_names(turno, nombres_farmacias_santa_fe)
         fechas_del_turno = extract_dates(cabecera)
         dates_from, dates_to = separate_dates(fechas_del_turno)
-        turnos_extracted_text.append((dates_from, dates_to, farmacias_en_el_turno))
+        turnos_extracted_text_santa_fe.append((dates_from, dates_to, farmacias_en_el_turno))
 
-    turnos_json = [{"datesFrom": dates_from, "datesTo": dates_to, "pharmacies": farmacias}
-                   for dates_from, dates_to, farmacias in turnos_extracted_text]
+    turnos_santa_fe_json = [{"datesFrom": dates_from, "datesTo": dates_to, "pharmacies": farmacias}
+                   for dates_from, dates_to, farmacias in turnos_extracted_text_santa_fe]
 
-    with open("../../data/turnos.json", "w", encoding="utf-8") as f:
-        json.dump(turnos_json, f, indent=4, ensure_ascii=False)
-    print("turnos guardados correctamente")
+    with open("../../data/turnos-santa-fe.json", "w", encoding="utf-8") as f:
+        json.dump(turnos_santa_fe_json, f, indent=4, ensure_ascii=False)
+
+    print("turnos santa fe guardados correctamente")
+
+    turnos_extracted_text_santoto = []
+    for cabecera, turno, pie in turnos_text_raw_santoto:
+        turno = turno.upper().replace(" A.", " A ").replace("SEN - COLTRINARI", "SEN COLTRINARI")
+        print(turno)
+        farmacias_en_el_turno = extract_pharmacy_names(turno, nombres_farmacias_santoto)
+        fechas_del_turno = extract_dates(cabecera)
+        dates_from, dates_to = separate_dates(fechas_del_turno)
+        turnos_extracted_text_santoto.append((dates_from, dates_to, farmacias_en_el_turno))
+
+    turnos_santa_fe_json = [{"datesFrom": dates_from, "datesTo": dates_to, "pharmacies": farmacias}
+                            for dates_from, dates_to, farmacias in turnos_extracted_text_santoto]
+
+    with open("../../data/turnos-santo-tome.json", "w", encoding="utf-8") as f:
+        json.dump(turnos_santa_fe_json, f, indent=4, ensure_ascii=False)
+    print("turnos santo tome guardados correctamente")
 
 
 if __name__ == "__main__":

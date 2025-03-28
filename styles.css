@@ -21,10 +21,10 @@ html, body {
     margin: 1rem;
 }
 .card img{
-    max-width: 2rem;
+    max-width: 2.5rem;
     margin: 1.5rem  ;
 }
-.card{
+.card {
     margin: 1.5rem 0;
     display: flex;
     align-items: center;
@@ -32,6 +32,7 @@ html, body {
     border-radius: 10px;
     background-color: white;
     cursor: pointer;
+    padding: 0.5rem 0;
 }
 .card-list{
     font-family: Wotfard, Arial, sans-serif;
