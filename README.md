@@ -2,8 +2,8 @@
 
 This project was created to display the shifts of my city's pharmacies on a map. You can access the webpage beta by clicking the link below:
 
-🔗 [Visit deturno.ar](deturno.ar)
-🔗 [Visit deturno.ar/santo-tome](deturno.ar/santo-tome)
+🔗 [Visit deturno.ar](https://deturno.ar/)
+🔗 [Visit deturno.ar/santo-tome](https://deturno.ar/santo-tome)
 
 ---
 
