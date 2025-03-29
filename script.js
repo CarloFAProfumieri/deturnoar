@@ -141,6 +141,11 @@ function resetPin(pharmacyName, animationSeconds) {
 }
 
 function center(lon, lat, zoom){
+
+    Object.entries(pinDictionary).forEach(([pharmacy, marker]) => {
+        resetPin(pharmacy,0)
+    });
+
     map.flyTo({
         center: [lon, lat],
         zoom: zoom,
@@ -191,7 +196,7 @@ async function getCoordinates(address) {
 
     try {
         const response = await fetch(url, {
-            headers: { 'User-Agent': 'deturnoarBeta/1.0 (YourEmail@example.com)' }
+            headers: { 'User-Agent': 'deturnoarBeta/1.0 (carloprofumieri@gmail.com)' }
         });
 
         if (!response.ok) {
