@@ -30,21 +30,19 @@ function addCard(pharmacy){
     imageNode.className = "card-image";
     imageNode.role = "presentation"
     nameNewNode.textContent = pharmacy.nombre;
-    addressNewNode.textContent= pharmacy.direccion + " (" + pharmacy.distance + " metros)";
+    addressNewNode.textContent= pharmacy.direccion;
     extraInformationNewNode.textContent = "Telefono: " + pharmacy.telefono;
     cardText.appendChild(nameNewNode);
     cardText.appendChild(addressNewNode);
     cardText.appendChild(extraInformationNewNode);
     if (pharmacy.distance){
-        distanceNode = document.createElement("h5");
-        distanceNode.textContent = pharmacy.distance + " metros";
-        cardText.appendChild(distanceNode);
+        addressNewNode.textContent= pharmacy.direccion + " (" + pharmacy.distance + " metros)";
     }
 
     cardNewNode.appendChild(imageNode);
     cardNewNode.appendChild(cardText);
 
-    cardNewNode.addEventListener("click",() => center(pharmacy));
+    cardNewNode.addEventListener("click",() => center(pharmacy.longitud, pharmacy.latitud));
     cardNewNode.addEventListener("mouseenter", () => {
         highlightPin(pharmacy.nombre,.2);
         highlightCard(pharmacy.nombre, .2);
@@ -142,9 +140,14 @@ function resetPin(pharmacyName, animationSeconds) {
     }
 }
 
-function center(pharmacy){
-    map.setCenter([pharmacy.longitud, pharmacy.latitud]);
-    map.setZoom(15);
+function center(lon, lat){
+    map.flyTo({
+        center: [lon, lat],
+        zoom: 15,
+        essential: true, // Ensures animation is not disabled by user settings
+        speed: 1.2, // Adjust the speed of the animation (default is 1.2)
+        curve: 1.5 // Adjust the curve of the transition for a smoother effect
+    });
 }
 
 function getCurrentDate() {
@@ -276,7 +279,7 @@ function addSearchListener(){
                         let searchInputPin = document.createElement("img");
                         searchInputPin.src = "public/classic-pin.svg";
                         searchInputPin.style.width = '35px';
-
+                        center(lon, lat);
                         orderCardsByDistance(lat,lon);
                         if (personalAddressPin) {
                             personalAddressPin.remove()

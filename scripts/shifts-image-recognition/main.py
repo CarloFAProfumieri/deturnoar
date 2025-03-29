@@ -204,7 +204,7 @@ def thin_font(image):
 
 def extract_pharmacy_names(turno, nombres_farmacias):
     # this parses through the set of image extracted names and then compares it with all pharmacy names given
-    # if it finds no match, it iterates over the split, but with a much lower tolerance for error
+    # if it finds no match, its splits with spaces and iterates over it, but with a much lower tolerance for error
     potential_names = [re.split(r"[.«,\-]", line)[0].strip().upper() for line in turno.strip().split("\n")]
     matched_names = []
     for name in potential_names:
