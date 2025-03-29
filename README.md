@@ -1,6 +1,6 @@
 # deturno.ar
 
-This project was created to display the shifts of my city's pharmacies on a map. Since this is still an alpha release, you can access the site through **GitHub Pages** by clicking the link below:
+This project was created to display the shifts of my city's pharmacies on a map. You can access the webpage beta by clicking the link below:
 
 🔗 [Visit deturno.ar](deturno.ar)
 🔗 [Visit deturno.ar/santo-tome](deturno.ar/santo-tome)
