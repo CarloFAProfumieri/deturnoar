@@ -21,23 +21,59 @@ function addCard(pharmacy){
     let cardText = document.createElement("div");
     let pharmacyListNode = document.querySelector("#pharmacyList");
     let imageNode = document.createElement("img");
+    let phoneImageNode = document.createElement("img")
+    let directionsImageNode = document.createElement("img")
+    let contactIconContainer = document.createElement("div");
+    let callButton = document.createElement("button");
+    let directionsButton = document.createElement("button");
+    let directionsText = document.createElement("p");
+    let phoneText = document.createElement("p")
 
     cardNewNode.className = "card";
     cardText.className = "card-text";
-    addressNewNode.className = "lighter"
+    addressNewNode.className = "lighter";
+    contactIconContainer.className = "contact-icon-container";
+    callButton.className = "contact-button"
+    directionsButton.className = "contact-button"
+
+
+    phoneText.textContent = "LLAMAR"
+    directionsText.textContent = "INDICACIONES"
+
+    phoneImageNode.src = "public/phone.svg"
+    phoneImageNode.className = "contact-icon";
+    phoneImageNode.role = "presentation";
+    callButton.appendChild(phoneImageNode);
+    callButton.appendChild(phoneText);
+    callButton.addEventListener("click", () => {
+        window.location.href = `tel:${pharmacy.telefono}`;
+    });
+
+    directionsImageNode.src = "public/directions.svg"
+    directionsImageNode.className = "contact-icon"
+    directionsImageNode.role = "presentation";
+    directionsButton.appendChild(directionsImageNode);
+    directionsButton.appendChild(directionsText);
+    directionsButton.addEventListener("click", () => {
+        window.open(`https://www.google.com/maps/dir/?api=1&destination=${pharmacy.latitud},${pharmacy.longitud}`, '_blank');
+    });
+
+    contactIconContainer.appendChild(callButton)
+    contactIconContainer.appendChild(directionsButton)
 
     imageNode.src = "public/logo.svg";
     imageNode.className = "card-image";
     imageNode.role = "presentation"
+
     nameNewNode.textContent = pharmacy.nombre;
     addressNewNode.textContent= pharmacy.direccion;
-    extraInformationNewNode.textContent = "Telefono: " + pharmacy.telefono;
-    cardText.appendChild(nameNewNode);
-    cardText.appendChild(addressNewNode);
-    cardText.appendChild(extraInformationNewNode);
     if (pharmacy.distance){
         addressNewNode.textContent= pharmacy.direccion + " (" + pharmacy.distance + " metros)";
     }
+
+    cardText.appendChild(nameNewNode);
+    cardText.appendChild(addressNewNode);
+    cardText.appendChild(contactIconContainer);
 
     cardNewNode.appendChild(imageNode);
     cardNewNode.appendChild(cardText);
