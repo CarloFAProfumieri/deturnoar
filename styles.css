@@ -12,10 +12,11 @@ html, body {
 }
 
 .contact-icon-container{
+    margin: 0;
     display: flex;
     flex-direction: row;
-    margin: 1rem;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .pharmacy-icon{
@@ -36,6 +37,7 @@ html, body {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 1rem 0 0;
 }
 
 .contact-button:hover {
@@ -108,6 +110,10 @@ html, body {
 }
 
 .contact-icon{
+    width: 2rem;
+    margin: 0.5rem;
+}
+.contact-button-icon{
     width: 1.5rem;
     margin: 0.5rem;
 }
@@ -243,14 +249,24 @@ html, body {
 .mobile-hint{
     display: none;
 }
+.search-icon {
+    display: none;
+}
 
 @media (max-width: 768px) {
+    .search-icon{
+        display: flex;
+        width: 2rem;
+        margin: 0.5rem;
+        cursor: pointer;
+    }
     .navbar{
         align-items: stretch;
     }
     .header-container{
         flex-grow: 1;
         justify-content: space-between;
+        padding: 0 1rem;
     }
     .search-form-container{
         display: none;
@@ -304,5 +320,13 @@ html, body {
         max-height: 50vh;
         min-width: 90%;
     }
-
+    .contact-button-icon{
+        width: 3vw;
+        min-width: 15px;
+    }
+    .contact-button{
+        width: 35vw;
+        min-width: 175px;
+        font-size: 1rem;
+    }
 }

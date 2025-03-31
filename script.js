@@ -16,7 +16,6 @@ function setFromToText(currentHour){
 function addCard(pharmacy){
     let nameNewNode = document.createElement("h4");
     let addressNewNode = document.createElement("h5");
-    let extraInformationNewNode = document.createElement("h5");
     let cardNewNode = document.createElement("div");
     let cardText = document.createElement("div");
     let pharmacyListNode = document.querySelector("#pharmacyList");
@@ -41,7 +40,7 @@ function addCard(pharmacy){
     directionsText.textContent = "INDICACIONES"
 
     phoneImageNode.src = "public/phone.svg"
-    phoneImageNode.className = "contact-icon";
+    phoneImageNode.className = "contact-button-icon";
     phoneImageNode.role = "presentation";
     callButton.appendChild(phoneImageNode);
     callButton.appendChild(phoneText);
@@ -50,7 +49,7 @@ function addCard(pharmacy){
     });
 
     directionsImageNode.src = "public/directions.svg"
-    directionsImageNode.className = "contact-icon"
+    directionsImageNode.className = "contact-button-icon"
     directionsImageNode.role = "presentation";
     directionsButton.appendChild(directionsImageNode);
     directionsButton.appendChild(directionsText);
@@ -201,8 +200,7 @@ function getCurrentDate2() {
     //an improvement on getcurrentDate1, to make sure this works outside of Argentina's time zone
     let today = new Date();
     let options = { timeZone: 'America/Argentina/Buenos_Aires', day: '2-digit', month: '2-digit' };
-    let formattedDate = new Intl.DateTimeFormat('en-GB', options).format(today);
-    return formattedDate;
+    return new Intl.DateTimeFormat('en-GB', options).format(today);
 }
 function getCurrentHour() {
     let today = new Date();
