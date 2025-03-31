@@ -139,7 +139,7 @@ function scrollToCard(pharmacyName, callback) {
     });
 }
 
-function resetCard(pharmacyName, animationSeconds) {
+function resetCard(pharmacyName) {
     let card = cardDictionary[pharmacyName];
     if (card) {
         card.style.backgroundColor = "white";
@@ -308,7 +308,7 @@ function addSearchListener(){
 
                 // pongo un indicador de que se está fetcheando la direccion
                 searchButton.disabled = true;
-                searchButton.innerHTML = `<img src="public/loading-spinner.svg" class="spinner" alt="loading">`;
+                searchButton.innerHTML = `<img src="public/loading-spinner.svg" class="spinner" alt="cargando">`;
 
                 getCoordinates(searchInput).then(coords => {
                     if (coords) {
@@ -336,7 +336,7 @@ function addSearchListener(){
                 }).finally(() => {
                     // Reset button state
                     searchButton.disabled = false;
-                    searchButton.innerHTML = `<img src="public/search-button.svg">`;
+                    searchButton.innerHTML = `<img src="public/search-button.svg" alt="buscar">`;
                 });
             } else {
                 console.log("Por favor ingrese una dirección.");
