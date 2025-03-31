@@ -31,7 +31,7 @@ html, body {
     background-color: #12418d;
     border: none;
     border-radius: 2rem; /* Makes the button rounder */
-    padding: 0rem 1rem 0 0.5rem;
+    padding: 0 1rem 0 0.5rem;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -310,7 +310,7 @@ html, body {
         width: 100%;
     }
     .mobile-hint h3{
-        margin: 0rem;
+        margin: 0;
         padding: 0 1rem;
     }
     .mobile-hint img{
