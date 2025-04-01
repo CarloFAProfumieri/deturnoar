@@ -4,7 +4,7 @@ import numpy as np
 import pytesseract
 import json
 from rapidfuzz import process, fuzz
-
+from pdf2image import convert_from_path
 
 def draw_line(an_image, an_y_coordinate):
     cv2.line(an_image, (0, an_y_coordinate), (an_image.shape[1], an_y_coordinate), (0, 255, 0), 2)
@@ -238,21 +238,31 @@ def separate_dates(dates):
     return dates_from, dates_to
 
 
+def pdf_to_image(pdf_path, dpi=300):
+    page = convert_from_path(pdf_path, dpi=dpi)[0]  # Read only the first page
+    image = np.array(page)
+    return cv2.cvtColor(image, cv2.COLOR_RGB2BGR)  # Convert RGB to BGR for OpenCV
 def main():
-    # The (?) as follows:
-    # I load the image, gray it out, then apply a small and a large kernel
-    # The large kernel serves me to detect the outer boxes, since there are two cities in two different boxes
-    # The smaller kernel lets me separate every shift box to finally get it cropped, then I sort each crop by x, y
-    # While im at it, I also separate each header with dates from the table with the pharmacy's data
-    # Finally, I separate the footer from the table, and send the whole thing to ocr function, which takes care of
-    # preprocessing and the ocr itself
-    # Then, i get this raw data, and spellcheck the names of the pharmacies with rapidfuzz, using all the parsed
-    # names that I previously scraped. I also use re to parse the dates of the shifts
-    # All this data is then saved in json format
-
+    """
+    The pipeline is as follows:
+    I load the image, gray it out, then apply a small and a large kernel
+    The large kernel serves me to detect the outer boxes, since there are two cities in two different boxes
+    The smaller kernel lets me separate every shift box to finally get it cropped, then I sort each crop by x, y
+    While im at it, I also separate each header with dates from the table with the pharmacy's data
+    Finally, I separate the footer from the table, and send the whole thing to ocr function, which takes care of
+    preprocessing and the ocr itself
+    Then, i get this raw data, and spellcheck the names of the pharmacies with rapidfuzz, using all the parsed
+    names that I previously scraped. I also use re to parse the dates of the shifts
+    All this data is then saved in json format
+    """
     with open("../../data/pharmacies_with_phones.json", "r", encoding="utf-8") as f:
         pharmacies = json.load(f)
-    image = cv2.imread("turnos.png")
+
+    image = pdf_to_image("turnos-abril.pdf")
+
+    # the original image I got was this and measurements are based on it:
+    image = cv2.resize(image, (1687, 2519), interpolation=cv2.INTER_AREA)
+
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     edges = cv2.Canny(gray, 250, 500)
 
