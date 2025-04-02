@@ -86,7 +86,9 @@ html, body {
 .card-list::-webkit-scrollbar{
     display: none;            /* Chromium */
 }
-
+.page-data{
+    max-width: 35vw;
+}
 
 .card-container{
 }
