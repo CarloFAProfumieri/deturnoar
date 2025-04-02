@@ -131,8 +131,7 @@ function scrollToCard(pharmacyName, callback) {
                 clearTimeout(isScrolling);
                 isScrolling = setTimeout(() => {
                     scrollCounter++;
-                    //console.log("Scrolling to " + pharmacyName + " finished! Total scrolls: " + scrollCounter);
-                    if (callback) callback(pharmacyName); // Execute the callback when done
+                    if (callback) callback(pharmacyName);
                 }, 100);
             });
         }
@@ -287,6 +286,7 @@ function orderCardsByDistance(lat, lon) {
     pharmaciesOnDutyData.forEach(pharmacy => {
         addPharmacy(pharmacy);
     });
+    scrollToCard(pharmaciesOnDutyData[0])
 }
 function setPersonalMarker(lat,lon){
     let searchInputPin = document.createElement("img");
@@ -362,7 +362,7 @@ function addMobileSearchButtonListener() {
 
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
-        center(position.coords.longitude, position.coords.latitude, 14);
+        center(position.coords.longitude, position.coords.latitude, 13);
         orderCardsByDistance(position.coords.latitude, position.coords.longitude);
         setPersonalMarker(position.coords.latitude, position.coords.longitude)
     }, function(error) {
