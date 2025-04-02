@@ -366,7 +366,7 @@ if (navigator.geolocation) {
         orderCardsByDistance(position.coords.latitude, position.coords.longitude);
         setPersonalMarker(position.coords.latitude, position.coords.longitude)
     }, function(error) {
-        alert("Geolocation is not supported or permission denied.");
+        console.log("Permiso de ubicación denegado");
     });
 }
 
