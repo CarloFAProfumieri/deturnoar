@@ -289,63 +289,77 @@ function orderCardsByDistance(lat, lon) {
     });
 }
 
-function addSearchListener(){
+function addSearchListener() {
     document.addEventListener("DOMContentLoaded", function () {
-        // Select the form
-        const searchForm = document.querySelector(".search-form");
-        const searchButton = searchForm.querySelector("button"); // Select the button
+        // Select all search forms
+        const searchForms = document.querySelectorAll(".search-form");
 
-        // Add event listener to handle submit
-        searchForm.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevents the page from reloading
+        searchForms.forEach(searchForm => {
+            const searchButton = searchForm.querySelector("button"); // Select the button
 
-            // Get the input value
-            const addressInput = searchForm.querySelector("input").value.trim();
+            // Add event listener to handle submit
+            searchForm.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevents the page from reloading
 
-            if (addressInput) {
-                let searchInput = addressInput + ", SANTA FE DE LA VERA CRUZ, SANTA FE, ARGENTINA"
-                console.log("Buscando:", searchInput);
+                // Get the input value
+                const addressInput = searchForm.querySelector("input").value.trim();
 
-                // pongo un indicador de que se está fetcheando la direccion
-                searchButton.disabled = true;
-                searchButton.innerHTML = `<img src="public/loading-spinner.svg" class="spinner" alt="cargando">`;
+                if (addressInput) {
+                    let searchInput = addressInput + ", SANTA FE DE LA VERA CRUZ, SANTA FE, ARGENTINA";
+                    console.log("Buscando:", searchInput);
 
-                getCoordinates(searchInput).then(coords => {
-                    if (coords) {
-                        let { lat, lon } = coords;
-                        console.log("lat: " + lat + " lon: " + lon);
+                    // Show loading indicator
+                    searchButton.disabled = true;
+                    searchButton.innerHTML = `<img src="public/loading-spinner.svg" class="spinner" alt="cargando">`;
 
-                        let searchInputPin = document.createElement("img");
-                        searchInputPin.src = "public/classic-pin.svg";
-                        searchInputPin.style.width = '35px';
-                        center(lon, lat, 14);
-                        orderCardsByDistance(lat,lon);
-                        if (personalAddressPin) {
-                            personalAddressPin.remove()
+                    getCoordinates(searchInput).then(coords => {
+                        if (coords) {
+                            let { lat, lon } = coords;
+                            console.log("lat: " + lat + " lon: " + lon);
+
+                            let searchInputPin = document.createElement("img");
+                            searchInputPin.src = "public/classic-pin.svg";
+                            searchInputPin.style.width = '35px';
+                            center(lon, lat, 14);
+                            orderCardsByDistance(lat, lon);
+                            if (personalAddressPin) {
+                                personalAddressPin.remove();
+                            }
+                            personalAddressPin = new maplibregl.Marker({
+                                element: searchInputPin,
+                                anchor: 'bottom'
+                            }).setLngLat([lon, lat]).addTo(map);
+                        } else {
+                            console.log("No se encontró la dirección");
                         }
-                        personalAddressPin = new maplibregl.Marker({
-                            element: searchInputPin,
-                            anchor: 'bottom'
-                        }).setLngLat([lon, lat]).addTo(map);
-
-                    } else {
-                        console.log("No se encontró la dirección");
-                    }
-                }).catch(error => {
-                    console.error("Error de la api de coordenadas: ", error);
-                }).finally(() => {
-                    // Reset button state
-                    searchButton.disabled = false;
-                    searchButton.innerHTML = `<img src="public/search-button.svg" alt="buscar">`;
-                });
-            } else {
-                console.log("Por favor ingrese una dirección.");
-            }
+                    }).catch(error => {
+                        console.error("Error de la API de coordenadas: ", error);
+                    }).finally(() => {
+                        // Reset button state
+                        searchButton.disabled = false;
+                        searchButton.innerHTML = `<img src="public/search-button.svg" alt="buscar">`;
+                    });
+                } else {
+                    console.log("Por favor ingrese una dirección.");
+                }
+            });
         });
     });
 }
+function addMobileSearchButtonListener() {
+    const searchBox = document.getElementById("mobile-search");
 
+    document.getElementById("searchToggle").addEventListener("click", function () {
+        if (searchBox.classList.contains("visible")) {
+            searchBox.classList.remove("visible");
+        } else {
+            searchBox.classList.add("visible");
+        }
+    });
+}
 addSearchListener();
+addMobileSearchButtonListener();
+
 let map = new maplibregl.Map({
     style: 'https://tiles.openfreemap.org/styles/bright',
     container: 'map',
@@ -395,4 +409,3 @@ Promise.all([
 
 
 setFromToText(currentHour);
-
