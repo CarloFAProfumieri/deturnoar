@@ -111,7 +111,7 @@ html, body {
 
 .contact-icon{
     width: 2rem;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 .contact-button-icon{
     width: 1.5rem;
@@ -131,6 +131,7 @@ html, body {
     align-items: center;
     background-color: #12418d;
     height: 11vh;
+    z-index: 1000;
 }
 
 .search-form {
@@ -200,7 +201,7 @@ html, body {
 .search-form input {
     flex: 1;
     border: none;
-    padding: 10px;
+    padding: 10px 10px 10px 15px;
     font-size: 1rem;
     font-weight: bold;
     color: #12418d;
@@ -221,7 +222,7 @@ html, body {
 }
 
 .search-form button:hover {
-    background-color: #a4e4c8;
+    background-color: #a4d4e4;
 }
 
 #map{
@@ -252,36 +253,86 @@ html, body {
 .search-icon {
     display: none;
 }
+#mobile-search {
+display: none;
+}
 
 @media (max-width: 768px) {
-    .search-icon{
+    .search-form input{
+        min-width: 0;
+    }
+    .search-form button{
+        width: 5vh;
+        flex-shrink: 0;
+    }
+    .search-form {
+        flex:1;
+        border: 1px solid #ccc;
+        border-radius: 150px;
+        overflow: hidden;
+        width: 300px;
+        align-self: center;
+        background-color: white;
+        max-height: 5vh;
+    }
+    .search-icon {
         display: flex;
         width: 2rem;
-        margin: 0.5rem;
+        margin: 1rem;
         cursor: pointer;
     }
-    .navbar{
+
+    .navbar {
         align-items: stretch;
     }
-    .header-container{
+
+    .header-container {
         flex-grow: 1;
         justify-content: space-between;
         padding: 0 1rem;
     }
-    .search-form-container{
+
+    .search-form-container {
         display: none;
     }
-    .footer{
+
+    #mobile-search {
+        display: flex;
+        position: absolute;
+        top: 9vh;
+        left: 0;
+        right: 0;
+        width: 80%;
+        margin: 0 auto;
+        background: transparent;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 900;
+        opacity: 0;
+        transform: translateY(-65%);
+        transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    }
+
+
+    #mobile-search.visible {
+        display: flex; /* Show the element */
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    .footer {
         flex-direction: column;
         text-align: center;
     }
+
     .main-container {
         flex-direction: column;
         align-items: center;
         width: 100vw;
         padding: 0;
     }
-    .list-header{
+
+    .list-header {
         display: none;
     }
 
@@ -295,36 +346,44 @@ html, body {
         width: 100%;
         padding: 0;
     }
-    div .mobile-hint{
+
+    div .mobile-hint {
         display: flex;
         align-items: center;
         flex-direction: column;
         margin: 0;
     }
-    ul{
+
+    ul {
         margin: 0;
     }
-    .mobile-hint{
+
+    .mobile-hint {
         display: block;
         margin: .5rem;
         width: 100%;
     }
-    .mobile-hint h3{
+
+    .mobile-hint h3 {
         margin: 0;
         padding: 0 1rem;
     }
-    .mobile-hint img{
+
+    .mobile-hint img {
         max-width: 2rem;
     }
+
     .card-list {
         max-height: 50vh;
         min-width: 90%;
     }
-    .contact-button-icon{
+
+    .contact-button-icon {
         width: 3vw;
         min-width: 15px;
     }
-    .contact-button{
+
+    .contact-button {
         width: 35vw;
         min-width: 175px;
         font-size: 1rem;
