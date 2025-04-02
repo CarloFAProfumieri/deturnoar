@@ -86,12 +86,10 @@ html, body {
 .card-list::-webkit-scrollbar{
     display: none;            /* Chromium */
 }
-.page-data{
-    max-width: 35vw;
+.page-info{
 }
 
-.card-container{
-}
+
 .card-text{
     max-width: 50rem;
 }
@@ -160,6 +158,7 @@ html, body {
     flex-direction: column;
     color: #12418d;
     font-family: Roboto, "Vollkorn", serif;
+    max-width: 35vw;
 }
 .list-header{
     display: flex;
@@ -347,6 +346,7 @@ display: none;
     .left-container {
         width: 100%;
         padding: 0;
+        max-width: none;
     }
 
     div .mobile-hint {
