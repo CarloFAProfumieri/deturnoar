@@ -288,7 +288,19 @@ function orderCardsByDistance(lat, lon) {
         addPharmacy(pharmacy);
     });
 }
+function setPersonalMarker(lat,lon){
+    let searchInputPin = document.createElement("img");
 
+    searchInputPin.src = "public/classic-pin.svg";
+    searchInputPin.style.width = '35px';
+    if (personalAddressPin) {
+        personalAddressPin.remove();
+    }
+    personalAddressPin = new maplibregl.Marker({
+        element: searchInputPin,
+        anchor: 'bottom'
+    }).setLngLat([lon, lat]).addTo(map);
+}
 function addSearchListener() {
     document.addEventListener("DOMContentLoaded", function () {
         // Select all search forms
@@ -316,19 +328,9 @@ function addSearchListener() {
                         if (coords) {
                             let { lat, lon } = coords;
                             console.log("lat: " + lat + " lon: " + lon);
-
-                            let searchInputPin = document.createElement("img");
-                            searchInputPin.src = "public/classic-pin.svg";
-                            searchInputPin.style.width = '35px';
                             center(lon, lat, 14);
                             orderCardsByDistance(lat, lon);
-                            if (personalAddressPin) {
-                                personalAddressPin.remove();
-                            }
-                            personalAddressPin = new maplibregl.Marker({
-                                element: searchInputPin,
-                                anchor: 'bottom'
-                            }).setLngLat([lon, lat]).addTo(map);
+                            setPersonalMarker(lat,lon)
                         } else {
                             console.log("No se encontró la dirección");
                         }
@@ -357,6 +359,17 @@ function addMobileSearchButtonListener() {
         }
     });
 }
+
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+        center(position.coords.longitude, position.coords.latitude, 14);
+        orderCardsByDistance(position.coords.latitude, position.coords.longitude);
+        setPersonalMarker(position.coords.latitude, position.coords.longitude)
+    }, function(error) {
+        alert("Geolocation is not supported or permission denied.");
+    });
+}
+
 addSearchListener();
 addMobileSearchButtonListener();
 
