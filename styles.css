@@ -289,6 +289,9 @@ display: none;
     display: block;
     max-width: none;
 }
+#small-screen-link{
+    display: none;
+}
 @media (max-width: 768px) {
     #link-header{
         max-width: 3rem;
@@ -441,10 +444,19 @@ display: none;
     #locate{
         min-width: 300px;
     }
-    @media (max-width: 460px) {
-        .contact-icon{
-            display: none;
-        }
-    }
 
+}
+@media (max-width: 460px) {
+    .contact-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 395px){
+    .link-container{
+        display: none;
+    }
+    #small-screen-link{
+        display: flex;
+    }
 }
