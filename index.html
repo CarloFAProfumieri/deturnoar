@@ -32,8 +32,15 @@
             <a href="https://github.com/CarloFAProfumieri/deturnoar" target="_blank">
                 <img src="public/github-mark.svg" class="contact-icon" alt="GitHub Repository">
             </a>
+            <div class="link-container" onclick="window.location.href='https://deturno.ar/santo-tome'" role="button" tabindex="0">
+                <img class="contact-button-icon" src="public/link.svg">
+                <a rel="nofollow" id="link-header">
+                    Santo Tome
+                </a>
+            </div>
                 <img src="public/search-button-toggle.svg" class="search-icon" id="searchToggle" alt="Mostrar búsqueda">
         </div>
+
     </div>
     <div class="search-form-container">
         <form class="search-form"  >
@@ -77,6 +84,21 @@
                           Toque una ubicación para ver la información de la farmacia
                       </h3>
                   </div>
+
+                  <div class="filter-card filters">
+                      <div class="filters">
+                          <button class="contact-button filters" id="locate">
+                              <img src="public/locate.svg" class="contact-button-icon">
+                              <p>ORDENAR POR DISTANCIA</p>
+                          </button>
+                      </div>
+                      <!--
+                      <button class="contact-button filters" onclick="window.location.href='https://deturno.ar/santo-tome'" role="button" tabindex="0">
+                          <img src="public/link.svg" class="contact-button-icon">
+                          <p>De turno Santo Tome</p>
+                      </button>
+                      -->
+                  </div>
                   <!--
                   <div class="card">
                       <img src="public/logo.svg" alt="pin icon" class="card-image">
@@ -105,13 +127,10 @@
           </ul>
           <div>
               <p class="page-info">
-                  Las <strong> farmacias se encuentran abiertas en horario corrido</strong> durante toda la duración del turno para atender urgencias.
+                  Las <strong> farmacias se encuentran abiertas en horario corrido durante toda la duración del turno</strong> para atender urgencias.
               </p>
               <p class="page-info">
                   Los turnos comienzan a las 8hs y terminan a las 8hs del día siguiente, logrando así una cobertura de 24hs.
-              </p>
-              <p class="page-info">
-                  Ingresando una dirección, puede ver cual es la <strong>farmacia de turno más cercana</strong>.
               </p>
           </div>
       </div>
