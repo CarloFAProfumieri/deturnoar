@@ -42,7 +42,7 @@ function addCard(pharmacy){
     cardNewNode.appendChild(imageNode);
     cardNewNode.appendChild(cardText);
 
-    cardNewNode.addEventListener("click",() => center(pharmacy.longitud, pharmacy.latitud));
+    cardNewNode.addEventListener("click",() => center(pharmacy.longitud, pharmacy.latitud,14));
     cardNewNode.addEventListener("mouseenter", () => {
         highlightPin(pharmacy.nombre,.2);
         highlightCard(pharmacy.nombre, .2);
@@ -140,13 +140,17 @@ function resetPin(pharmacyName, animationSeconds) {
     }
 }
 
-function center(lon, lat){
+function center(lon, lat, zoom){
+    Object.entries(pinDictionary).forEach(([pharmacy, marker]) => {
+        resetPin(pharmacy,0)
+    });
+
     map.flyTo({
         center: [lon, lat],
-        zoom: 15,
-        essential: true, // Ensures animation is not disabled by user settings
-        speed: 1.2, // Adjust the speed of the animation (default is 1.2)
-        curve: 1.5 // Adjust the curve of the transition for a smoother effect
+        zoom: zoom,
+        essential: true,
+        speed: 1.2,
+        curve: 1.5
     });
 }
 
@@ -279,7 +283,7 @@ function addSearchListener(){
                         let searchInputPin = document.createElement("img");
                         searchInputPin.src = "public/classic-pin.svg";
                         searchInputPin.style.width = '35px';
-                        center(lon, lat);
+                        center(lon, lat, 14);
                         orderCardsByDistance(lat,lon);
                         if (personalAddressPin) {
                             personalAddressPin.remove()

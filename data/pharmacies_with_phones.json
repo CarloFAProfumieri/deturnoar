@@ -431,8 +431,8 @@
     {
         "nombre": "GÓMEZ",
         "direccion": "AV. VERA PEÑALOZA 6839",
-        "latitud": "-31.601073",
-        "longitud": "-60.712867",
+        "latitud": "-31.601080206899717",
+        "longitud": "-60.712864700000004",
         "localidad": "SANTA FE LA CAPITAL",
         "calle": "AV. VERA PEÑALOZA",
         "altura": "6839",
@@ -1839,8 +1839,8 @@
     {
         "nombre": "TERENZI",
         "direccion": "BELGRANO 3018",
-        "latitud": "-31.67277",
-        "longitud": "-60.768918",
+        "latitud": "-31.676115713013257",
+        "longitud": "-60.76323431948761",
         "calle": "BELGRANO",
         "altura": "3018",
         "localidad": "SANTO TOME LA CAPITAL",

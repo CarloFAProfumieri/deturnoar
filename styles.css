@@ -67,6 +67,20 @@ html, body {
     cursor: pointer;
     padding: 0.5rem 0;
 }
+.filter-card {
+    display: none;
+    margin: 1.5rem 0;
+    align-items: center;
+    font-family: Roboto, "Vollkorn", serif;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    padding: 0.5rem 0;
+}
+.card.filters{
+    display: none;
+}
+
 .card-list{
     font-family: Wotfard, Arial, sans-serif;
     list-style: none;
@@ -190,7 +204,9 @@ html, body {
 .card p{
     margin: 0.3rem 0;
 }
-
+.filter-card p{
+    margin: 0.3rem 0;
+}
 .card h4, h5{
     margin: 0.1rem 0;
 }
@@ -244,7 +260,19 @@ html, body {
     margin: 0;
     color: white;
 }
-.footer-text a{
+
+.link-container {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: underline;
+    color: #03bf55;
+}
+.link-container:hover {
+    color: #029645;
+}
+a{
     text-decoration: none;
     color: #03bf55;
 }
@@ -257,8 +285,17 @@ html, body {
 #mobile-search {
 display: none;
 }
-
+#link-header{
+    display: block;
+    max-width: none;
+}
+#small-screen-link{
+    display: none;
+}
 @media (max-width: 768px) {
+    #link-header{
+        max-width: 3rem;
+    }
     .search-form input{
         min-width: 0;
     }
@@ -389,5 +426,37 @@ display: none;
         width: 35vw;
         min-width: 175px;
         font-size: 1rem;
+    }
+    .contact-button.filters{
+        margin: 0.5rem;
+    }
+    .filter-card{
+        display: flex;
+    }
+    .filter-card.filters{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #link{
+        min-width: 235px;
+    }
+    #locate{
+        min-width: 300px;
+    }
+
+}
+@media (max-width: 460px) {
+    .contact-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 395px){
+    .link-container{
+        display: none;
+    }
+    #small-screen-link{
+        display: flex;
     }
 }

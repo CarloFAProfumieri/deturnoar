@@ -183,9 +183,9 @@ function center(lon, lat, zoom){
     map.flyTo({
         center: [lon, lat],
         zoom: zoom,
-        essential: true, // Ensures animation is not disabled by user settings
-        speed: 1.2, // Adjust the speed of the animation (default is 1.2)
-        curve: 1.5 // Adjust the curve of the transition for a smoother effect
+        essential: true,
+        speed: 1.2,
+        curve: 1.5
     });
 }
 
@@ -359,17 +359,26 @@ function addMobileSearchButtonListener() {
         }
     });
 }
-
-if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
+function geoLocate() {
+    if (!navigator.geolocation) {
+        console.error("Geolocation is not supported by this browser.");
+        return;
+    }
+    navigator.geolocation.getCurrentPosition(function (position) {
         center(position.coords.longitude, position.coords.latitude, 13);
         orderCardsByDistance(position.coords.latitude, position.coords.longitude);
         setPersonalMarker(position.coords.latitude, position.coords.longitude)
-    }, function(error) {
+    }, function (error) {
         console.log("Permiso de ubicación denegado");
     });
 }
-
+function addGeolocationListener(){
+    document.addEventListener("DOMContentLoaded", function () {
+        const locationButton = document.getElementById("locate");
+        locationButton.addEventListener("click", geoLocate);
+    });
+}
+addGeolocationListener();
 addSearchListener();
 addMobileSearchButtonListener();
 
@@ -402,12 +411,18 @@ Promise.all([
     fetch("data/turnos-santa-fe.json").then(res => res.json()),
     fetch("data/pharmacies_with_phones.json").then(res => res.json())
 ]).then(([turnosData, pharmaciesData]) => {
-    // Find pharmacies on duty today
-    pharmaciesOnDuty = getPharmaciesOnDuty(turnosData, currentDate, currentHour);
+    // Filtrar solo farmacias en "SANTA FE LA CAPITAL"
+    const filteredPharmacies = pharmaciesData.filter(pharmacy =>
+        pharmacy.localidad.toUpperCase() === "SANTA FE LA CAPITAL"
+    );
 
-    pharmaciesData.forEach(pharmacy => {
+    // Convertir farmacias en un diccionario para búsqueda rápida
+    filteredPharmacies.forEach(pharmacy => {
         pharmaciesWithDetails[pharmacy.nombre.toUpperCase()] = pharmacy;
     });
+
+    // Buscar farmacias de turno y agregarlas si están en el diccionario filtrado
+    pharmaciesOnDuty = getPharmaciesOnDuty(turnosData, currentDate, currentHour);
 
     pharmaciesOnDuty.forEach(pharmacyName => {
         let pharmacyDetails = pharmaciesWithDetails[pharmacyName];
@@ -415,7 +430,7 @@ Promise.all([
             addPharmacy(pharmacyDetails);
             pharmaciesOnDutyData.push(pharmacyDetails);
         } else {
-            console.warn("No se encontro la farmacia:", pharmacyName);
+            console.warn("No se encontró la farmacia:", pharmacyName);
         }
     });
 }).catch(error => console.error("Error loading JSON:", error));
