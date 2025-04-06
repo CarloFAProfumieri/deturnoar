@@ -25,8 +25,8 @@ function addCard(pharmacy){
     let contactIconContainer = document.createElement("div");
     let callButton = document.createElement("button");
     let directionsButton = document.createElement("button");
-    let directionsText = document.createElement("p");
-    let phoneText = document.createElement("p")
+    let directionsText = document.createElement("span");
+    let phoneText = document.createElement("span")
 
     cardNewNode.className = "card";
     cardText.className = "card-text";

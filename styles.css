@@ -100,7 +100,14 @@ html, body {
 .card-list::-webkit-scrollbar{
     display: none;            /* Chromium */
 }
-.page-info{
+
+.page-info {
+    font-family: Roboto, "Vollkorn", serif;
+    color: #12418d;
+    max-width: 75vw;
+    word-wrap: break-word; /* Asegura que las palabras largas se corten */
+    overflow-wrap: break-word; /* Es más moderno y recomendado */
+    white-space: normal; /* Asegura que el texto se ajuste */
 }
 
 
@@ -166,6 +173,7 @@ html, body {
     padding: 1.5rem 0;
     background-color: #f7f5ed;
     flex: 1;
+    flex-wrap: wrap;
 }
 .left-container{
     display: flex;
@@ -184,6 +192,9 @@ html, body {
     align-self: center;
     font-size: 2rem;
     margin: 0.5rem 0;
+}
+.bottom-header{
+    font-size: 1.5rem;
 }
 .spinner {
     width: 25px;
@@ -204,7 +215,7 @@ html, body {
 .card p{
     margin: 0.3rem 0;
 }
-.filter-card p{
+.filter-card span{
     margin: 0.3rem 0;
 }
 .card h4, h5{
@@ -293,6 +304,9 @@ display: none;
     display: none;
 }
 @media (max-width: 768px) {
+    .bottom-header{
+        text-align: center;
+    }
     #link-header{
         max-width: 3rem;
     }
