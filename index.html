@@ -19,8 +19,10 @@
     </noscript>
 
     <!-- MapLibre CSS -->
-    <link rel="preload" href="public/maplibre/maplibre-gl.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <script src="public/maplibre/maplibre-gl.js" defer></script>
+    <link rel="preload" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous" />
+    <noscript>
+        <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
+    </noscript>
 
     <!-- Scripts (defer loading) -->
     <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js" defer></script>
