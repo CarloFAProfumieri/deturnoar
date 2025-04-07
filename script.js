@@ -7,9 +7,9 @@ function setFromToText(currentHour){
     let desdeHastaElement = document.getElementById("desdehasta");
 
     if (currentHour >= 8) {
-        desdeHastaElement.textContent = "ESTARÁN ABIERTAS HASTA LAS 8HS DE MAÑANA";
+        desdeHastaElement.textContent = "ABIERTAS AHORA, HASTA LAS 8HS DE MAÑANA";
     } else {
-        desdeHastaElement.textContent = "ESTARÁN ABIERTAS HASTA LAS 8HS DE HOY: ";
+        desdeHastaElement.textContent = "ABIERTAS AHORA, HASTA LAS 8HS DE HOY: ";
     }
 }
 

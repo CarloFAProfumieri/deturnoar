@@ -105,9 +105,9 @@ html, body {
     font-family: Roboto, "Vollkorn", serif;
     color: #12418d;
     max-width: 75vw;
-    word-wrap: break-word; /* Asegura que las palabras largas se corten */
-    overflow-wrap: break-word; /* Es más moderno y recomendado */
-    white-space: normal; /* Asegura que el texto se ajuste */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 
@@ -385,7 +385,7 @@ display: none;
     }
 
     .list-header {
-        display: none;
+        text-align: center;
     }
 
     #map {
