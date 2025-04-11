@@ -7,9 +7,9 @@ function setFromToText(currentHour){
     let desdeHastaElement = document.getElementById("desdehasta");
 
     if (currentHour >= 8) {
-        desdeHastaElement.textContent = "ESTARÁN ABIERTAS HASTA LAS 8HS DE MAÑANA";
+        desdeHastaElement.textContent = "ABIERTAS AHORA, HASTA LAS 8HS DE MAÑANA";
     } else {
-        desdeHastaElement.textContent = "ESTARÁN ABIERTAS HASTA LAS 8HS DE HOY: ";
+        desdeHastaElement.textContent = "ABIERTAS AHORA, HASTA LAS 8HS DE HOY: ";
     }
 }
 
@@ -25,8 +25,8 @@ function addCard(pharmacy){
     let contactIconContainer = document.createElement("div");
     let callButton = document.createElement("button");
     let directionsButton = document.createElement("button");
-    let directionsText = document.createElement("p");
-    let phoneText = document.createElement("p")
+    let directionsText = document.createElement("span");
+    let phoneText = document.createElement("span")
 
     cardNewNode.className = "card";
     cardText.className = "card-text";
@@ -303,24 +303,20 @@ function setPersonalMarker(lat,lon){
 }
 function addSearchListener() {
     document.addEventListener("DOMContentLoaded", function () {
-        // Select all search forms
         const searchForms = document.querySelectorAll(".search-form");
 
         searchForms.forEach(searchForm => {
             const searchButton = searchForm.querySelector("button"); // Select the button
 
-            // Add event listener to handle submit
             searchForm.addEventListener("submit", function (event) {
                 event.preventDefault(); // Prevents the page from reloading
 
-                // Get the input value
                 const addressInput = searchForm.querySelector("input").value.trim();
 
                 if (addressInput) {
                     let searchInput = addressInput + ", SANTA FE DE LA VERA CRUZ, SANTA FE, ARGENTINA";
                     console.log("Buscando:", searchInput);
 
-                    // Show loading indicator
                     searchButton.disabled = true;
                     searchButton.innerHTML = `<img src="public/loading-spinner.svg" class="spinner" alt="cargando">`;
 
@@ -337,7 +333,6 @@ function addSearchListener() {
                     }).catch(error => {
                         console.error("Error de la API de coordenadas: ", error);
                     }).finally(() => {
-                        // Reset button state
                         searchButton.disabled = false;
                         searchButton.innerHTML = `<img src="public/search-button.svg" alt="buscar">`;
                     });
@@ -389,7 +384,7 @@ let map = new maplibregl.Map({
     zoom: 12.2,
 })
 
-//por ahora lo dejo asi porque total hay una sola en santa fe
+//por ahora lo dejo asi porque total hay una sola 24hs en santa fe
 let farmacias24HS = {
     nombre: "ACOSTA (24hs)",
     direccion: "SUIPACHA 2506",
@@ -411,17 +406,14 @@ Promise.all([
     fetch("data/turnos-santa-fe.json").then(res => res.json()),
     fetch("data/pharmacies_with_phones.json").then(res => res.json())
 ]).then(([turnosData, pharmaciesData]) => {
-    // Filtrar solo farmacias en "SANTA FE LA CAPITAL"
     const filteredPharmacies = pharmaciesData.filter(pharmacy =>
         pharmacy.localidad.toUpperCase() === "SANTA FE LA CAPITAL"
     );
 
-    // Convertir farmacias en un diccionario para búsqueda rápida
     filteredPharmacies.forEach(pharmacy => {
         pharmaciesWithDetails[pharmacy.nombre.toUpperCase()] = pharmacy;
     });
 
-    // Buscar farmacias de turno y agregarlas si están en el diccionario filtrado
     pharmaciesOnDuty = getPharmaciesOnDuty(turnosData, currentDate, currentHour);
 
     pharmaciesOnDuty.forEach(pharmacyName => {

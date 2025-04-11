@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Farmacias de Turno en Santa Fe - Encuentra la farmacia de turno más cercana</title>
-    <link rel="canonical" href="https://deturno.ar/">
-    <link rel="shortcut icon" href="public/favicon.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- SEO and Favicon -->
+    <link rel="canonical" href="https://deturno.ar/" />
+    <link rel="shortcut icon" href="public/favicon.png" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" />
+    </noscript>
+
+    <!-- MapLibre loading -->
+    <link rel="preload" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous" />
+    <noscript>
+        <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
+    </noscript>
+
+    <!-- Scripts (defer loading) -->
+    <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js" defer></script>
     <script src="script.js" defer></script>
-    <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
-    <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
-    <meta name="description" content="Farmacias de turno en Santa Fe">
-    <meta name="keywords" content="farmacias de turno santa fe, abiertas hoy, farmacias de turno, zona norte Santa Fe, farmacias abiertas ahora, farmacias de turno santa fe hoy, que farmacia está de turno hoy cerca de santa fe de la vera cruz">
+    <!-- Metadata -->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="mapa de Farmacias de turno Santa Fe" />
+    <meta
+            name="keywords"
+            content="farmacias de turno santa fe mapa, abiertas hoy, farmacias de turno, zona norte Santa Fe, farmacias abiertas ahora, farmacias de turno santa fe hoy, que farmacia está de turno hoy cerca de santa fe de la vera cruz"
+    />
 </head>
 <body>
-  <div class="navbar">
+  <div class="navbar" role="banner">
     <div class="header-container">
         <div class="logo-container">
             <img src="public/logo.svg" alt="logo de la página" class="logo-icon">
@@ -33,7 +52,7 @@
                 <img src="public/github-mark.svg" class="contact-icon" alt="GitHub Repository">
             </a>
             <div class="link-container" onclick="window.location.href='https://deturno.ar/santo-tome'" role="button" tabindex="0">
-                <img class="contact-button-icon" src="public/link.svg">
+                <img class="contact-button-icon" src="public/link.svg" role="presentation" alt="link">
                 <a rel="nofollow" id="link-header">
                     Santo Tome
                 </a>
@@ -59,7 +78,7 @@
           </button>
       </form>
   </div>
-  <div class="main-container">
+  <div class="main-container" role="main">
       <div id="map">
 
       </div>
@@ -69,31 +88,31 @@
       <div class="left-container">
           <div class="list-header">
               <h2 class="left-header">
-                  Farmacias de Turno
+                  Farmacias de Turno en Santa Fe
               </h2>
+              <div class="mobile-hint">
+                  <h3>
+                      Toque una farmacia en el mapa para encontrarla rápidamente!
+                  </h3>
+              </div>
               <h4 id ="desdehasta" CLASS="lighter">
                   HASTA LAS 8HS DE $(HOY/MAÑANA)
               </h4>
-
           </div>
           <ul class="card-list" id="pharmacyList">
               <li class="card-container">
 
-                  <div class="mobile-hint">
-                      <h3>
-                          Toque una ubicación para ver la información de la farmacia
-                      </h3>
-                  </div>
+
 
                   <div class="filter-card filters">
-                      <div class="filters">
+                      <div class="filters" style="display: flex;flex-direction: column; align-items: center">
                           <button class="contact-button filters" id="locate">
-                              <img src="public/locate.svg" class="contact-button-icon">
-                              <p>ORDENAR POR DISTANCIA</p>
+                              <img src="public/locate.svg" class="contact-button-icon" role="presentation" alt="usar ubicación">
+                              <span>ORDENAR POR DISTANCIA</span>
                           </button>
                           <button class="contact-button filters" id="small-screen-link" onclick="window.location.href='https://deturno.ar/santo-tome'" role="button" tabindex="0">
-                              <img src="public/link.svg" class="contact-button-icon">
-                              <p>De turno Santo Tome</p>
+                              <img src="public/link.svg" class="contact-button-icon" role="presentation" alt="link">
+                              <span>De turno Santo Tome</span>
                           </button>
                       </div>
                       <!--
@@ -126,16 +145,39 @@
                   -->
               </li>
           </ul>
-          <div>
-              <p class="page-info">
-                  Las <strong> farmacias se encuentran abiertas en horario corrido durante toda la duración del turno</strong> para atender urgencias.
-              </p>
-              <p class="page-info">
-                  Los turnos comienzan a las 8hs y terminan a las 8hs del día siguiente, logrando así una cobertura de 24hs.
-              </p>
-          </div>
+
+      </div>
+      <div class="page-info">
+          <h3 class="bottom-header">
+              Más información
+          </h3>
+          <p class="page-info">
+              Las <strong> farmacias deben estar abiertas en horario corrido durante toda la duración del
+              turno</strong> para atender urgencias.
+          </p>
+
+          <p class="page-info">
+              Los turnos comienzan a las 8hs y terminan a las 8hs del día siguiente, logrando así una cobertura de
+              24hs.
+          </p>
+          <p class="page-info">
+              La información de los turnos es <strong> extraída directamente de la turnera oficial del Colegio de
+              Farmacéuticos</strong> (la misma que
+              <a href="https://colfarsfe.org.ar/wp-content/uploads/2025/04/Afiche-Turnos-Abril-2025.pdf"
+                 target="_blank" rel="nofollow">puede encontrarse en el frente de las farmacias</a>).
+          </p>
+          <p>
+              En caso de arribar a una farmacia y que la misma se encuentre cerrada, puede dirigirse a la página de
+              contacto oficial del colegio de farmaceuticos haciendo click
+              <a href="https://colfarsfe.org.ar/contactenos/" target="_blank" rel="nofollow">aqui</a>
+              y luego en la opcion <strong>notificar incumplimiento de turnos</strong>.
+          </p>
+          <p>
+              <strong>deturno.ar no se hace responsable por posibles errores, cambios de último momento o incumplimientos por parte de las farmacias</strong>.
+          </p>
       </div>
   </div>
+
   <div class="footer">
       <p class="footer-text">&copy;2025 DE TURNO ARGENTINA - Fuente: <a href="https://colfarsfe.org.ar/wp-content/uploads/2025/04/Afiche-Turnos-Abril-2025.pdf" target="_blank" rel="nofollow">Colegio de Farmaceuticos Santa Fe</a></p>
   </div>
