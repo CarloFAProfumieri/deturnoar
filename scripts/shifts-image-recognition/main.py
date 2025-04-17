@@ -351,25 +351,46 @@ def main():
             nombres_farmacias_santoto.append(pharmacy["nombre"])
 
     turnos_extracted_text_santa_fe = []
+    turnos_especiales = []
     for cabecera, turno, pie in turnos_text_raw_santa_fe:
         turno = turno.upper().replace(" A.", " A ").replace("SEN - COLTRINARI", "SEN COLTRINARI")
         farmacias_en_el_turno = extract_pharmacy_names(turno, nombres_farmacias_santa_fe)
         fechas_del_turno = extract_dates(cabecera)
         dates_from, dates_to = separate_dates(fechas_del_turno)
         turnos_extracted_text_santa_fe.append((dates_from, dates_to, farmacias_en_el_turno))
+        if len(pie) < 2:
+            continue
+
+        pie = pie.upper().replace(" A.", " A ").replace("SEN - COLTRINARI", "SEN COLTRINARI")
+        pie = pie.splitlines()
+        pie = [line for line in pie if line.strip() != '']
+        for i in range(0, len(pie) - 1, 2):
+            linea_nombre = pie[i]
+            linea_turno = pie[i + 1]
+            farmacias_pie = extract_pharmacy_names(linea_nombre, nombres_farmacias_santa_fe)
+            fechas_del_pie = extract_dates(linea_turno)
+            dates_from_pie, dates_to_pie = separate_dates(fechas_del_pie)
+            turnos_especiales.append((dates_from_pie, dates_to_pie, farmacias_pie))
+            print(turnos_especiales)
 
     turnos_santa_fe_json = [{"datesFrom": dates_from, "datesTo": dates_to, "pharmacies": farmacias}
                    for dates_from, dates_to, farmacias in turnos_extracted_text_santa_fe]
 
+    # los turnos del pie
+    turnos_santa_fe_especiales_json = [[{"datesFrom": dates_from, "datesTo": dates_to, "pharmacies": farmacias_pie}
+                   for dates_from, dates_to, farmacias_pie in turnos_especiales]]
+
     with open("../../data/turnos-santa-fe.json", "w", encoding="utf-8") as f:
         json.dump(turnos_santa_fe_json, f, indent=4, ensure_ascii=False)
-
     print("turnos santa fe guardados correctamente")
+
+    with open("../../data/turnos-especiales-santa-fe.json", "w", encoding="utf-8") as f:
+        json.dump(turnos_santa_fe_especiales_json, f, indent=4, ensure_ascii=False)
+    print("turnos especiales guardados")
 
     turnos_extracted_text_santoto = []
     for cabecera, turno, pie in turnos_text_raw_santoto:
         turno = turno.upper().replace(" A.", " A ").replace("SEN - COLTRINARI", "SEN COLTRINARI")
-        print(turno)
         farmacias_en_el_turno = extract_pharmacy_names(turno, nombres_farmacias_santoto)
         fechas_del_turno = extract_dates(cabecera)
         dates_from, dates_to = separate_dates(fechas_del_turno)
