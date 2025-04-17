@@ -371,14 +371,13 @@ def main():
             fechas_del_pie = extract_dates(linea_turno)
             dates_from_pie, dates_to_pie = separate_dates(fechas_del_pie)
             turnos_especiales.append((dates_from_pie, dates_to_pie, farmacias_pie))
-            print(turnos_especiales)
 
     turnos_santa_fe_json = [{"datesFrom": dates_from, "datesTo": dates_to, "pharmacies": farmacias}
                    for dates_from, dates_to, farmacias in turnos_extracted_text_santa_fe]
 
     # los turnos del pie
-    turnos_santa_fe_especiales_json = [[{"datesFrom": dates_from, "datesTo": dates_to, "pharmacies": farmacias_pie}
-                   for dates_from, dates_to, farmacias_pie in turnos_especiales]]
+    turnos_santa_fe_especiales_json = [{"datesFrom": dates_from, "datesTo": dates_to, "pharmacies": farmacias_pie}
+                   for dates_from, dates_to, farmacias_pie in turnos_especiales]
 
     with open("../../data/turnos-santa-fe.json", "w", encoding="utf-8") as f:
         json.dump(turnos_santa_fe_json, f, indent=4, ensure_ascii=False)
