@@ -7,9 +7,9 @@ function setFromToText(currentHour){
     let desdeHastaElement = document.getElementById("desdehasta");
 
     if (currentHour >= 8) {
-        desdeHastaElement.textContent = "ABIERTAS AHORA, HASTA LAS 8HS DE MAÑANA";
+        desdeHastaElement.textContent = "ABIERTAS AHORA, HASTA LAS 8HS DE MAÑANA:";
     } else {
-        desdeHastaElement.textContent = "ABIERTAS AHORA, HASTA LAS 8HS DE HOY: ";
+        desdeHastaElement.textContent = "ABIERTAS AHORA, HASTA LAS 8HS DE HOY:";
     }
 }
 
@@ -207,8 +207,9 @@ function getCurrentHour() {
     let currentHour = new Intl.DateTimeFormat('en-US', options).format(today);
     return currentHour;
 }
-function getPharmaciesOnDuty(turnosData, currentDate, currentHour) {
+function getPharmaciesOnDuty(turnosData, specialShifts, currentDate, currentHour) {
     let pharmacies = [];
+
     turnosData.forEach(entry => {
         if (currentHour >= 8){
             if (entry.datesFrom.includes(currentDate)) {
@@ -218,6 +219,19 @@ function getPharmaciesOnDuty(turnosData, currentDate, currentHour) {
         else {
             if (entry.datesTo.includes(currentDate)) {
                 pharmacies = pharmacies.concat(entry.pharmacies);
+            }
+        }
+    });
+
+    specialShifts.forEach(specialEntry => {
+        if (currentHour >= 8){
+            if (specialEntry.datesFrom.includes(currentDate)) {
+                pharmacies = pharmacies.concat(specialEntry.pharmacies);
+            }
+        }
+        else {
+            if (specialEntry.datesTo.includes(currentDate)) {
+                pharmacies = pharmacies.concat(specialEntry.pharmacies);
             }
         }
     });
@@ -404,8 +418,9 @@ pharmaciesOnDutyData.push(farmacias24HS);
 addPharmacy(farmacias24HS)
 Promise.all([
     fetch("data/turnos-santa-fe.json").then(res => res.json()),
-    fetch("data/pharmacies_with_phones.json").then(res => res.json())
-]).then(([turnosData, pharmaciesData]) => {
+    fetch("data/pharmacies_with_phones.json").then(res => res.json()),
+    fetch("data/turnos-especiales-santa-fe.json").then(res => res.json())
+]).then(([turnosData, pharmaciesData, footersData]) => {
     const filteredPharmacies = pharmaciesData.filter(pharmacy =>
         pharmacy.localidad.toUpperCase() === "SANTA FE LA CAPITAL"
     );
@@ -414,7 +429,7 @@ Promise.all([
         pharmaciesWithDetails[pharmacy.nombre.toUpperCase()] = pharmacy;
     });
 
-    pharmaciesOnDuty = getPharmaciesOnDuty(turnosData, currentDate, currentHour);
+    pharmaciesOnDuty = getPharmaciesOnDuty(turnosData, footersData, currentDate, currentHour);
 
     pharmaciesOnDuty.forEach(pharmacyName => {
         let pharmacyDetails = pharmaciesWithDetails[pharmacyName];
