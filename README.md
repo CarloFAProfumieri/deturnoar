@@ -57,7 +57,7 @@ This project is open-source and available under the **MIT License**.
 
 
 ## ♿ Accessibility
-This was the central point of this project.
+This was a central topic of the project.
 
 - The frontend was checked for **colorblindness accessibility** using the **Let's Get Colorblind** extension in Chrome, and later in Firefox because Chrome disabled Ublock Origin and now I hate Chrome.
 - If you input any address in the search box, pharmacies are automatically sorted by closest first! :)
