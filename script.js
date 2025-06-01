@@ -437,7 +437,7 @@ Promise.all([
             addPharmacy(pharmacyDetails);
             pharmaciesOnDutyData.push(pharmacyDetails);
         } else {
-            console.warn("No se encontró la farmacia:", pharmacyName);
+            //console.warn("No se encontró la farmacia:", pharmacyName);
         }
     });
 }).catch(error => console.error("Error loading JSON:", error));
