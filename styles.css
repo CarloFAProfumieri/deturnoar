@@ -1,3 +1,33 @@
+
+/*
+Primary color: blue (#12418d)
+Secondary color: linen
+ */
+
+:root.light {
+    --primary-color: #12418d;
+    --primary-text-color: #212121;
+    --main-background-color: #f7f5ed;
+    --cards-background-color: white;
+    --hover-secondary-color: #a4e4c8;
+    --main-body-font-color: var(--primary-color);
+    --secondary-color-hover: #a4d4e4;
+    --cards-hover-color: #a4e4c8;
+    --button-hover-color: #0f3a7a;
+    --mobile-border-color: #ccc;
+}
+:root.dark {
+    --primary-color: #272757; /* this is midnight blue, and its my favourite color */
+    --primary-text-color: #212121;
+    --main-background-color: #333739;
+    --cards-background-color: #181a1b;
+    --hover-secondary-color: #212121;
+    --main-body-font-color: #9e9da1;
+    --secondary-color-hover: #a4d4e4;
+    --cards-hover-color: #164b3a;
+    --button-hover-color: #2f2f7d;
+    --mobile-border-color: #454545
+}
 .Vollkorn {
    font-family: "Vollkorn", serif;
    font-optical-sizing: auto;
@@ -28,9 +58,9 @@ html, body {
     justify-content: center;
     gap: 0.5rem;
     color: white;
-    background-color: #12418d;
+    background-color: var(--primary-color);
     border: none;
-    border-radius: 2rem; /* Makes the button rounder */
+    border-radius: 2rem;
     padding: 0 1rem 0 0.5rem;
     font-size: 1rem;
     font-weight: bold;
@@ -41,7 +71,7 @@ html, body {
 }
 
 .contact-button:hover {
-    background-color: #0f3a7a;
+    background-color: var(--button-hover-color);
     transform: scale(1.05);
 }
 
@@ -63,7 +93,7 @@ html, body {
     align-items: center;
     font-family: Roboto, "Vollkorn", serif;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--cards-background-color);
     cursor: pointer;
     padding: 0.5rem 0;
 }
@@ -103,7 +133,7 @@ html, body {
 
 .page-info {
     font-family: Roboto, "Vollkorn", serif;
-    color: #12418d;
+    color: var(--main-body-font-color);
     max-width: 75vw;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -150,19 +180,19 @@ html, body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #12418d;
+    background-color: var(--primary-color);
     height: 11vh;
     z-index: 1000;
 }
 
 .search-form {
     display: flex;
-    border: 1px solid #ccc;
+    border: 1px solid transparent;
     border-radius: 150px;
     overflow: hidden;
     width: 300px;
     align-self: center;
-    background-color: white;
+    background-color: var(--main-background-color);
 }
 
 .main-container{
@@ -171,14 +201,14 @@ html, body {
     flex-direction: row-reverse;
     justify-content: space-evenly;
     padding: 1.5rem 0;
-    background-color: #f7f5ed;
+    background-color: var(--main-background-color);
     flex: 1;
     flex-wrap: wrap;
 }
 .left-container{
     display: flex;
     flex-direction: column;
-    color: #12418d;
+    color: var(--main-body-font-color);
     font-family: Roboto, "Vollkorn", serif;
     max-width: 35vw;
 }
@@ -232,7 +262,8 @@ html, body {
     padding: 10px 10px 10px 15px;
     font-size: 1rem;
     font-weight: bold;
-    color: #12418d;
+    color: var(--main-body-font-color);
+    background-color: var(--main-background-color);
     outline: none;
 }
 .search-form-container{
@@ -241,7 +272,6 @@ html, body {
 .search-form button {
     background: transparent;
     margin: 0 .5rem;
-    color: white;
     border: none;
     border-radius: 15px;
     font-size: 16px;
@@ -250,20 +280,21 @@ html, body {
 }
 
 .search-form button:hover {
-    background-color: #a4d4e4;
+
+    background-color: var(--secondary-color-hover);
 }
 
 #map{
     width: 35%;
     height: 80vh;
-    border: grey solid 1.5px;
+    border: transparent solid 1.5px;
     border-radius: 20px;
 }
 .footer{
     display: flex;
     justify-content: space-around;
     flex:1;
-    background-color: #12418d;
+    background-color: var(--primary-color);
     padding: 1rem;
     font-size: 0.8rem;
 }
@@ -319,13 +350,13 @@ display: none;
     }
     .search-form {
         flex:1;
-        border: 1px solid #ccc;
         border-radius: 150px;
         overflow: hidden;
         width: 300px;
         align-self: center;
-        background-color: white;
+        background-color: var(--main-background-color);
         max-height: 5vh;
+        border-color: var(--mobile-border-color);
     }
     .search-icon {
         display: flex;

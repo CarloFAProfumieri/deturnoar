@@ -113,7 +113,7 @@ function highlightCard(pharmacyName, animationSeconds) {
 
     if (card) {
         card.style.transition = "background-color " + animationSeconds + "s ease-in-out";
-        card.style.backgroundColor = "#a4e4c8";
+        card.style.backgroundColor = "var(--cards-hover-color)";
     }
     scrollToCard(pharmacyName)
 
@@ -141,7 +141,7 @@ function scrollToCard(pharmacyName, callback) {
 function resetCard(pharmacyName) {
     let card = cardDictionary[pharmacyName];
     if (card) {
-        card.style.backgroundColor = "white";
+        card.style.backgroundColor = "var(--cards-background-color)";
     }
 }
 
@@ -387,12 +387,23 @@ function addGeolocationListener(){
         locationButton.addEventListener("click", geoLocate);
     });
 }
+function setTheme(){
+    const root = document.documentElement;
+    const newTheme = root.className === 'dark' ? 'light' : 'dark';
+    root.className = newTheme;
+}
+function addThemeListener(){
+    document.querySelector('.theme-toggle').addEventListener('click', setTheme)
+}
+
+//addThemeListener();
 addGeolocationListener();
 addSearchListener();
 addMobileSearchButtonListener();
 
 let map = new maplibregl.Map({
-    style: 'https://tiles.openfreemap.org/styles/bright',
+    style: '/styles/light.json',
+    //style: '/styles/dark.json',
     container: 'map',
     center: [-60.705, -31.630],
     zoom: 12.2,
@@ -441,6 +452,7 @@ Promise.all([
         }
     });
 }).catch(error => console.error("Error loading JSON:", error));
+
 
 
 setFromToText(currentHour);
