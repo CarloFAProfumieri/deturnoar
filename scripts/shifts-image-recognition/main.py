@@ -258,7 +258,7 @@ def main():
     with open("../../data/pharmacies_with_phones.json", "r", encoding="utf-8") as f:
         pharmacies = json.load(f)
 
-    image = pdf_to_image("turnos-mayo.pdf")
+    image = pdf_to_image("turnos-junio.pdf")
 
     # the original image I got was this and measurements are based on it:
     image = cv2.resize(image, (1687, 2519), interpolation=cv2.INTER_AREA)
