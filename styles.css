@@ -29,6 +29,9 @@ Secondary color: linen
         --button-hover-color: #2f2f7d;
         --mobile-border-color: #454545
     }
+    .mobile-hint img {
+        filter: invert(1);
+    }
 }
 .Vollkorn {
    font-family: "Vollkorn", serif;
