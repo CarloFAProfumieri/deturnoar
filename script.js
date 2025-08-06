@@ -396,14 +396,18 @@ function addThemeListener(){
     document.querySelector('.theme-toggle').addEventListener('click', setTheme)
 }
 
+function getMapStyle() {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return prefersDark ? '/styles/dark.json' : '/styles/light.json';
+}
+
 //addThemeListener();
 addGeolocationListener();
 addSearchListener();
 addMobileSearchButtonListener();
 
 let map = new maplibregl.Map({
-    style: '/styles/light.json',
-    //style: '/styles/dark.json',
+    style: getMapStyle(),
     container: 'map',
     center: [-60.705, -31.630],
     zoom: 12.2,
