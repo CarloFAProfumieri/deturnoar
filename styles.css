@@ -364,8 +364,8 @@ display: none;
         max-height: 5vh;
         border-color: var(--mobile-border-color);
     }
-    .search-icon {
-        display: flex;
+    .search-icon { /*legacy toggle for search icon */
+        display: none;
         width: 2rem;
         margin: 1rem;
         cursor: pointer;
@@ -427,7 +427,7 @@ display: none;
 
     #map {
         width: 100vw;
-        height: 60vh;
+        height: 80vh;
         border-radius: 0;
     }
 
