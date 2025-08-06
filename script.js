@@ -400,7 +400,15 @@ function getMapStyle() {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     return prefersDark ? '/styles/dark.json' : '/styles/light.json';
 }
-
+function hideAttribution(){
+    setTimeout(() => {
+        const details = document.querySelector('.maplibregl-ctrl-attrib');
+        if (details) {
+            details.removeAttribute('open');
+            details.classList.remove('maplibregl-compact-show');
+        }
+    }, 100);
+}
 //addThemeListener();
 addGeolocationListener();
 addSearchListener();
@@ -412,6 +420,8 @@ let map = new maplibregl.Map({
     center: [-60.705, -31.630],
     zoom: 12.2,
 })
+
+map.on('load', () => hideAttribution());
 
 //por ahora lo dejo asi porque total hay una sola 24hs en santa fe
 let farmacias24HS = {
