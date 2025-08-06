@@ -117,7 +117,7 @@ html, body {
     font-family: Wotfard, Arial, sans-serif;
     list-style: none;
     padding: 0;
-    max-height: 60vh;
+    height: 100%;
     min-width: 25vw;
     overflow: auto;
     margin: 0;
@@ -213,6 +213,8 @@ html, body {
     color: var(--main-body-font-color);
     font-family: Roboto, "Vollkorn", serif;
     max-width: 35vw;
+    max-height: 85vh;
+    align-items: stretch;
 }
 .list-header{
     display: flex;
@@ -288,7 +290,6 @@ html, body {
 
 #map{
     width: 35%;
-    height: 80vh;
     border: transparent solid 1.5px;
     border-radius: 20px;
 }
