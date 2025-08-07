@@ -80,7 +80,10 @@
   </div>
   <div class="main-container" role="main">
       <div id="map">
-
+          <div id="locate-hint" class="speech-bubble">Ordená por distancia usando la localización!</div>
+          <div id="locate-button" title="Centrar en mi ubicación">
+              <img src="public/locate.svg" class="contact-button-icon" role="presentation" alt="usar ubicación">
+          </div>
       </div>
       <div class="mobile-hint">
           <img src="public/drag-handle.svg" alt="ayuda visual tactil">
@@ -103,10 +106,6 @@
               <li class="card-container">
                   <div class="filter-card filters">
                       <div class="filters" style="display: flex;flex-direction: column; align-items: center">
-                          <button class="contact-button filters" id="locate">
-                              <img src="public/locate.svg" class="contact-button-icon" role="presentation" alt="usar ubicación">
-                              <span>ORDENAR POR DISTANCIA</span>
-                          </button>
                           <button class="contact-button filters" id="small-screen-link" onclick="window.location.href='https://deturno.ar/santo-tome'" role="button" tabindex="0">
                               <img src="public/link.svg" class="contact-button-icon" role="presentation" alt="link">
                               <span>De turno Santo Tome</span>

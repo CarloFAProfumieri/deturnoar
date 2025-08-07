@@ -33,6 +33,60 @@ Secondary color: linen
         filter: invert(1);
     }
 }
+#locate-button {
+    position: absolute;
+    bottom: 60px;
+    right: 2px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+#locate-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+#locate-hint {
+    position: absolute;
+    bottom: 110px; /* Adjust based on button position */
+    right: 4px;
+    background-color: white;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+}
+
+#locate-hint::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 12px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+#locate-hint.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .Vollkorn {
    font-family: "Vollkorn", serif;
    font-optical-sizing: auto;
@@ -469,7 +523,6 @@ display: none;
     }
 
     .contact-button-icon {
-        width: 3vw;
         min-width: 15px;
     }
 

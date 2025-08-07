@@ -383,7 +383,7 @@ function geoLocate() {
 }
 function addGeolocationListener(){
     document.addEventListener("DOMContentLoaded", function () {
-        const locationButton = document.getElementById("locate");
+        const locationButton = document.getElementById("locate-button");
         locationButton.addEventListener("click", geoLocate);
     });
 }
@@ -468,5 +468,13 @@ Promise.all([
 }).catch(error => console.error("Error loading JSON:", error));
 
 
-
+window.addEventListener('load', () => {
+    const hint = document.getElementById('locate-hint');
+    if (hint) {
+        hint.classList.add('show');
+        setTimeout(() => {
+            hint.classList.remove('show');
+        }, 5000);
+    }
+});
 setFromToText(currentHour);
