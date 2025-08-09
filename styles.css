@@ -15,6 +15,7 @@ Secondary color: linen
     --cards-hover-color: #a4e4c8;
     --button-hover-color: #0f3a7a;
     --mobile-border-color: #ccc;
+    --search-button-color: var(--main-background-color);
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -24,10 +25,11 @@ Secondary color: linen
         --cards-background-color: #181a1b;
         --hover-secondary-color: #212121;
         --main-body-font-color: #9e9da1;
-        --secondary-color-hover: #a4d4e4;
+        --secondary-color-hover: #57737e;
         --cards-hover-color: #164b3a;
         --button-hover-color: #2f2f7d;
-        --mobile-border-color: #454545
+        --mobile-border-color: #454545;
+        --search-button-color: var(--cards-background-color);
     }
     .mobile-hint img {
         filter: invert(1);
@@ -251,7 +253,7 @@ html, body {
     overflow: hidden;
     width: 300px;
     align-self: center;
-    background-color: var(--main-background-color);
+    background-color: var(--search-button-color);
 }
 
 .main-container{
@@ -324,7 +326,8 @@ html, body {
     font-size: 1rem;
     font-weight: bold;
     color: var(--main-body-font-color);
-    background-color: var(--main-background-color);
+    background-color: var(--search-button-color);
+);
     outline: none;
 }
 .search-form-container{
@@ -414,7 +417,7 @@ display: none;
         overflow: hidden;
         width: 300px;
         align-self: center;
-        background-color: var(--main-background-color);
+        background-color: var(--search-button-color);
         max-height: 5vh;
         border-color: var(--mobile-border-color);
     }
