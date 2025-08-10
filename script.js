@@ -12,7 +12,12 @@ function setFromToText(currentHour){
         desdeHastaElement.textContent = "ABIERTAS AHORA, HASTA LAS 8HS DE HOY:";
     }
 }
-
+function openPopup() {
+    document.getElementById('popup-backdrop').classList.add('active');
+}
+function closePopup() {
+    document.getElementById('popup-backdrop').classList.remove('active');
+}
 function addCard(pharmacy){
     let nameNewNode = document.createElement("h4");
     let addressNewNode = document.createElement("h5");

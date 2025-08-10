@@ -35,6 +35,30 @@ Secondary color: linen
         filter: invert(1);
     }
 }
+
+.popup-backdrop {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 999999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.popup-backdrop.active {
+    display: flex;
+}
+
 #locate-button {
     position: absolute;
     bottom: 60px;
