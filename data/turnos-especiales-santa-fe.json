@@ -1,10 +1,10 @@
 [
     {
         "datesFrom": [
-            "04/02"
+            "11/05"
         ],
         "datesTo": [
-            "05/02"
+            "12/05"
         ],
         "pharmacies": [
             "AZANZA"
@@ -12,10 +12,10 @@
     },
     {
         "datesFrom": [
-            "05/02"
+            "12/05"
         ],
         "datesTo": [
-            "06/02"
+            "13/05"
         ],
         "pharmacies": [
             "BORDIGNON"
@@ -23,10 +23,10 @@
     },
     {
         "datesFrom": [
-            "06/02"
+            "01/05"
         ],
         "datesTo": [
-            "07/02"
+            "02/05"
         ],
         "pharmacies": [
             "ASINARI"
@@ -34,10 +34,10 @@
     },
     {
         "datesFrom": [
-            "12/02"
+            "07/05"
         ],
         "datesTo": [
-            "13/02"
+            "08/05"
         ],
         "pharmacies": [
             "GARCÍA"
@@ -45,10 +45,10 @@
     },
     {
         "datesFrom": [
-            "01/02"
+            "08/05"
         ],
         "datesTo": [
-            "02/02"
+            "09/05"
         ],
         "pharmacies": [
             "BOSCH"
@@ -56,10 +56,10 @@
     },
     {
         "datesFrom": [
-            "03/02"
+            "10/05"
         ],
         "datesTo": [
-            "04/02"
+            "11/05"
         ],
         "pharmacies": [
             "WAGNER BURGUÉS"
@@ -67,10 +67,10 @@
     },
     {
         "datesFrom": [
-            "03/02"
+            "10/05"
         ],
         "datesTo": [
-            "04/02"
+            "11/05"
         ],
         "pharmacies": [
             "ZENTNER"
